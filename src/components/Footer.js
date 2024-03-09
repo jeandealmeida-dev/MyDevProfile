@@ -9,14 +9,14 @@ function Footer() {
     <footer className="footer-container">
       <div className="links-footer">
         <p>Encontre-me em:</p>
-        <a href="https://www.linkedin.com/in/thiagodanobrega/" 
+        <a href="https://www.linkedin.com/in/jeanalmeida/" 
           target="_blank" 
           className="icon-container" 
           rel="noreferrer"
         >
           <BsLinkedin className="icon-footer"/>
         </a>
-        <a href="https://github.com/thiagodanobrega" 
+        <a href="https://github.com/jeandealmeida-dev" 
           target="_blank" 
           className="icon-container" 
           rel="noreferrer"
@@ -25,7 +25,7 @@ function Footer() {
         </a>
       </div>
       
-      <p className="text-footer">Desenvolvido com ❤ por Thiago Nóbrega</p>
+      <p className="text-footer">Desenvolvido com ❤ por Jean Paulo de Almeida Silva</p>
       {/* <select className="select-language">
         <option>🇧🇷 pt-BR</option>
         <option>🇺🇸 en-US</option>

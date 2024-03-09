@@ -21,14 +21,14 @@ function Home() {
           <main className="main-wrapper home">
             <div className="home-content">
               <p><span className="span">{'<'}</span>Olá 👋 eu sou o</p>
-              <h1>Thiago Nóbrega <span className="span">{'/>'}</span> </h1>
+              <h1>Jean Paulo de Almeida<span className="span">{'/>'}</span> </h1>
               <Typical 
-                steps={['Front-End Developer', 1000, 'Web Development Student', 1000]}
+                steps={['Mobile Software Enginner', 1000, 'Android Developer', 1000, 'Enthusiast Backend Developer', 1000]}
                 loop={Infinity}
                 wrapper="h2"
               />
               <a 
-                href="https://gitconnected.com/thiagodanobrega/resume" 
+                href="https://gitconnected.com/jeandealmeida-dev/resume" 
                 target="_blank"
                 className="btn-download" rel="noreferrer"
               >
