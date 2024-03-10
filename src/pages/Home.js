@@ -29,17 +29,16 @@ function Home() {
               />
               <a 
                 href="cv_jeandealmeida.pdf" 
-                target="_blank"
                 className="btn-download" rel="noreferrer"
               >
                 Download CV
                 <FiDownload />
               </a>
             </div>
-            <img 
+            {/* <img 
               src={image} alt="Foto de perfil do Thiago, um jovem homem branco de cabelo castanho" 
               className="image-perfil"
-            />
+            /> */}
           </main>
         </section>
         {/* <SideBar /> */}

@@ -17,15 +17,9 @@ function About() {
           <MenuMobile />
           <main className="main-wrapper about">
             <div className="about-container">
-              <span className="span-tag html">{'<html>'}</span>
               <br/>
-              <span className="span-tag body">{'<body>'}</span>
-              <br/>
-              <span className="span-tag content">{'<h1>'}</span>
                 <h1 className="title-about">Olá,</h1>
-              <span className="span-tag content">{'</h1>'}</span>
               <br/>
-              <span className="span-tag content">{'<p>'}</span>
                 <p className="text-about">
                   Meu nome é <span className="span-highlight">Jean Paulo</span> e com mais de <span className="span-highlight">5 anos de experiência</span> como desenvolvedor mobile, possuo um profundo conhecimento da plataforma Android e seu ecossistema de desenvolvimento. 
                 </p>
@@ -38,11 +32,6 @@ function About() {
                 <p className="text-about last">
                   As habilidades relevantes incluem: <span className="span-highlight">Android SDK, Java, Kotlin, Flutter, Dart, python</span>
                 </p>
-              <span className="span-tag content">{'</p>'}</span>
-              <br/>
-              <span className="span-tag body">{'</body>'}</span>
-              <br/>
-              <span className="span-tag html">{'</html>'}</span>
             </div>
             <IconCloud />
           </main>
