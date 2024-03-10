@@ -28,7 +28,7 @@ function Home() {
                 wrapper="h2"
               />
               <a 
-                href="https://gitconnected.com/jeandealmeida-dev/resume" 
+                href="cv_jeandealmeida.pdf" 
                 target="_blank"
                 className="btn-download" rel="noreferrer"
               >

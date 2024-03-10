@@ -36,7 +36,7 @@ function About() {
                   Meu proposito é desenvolver aplicativos inovadores e de alta qualidade que atendam às necessidades dos usuários e <span className="span-highlight">impactem positivamente o mundo.</span> 
                 </p>
                 <p className="text-about last">
-                  As habilidades relevantes incluem: <span className="span-highlight">Android SDK nativo usando Java e Kotlin, desenvolvimento hibrido Flutter + Dart, alem de ser um entusiasta da linguagem python</span>
+                  As habilidades relevantes incluem: <span className="span-highlight">Android SDK, Java, Kotlin, Flutter, Dart, python</span>
                 </p>
               <span className="span-tag content">{'</p>'}</span>
               <br/>
