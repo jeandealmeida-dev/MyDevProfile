@@ -27,13 +27,16 @@ function About() {
               <br/>
               <span className="span-tag content">{'<p>'}</span>
                 <p className="text-about">
-                  Meu nome é <span className="span-highlight">Jean Paulo</span> e adoro solucionar problemas através dos códigos. Sou formado em Engenharia Civil, mas estou em transição de carreira, atualmente estudando Desenvolvimento <span className="span-highlight">Web Full Stack.</span>
+                  Meu nome é <span className="span-highlight">Jean Paulo</span> e com mais de <span className="span-highlight">5 anos de experiência</span> como desenvolvedor mobile, possuo um profundo conhecimento da plataforma Android e seu ecossistema de desenvolvimento. 
                 </p>
                 <p className="text-about">
-                  Meu foco é poder ajudar a melhorar a vida das pessoas, desenvolvendo aplicações que sejam <span className="span-highlight">acessíveis e funcionais</span>. A experiência inclui a solução de problemas e testes, trabalhando em equipes com prazos rigorosos, para projetos desenvolvidos no curso da Trybe.
+                  Minhas habilidades técnicas são complementadas por minhas excelentes <span className="span-highlight">soft skills</span>, que incluem escuta ativa, colaboração, apoio aos mais juniores, resiliência e atenção aos detalhes.
+                </p>
+                <p className="text-about">
+                  Meu proposito é desenvolver aplicativos inovadores e de alta qualidade que atendam às necessidades dos usuários e <span className="span-highlight">impactem positivamente o mundo.</span> 
                 </p>
                 <p className="text-about last">
-                  AS habilidades relevantes incluem: <span className="span-highlight">Html, CSS, JavaScript, React, Redux, ContextAPI, Hooks, Jest/RTL, Git/Github.</span>
+                  As habilidades relevantes incluem: <span className="span-highlight">Android SDK nativo usando Java e Kotlin, desenvolvimento hibrido Flutter + Dart, alem de ser um entusiasta da linguagem python</span>
                 </p>
               <span className="span-tag content">{'</p>'}</span>
               <br/>

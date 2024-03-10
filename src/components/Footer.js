@@ -26,10 +26,10 @@ function Footer() {
       </div>
       
       <p className="text-footer">Desenvolvido com ❤ por Jean Paulo de Almeida Silva</p>
-      {/* <select className="select-language">
+      { <select className="select-language">
         <option>🇧🇷 pt-BR</option>
         <option>🇺🇸 en-US</option>
-      </select> */}
+      </select> }
     </footer>
   );
 }

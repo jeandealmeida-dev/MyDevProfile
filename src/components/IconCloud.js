@@ -16,16 +16,15 @@ const Componente = () => {
     wheelZoom: false,
   }
   const iconSlugs = [
-    "java",
     "android",
+    "androidstudio",
+    "kotlin",
+    "java",
     "flutter",
     "dart",
-    "testinglibrary",
-    "kotlin",
     "git",
     "github",
     "visualstudiocode",
-    "androidstudio",
     "python",
   ];
   const iconTags = iconSlugs.map((slug) => ({
