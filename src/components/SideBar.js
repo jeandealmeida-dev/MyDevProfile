@@ -5,21 +5,24 @@ import js_icon from '../images/js_icon.svg'
 import html_icon from '../images/html_icon.svg'
 import css_icon from '../images/css_icon.svg'
 import json_icon from '../images/json_icon.svg'
+import markdown_icon from '../images/markdown_icon.svg'
 import { IoIosArrowDown,IoIosArrowForward } from 'react-icons/io';
 import { FaFolder, FaFolderOpen } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import myContext from "../context/AppContext";
+import { useTranslation } from 'react-i18next';
 
 function SideBar() {
   const {activeSideBar} = useContext(myContext)
-  const [open, setOpen] =useState(true);
-  return ( 
+  const [open, setOpen] = useState(true);
+  const { t } = useTranslation();
+  return (
     <aside className={`side-bar-container ${activeSideBar && 'active'}`}>
-      <div  className="explore-title">
+      <div className="explore-title">
         <p>EXPLORER</p>
       </div>
-      <button type="button" 
-        className="explore-portfolio" 
+      <button type="button"
+        className="explore-portfolio"
         onClick={() => setOpen(!open)}
       >
         {open ? <IoIosArrowDown /> : <IoIosArrowForward />}
@@ -30,23 +33,27 @@ function SideBar() {
         <>
           <Link to="/" className="explorer-file">
             <img src={ react_icon } alt="icon" className="icon-side-bar"/>
-            <p>home.jsx</p>
+            <p>{t('nav.home')}</p>
           </Link>
           <Link to="/about" className="explorer-file">
             <img src={ html_icon } alt="icon" className="icon-side-bar"/>
-            <p>sobre.html</p>
+            <p>{t('nav.about')}</p>
+          </Link>
+          <Link to="/experience" className="explorer-file">
+            <img src={ markdown_icon } alt="icon" className="icon-side-bar"/>
+            <p>{t('nav.experience')}</p>
           </Link>
           <Link to="/projects" className="explorer-file">
             <img src={ js_icon } alt="icon" className="icon-side-bar"/>
-            <p>projetos.js</p>
+            <p>{t('nav.projects')}</p>
           </Link>
           <Link to="/recommendation" className="explorer-file">
             <img src={ json_icon } alt="icon" className="icon-side-bar"/>
-            <p>recomendacoes.json</p>
+            <p>{t('nav.recommendation')}</p>
           </Link>
           <Link to="/contact" className="explorer-file">
             <img src={ css_icon } alt="icon" className="icon-side-bar"/>
-            <p>contato.css</p>
+            <p>{t('nav.contact')}</p>
           </Link>
         </>
       )}

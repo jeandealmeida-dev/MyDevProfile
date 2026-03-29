@@ -1,7 +1,8 @@
 .main-wrapper.recommendation {
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  padding: 7rem 0 4rem;
 }
 .title-recommendation {
   font-size: 45px;
@@ -32,7 +33,6 @@
   .title-recommendation {
     font-size: 30px;
     max-width: 570px;
-    margin-top: 100px;
     text-align: center;
   }
 

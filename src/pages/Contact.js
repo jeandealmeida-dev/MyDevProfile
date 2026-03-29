@@ -4,12 +4,14 @@ import TitleBar from "../components/TitleBar";
 import Footer from "../components/Footer";
 import SideBar from "../components/SideBar";
 import MenuMobile from "../components/MenuMobile";
-import "../styles/Contact.css"
+import "../styles/Contact.css";
 import contacts from "../data/contacts";
+import { useTranslation } from 'react-i18next';
 
 function Contact() {
-  return ( 
-    <body>
+  const { t } = useTranslation();
+  return (
+    <>
       <TitleBar />
       <section className="flex-container">
         <section className="main-container">
@@ -17,8 +19,8 @@ function Contact() {
           <MenuMobile />
           <main className="main-wrapper contact">
             <div className="title-container">
-              <h1 className="title-contact">Vamos conversar 🤙</h1>
-              <h2 className="message-contact">"O futuro pertence àqueles que acreditam na beleza dos seus sonhos." – Eleanor Roosevelt</h2>
+              <h1 className="title-contact">{t('contact.title')}</h1>
+              <h2 className="message-contact">{t('contact.quote')}</h2>
             </div>
             <div className="list-contact">
               <p className="class-name line">.contatos<span className="element">{' {'}</span></p>
@@ -36,7 +38,7 @@ function Contact() {
         <SideBar />
       </section>
       <Footer />
-    </body>
+    </>
   );
 }
 

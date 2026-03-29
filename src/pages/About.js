@@ -6,10 +6,12 @@ import SideBar from "../components/SideBar";
 import MenuMobile from "../components/MenuMobile";
 import '../styles/About.css';
 import IconCloud from '../components/IconCloud';
+import { useTranslation, Trans } from 'react-i18next';
 
 function About() {
-  return ( 
-    <body>
+  const { t } = useTranslation();
+  return (
+    <>
       <TitleBar />
       <section className="flex-container">
         <section className="main-container">
@@ -17,21 +19,19 @@ function About() {
           <MenuMobile />
           <main className="main-wrapper about">
             <div className="about-container">
-              <br/>
-                <h1 className="title-about">Olá,</h1>
-              <br/>
-                <p className="text-about">
-                  Meu nome é <span className="span-highlight">Jean Paulo</span> e com mais de <span className="span-highlight">5 anos de experiência</span> como desenvolvedor mobile, possuo um profundo conhecimento da plataforma Android e seu ecossistema de desenvolvimento. 
-                </p>
-                <p className="text-about">
-                  Minhas habilidades técnicas são complementadas por minhas excelentes <span className="span-highlight">soft skills</span>, que incluem escuta ativa, colaboração, apoio aos mais juniores, resiliência e atenção aos detalhes.
-                </p>
-                <p className="text-about">
-                  Meu proposito é desenvolver aplicativos inovadores e de alta qualidade que atendam às necessidades dos usuários e <span className="span-highlight">impactem positivamente o mundo.</span> 
-                </p>
-                <p className="text-about last">
-                  As habilidades relevantes incluem: <span className="span-highlight">Android SDK, Java, Kotlin, Flutter, Dart, python</span>
-                </p>
+              <h1 className="title-about">{t('about.title')}</h1>
+              <p className="text-about">
+                <Trans i18nKey="about.bio1" components={{ highlight: <span className="span-highlight" /> }} />
+              </p>
+              <p className="text-about">
+                <Trans i18nKey="about.bio2" components={{ highlight: <span className="span-highlight" /> }} />
+              </p>
+              <p className="text-about">
+                <Trans i18nKey="about.bio3" components={{ highlight: <span className="span-highlight" /> }} />
+              </p>
+              <p className="text-about last">
+                <Trans i18nKey="about.bio4" components={{ highlight: <span className="span-highlight" /> }} />
+              </p>
             </div>
             <IconCloud />
           </main>
@@ -39,7 +39,7 @@ function About() {
         <SideBar />
       </section>
       <Footer />
-    </body>
+    </>
   );
 }
 

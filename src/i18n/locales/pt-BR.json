@@ -1,0 +1,88 @@
+{
+  "home": {
+    "greeting": "Olá 👋 eu sou o",
+    "downloadCv": "Download CV"
+  },
+  "about": {
+    "title": "Olá,",
+    "bio1": "Meu nome é <highlight>Jean Paulo</highlight> e com mais de <highlight>5 anos de experiência</highlight> como desenvolvedor mobile, possuo um profundo conhecimento da plataforma Android e seu ecossistema de desenvolvimento.",
+    "bio2": "Minhas habilidades técnicas são complementadas por minhas excelentes <highlight>soft skills</highlight>, que incluem escuta ativa, colaboração, apoio aos mais juniores, resiliência e atenção aos detalhes.",
+    "bio3": "Meu proposito é desenvolver aplicativos inovadores e de alta qualidade que atendam às necessidades dos usuários e <highlight>impactem positivamente o mundo.</highlight>",
+    "bio4": "As habilidades relevantes incluem: <highlight>Android SDK, Java, Kotlin, Flutter, Dart, Python</highlight>"
+  },
+  "projects": {
+    "title": "Meus projetos...",
+    "filterAll": "Todos",
+    "filterAndroid": "Android",
+    "filterFlutter": "Flutter",
+    "viewApp": "Ver no GitHub",
+    "descriptions": {
+      "1": "App Android que busca músicas, álbuns e artistas usando a API do iTunes.",
+      "2": "App Android para consumir a API do FutMarket, exibindo dados do mercado do futebol.",
+      "3": "App Flutter com personagens e episódios do universo Rick and Morty.",
+      "4": "Projeto Android de teste para a Reign Softwarehouse, demonstrando Clean Architecture no Android."
+    }
+  },
+  "contact": {
+    "title": "Vamos conversar 🤙",
+    "quote": "\"O futuro pertence àqueles que acreditam na beleza dos seus sonhos.\" – Eleanor Roosevelt"
+  },
+  "recommendation": {
+    "title": "O que dizem devs que colaboraram comigo",
+    "messages": {
+      "yris": "\"Uma pessoa muito centrada e crítica, e acredito que sempre muito atento aos detalhes. Nos damos muito bem no trabalho e creio que é muito fácil trabalhar com você, sem dramas e tudo direto ao ponto.\"",
+      "fabio": "\"Dedicação, foco, entrega e questionamentos pertinentes. Admiro seu trabalho e espero que você continue procurando crescer.\"",
+      "jessica": "\"Domina o Android e tem um perfil analítico, sempre presta atenção nos detalhes antes de agir. Também é super pró-ativo, se antecipa às situações e traz soluções.\"",
+      "bruna": "\"Prático e objetivo. Se comunica bem e com clareza. Tem um perfil analítico excelente, fazendo boas análises e investigações. Documenta as coisas com qualidade. Possui muita autonomia e proatividade.\"",
+      "murilo": "\"Jean é um desenvolvedor Android muito competente, com domínio técnico acima da média. Confiável, com entregas de qualidade e com pontualidade, tem uma postura tranquila que facilita o dia a dia.\"",
+      "weslley": "\"Profissional, responsável, idealizador. Continue sempre aberto a coisas novas. Isso vai te levar a patamares mais altos sempre.\""
+    }
+  },
+  "experience": {
+    "title": "Histórico de Carreira",
+    "present": "Presente",
+    "consultancy": "Consultoria",
+    "jobs": {
+      "thoughtworks": {
+        "period": "Out 2025 – Presente",
+        "h1": "Liderando o re-platforming do app Breathwrk para Android do zero, definindo a arquitetura e o stack de tecnologia moderno.",
+        "h2": "Estabelecendo padrões de engenharia e boas práticas para o time de desenvolvimento, garantindo uma base de código escalável e manutenível.",
+        "h3": "Aplicando profundo conhecimento do ecossistema Android para entregar uma aplicação de bem-estar de alta performance."
+      },
+      "magalu": {
+        "period": "Set 2024 – Out 2025",
+        "h1": "Liderou a refatoração e o desenvolvimento de um novo SDK de anúncios, permitindo gerenciamento escalável de anúncios para casos de uso internos e externos.",
+        "h2": "Contribuiu com melhorias significativas de performance e correção de bugs em todo o ecossistema, incluindo os apps Netshoes e Magalu.",
+        "h3": "Monitorou ativamente a performance do app e a estabilidade dos releases usando Firebase e Datadog, garantindo alta qualidade para apps como Netshoes e Magalu."
+      },
+      "xp": {
+        "period": "Out 2021 – Fev 2024",
+        "h1": "Atuou proativamente em melhorias arquiteturais e na introdução de novas funcionalidades em ambientes cross-squad.",
+        "h2": "Mentorou ativamente desenvolvedores juniores, acelerando seu crescimento técnico e onboarding no desenvolvimento Android.",
+        "h3": "Gerenciou o ciclo de releases de aplicações principais (XP, Rico e Clear) e liderou War-Rooms para resolver problemas críticos em produção."
+      },
+      "nttdata": {
+        "h1": "Parte do time responsável por capturar e rastrear o comportamento do usuário para embasar decisões de negócio orientadas a dados.",
+        "h2": "Melhorou significativamente a qualidade e precisão dos dados, garantindo rastreamento confiável das jornadas dos usuários no app.",
+        "h3": "Focado em corrigir bugs críticos e otimizar a performance de soluções de fintech e logística de alto tráfego."
+      },
+      "hubxp": {
+        "h1": "Desenvolveu e implementou funcionalidades avançadas de geolocalização para plataformas de saúde e educação.",
+        "h2": "Atuou como membro-chave de um squad especializado de suporte, atendendo tickets sob demanda e problemas críticos em produção com alta agilidade.",
+        "h3": "Orientou a modernização de bases de código legadas e melhorou a estabilidade e qualidade geral das aplicações Android."
+      }
+    }
+  },
+  "nav": {
+    "home": "home.jsx",
+    "about": "sobre.html",
+    "projects": "projetos.js",
+    "recommendation": "recomendacoes.json",
+    "contact": "contato.css",
+    "experience": "experiencias.md"
+  },
+  "footer": {
+    "findMe": "Encontre-me em:",
+    "developedBy": "Desenvolvido com ❤ por Jean Paulo de Almeida Silva"
+  }
+}

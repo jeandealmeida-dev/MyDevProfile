@@ -1,7 +1,8 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import { Link, useLocation } from "react-router-dom";
 
-function Header({name, icon, path}) {
+function MenuBar({name, icon, path}) {
   const { pathname } = useLocation();
   return ( 
     <Link
@@ -9,10 +10,16 @@ function Header({name, icon, path}) {
       to={path}
       className={`nav-bar ${ pathname === path && 'active' }`}
     >
-      <img src={ icon } alt="icon" className="icon-nav"/>
+      <span className="icon-nav"><img src={icon} alt="" /></span>
       <p>{ name }</p>
     </Link>
   );
 }
 
-export default Header;
+MenuBar.propTypes = {
+  name: PropTypes.string.isRequired,
+  icon: PropTypes.node.isRequired,
+  path: PropTypes.string.isRequired,
+};
+
+export default MenuBar;

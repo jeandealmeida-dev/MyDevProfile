@@ -6,37 +6,45 @@ import js_icon from '../images/js_icon.svg'
 import html_icon from '../images/html_icon.svg'
 import css_icon from '../images/css_icon.svg'
 import json_icon from '../images/json_icon.svg'
+import markdown_icon from '../images/markdown_icon.svg'
+import { useTranslation } from 'react-i18next';
 
 
 function Header() {
-  return ( 
+  const { t } = useTranslation();
+  return (
     <header className="header-container">
       <nav className="nav-container">
-        <MenuBar 
+        <MenuBar
           icon={ react_icon }
-          name='home.jsx'
+          name={t('nav.home')}
           path="/"
-        /> 
-        <MenuBar 
+        />
+        <MenuBar
           icon={ html_icon }
-          name='sobre.html'
+          name={t('nav.about')}
           path="/about"
         />
-        <MenuBar 
+        <MenuBar
+          icon={ markdown_icon }
+          name={t('nav.experience')}
+          path="/experience"
+        />
+        <MenuBar
           icon={ js_icon }
-          name='projetos.js'
+          name={t('nav.projects')}
           path="/projects"
         />
-        <MenuBar 
+        <MenuBar
           icon={ json_icon }
-          name='recomendacoes.json'
+          name={t('nav.recommendation')}
           path="/recommendation"
-        /> 
-        <MenuBar 
+        />
+        <MenuBar
           icon={ css_icon }
-          name='contato.css'
+          name={t('nav.contact')}
           path="/contact"
-        /> 
+        />
       </nav>
     </header>
   );

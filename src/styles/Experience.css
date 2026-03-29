@@ -1,0 +1,77 @@
+.main-wrapper.experience {
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 7rem 0 4rem;
+}
+
+.title-experience {
+  font-size: 45px;
+  width: min(800px, 90vw);
+  color: var(--white-100);
+  margin-bottom: 2.5rem;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: min(800px, 90vw);
+}
+
+.experience-card {
+  border-left: 3px solid var(--green-100);
+  padding-left: 1.5rem;
+}
+
+.experience-card-header {
+  margin-bottom: 0.75rem;
+}
+
+.experience-role {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--white-100);
+  margin: 0 0 0.2rem;
+}
+
+.experience-company {
+  font-size: 1rem;
+  color: var(--blue-200);
+  margin: 0 0 0.2rem;
+}
+
+.experience-period {
+  font-size: 0.85rem;
+  color: var(--gray-100);
+  margin: 0;
+}
+
+.experience-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.experience-highlights li {
+  color: var(--white-100);
+  font-size: 0.95rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.experience-highlights li::before {
+  content: '▸';
+  color: var(--green-100);
+  position: absolute;
+  left: 0;
+}
+
+@media screen and (max-width: 925px) {
+  .title-experience {
+    font-size: 30px;
+  }
+}

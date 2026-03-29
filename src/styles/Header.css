@@ -35,7 +35,7 @@
 .nav-bar.active {
   border-right: 1.5px solid var(--gray-300);
   border-bottom: none;
-  border-top: 2px solid var(--red-100);
+  border-top: 2px solid var(--green-100);
   background-color: var(--gray-400);
   color: var(--white-100);
 }
