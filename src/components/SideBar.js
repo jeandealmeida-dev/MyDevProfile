@@ -13,7 +13,7 @@ import myContext from "../context/AppContext";
 import { useTranslation } from 'react-i18next';
 
 function SideBar() {
-  const {activeSideBar} = useContext(myContext)
+  const {activeSideBar, setActiveSideBar} = useContext(myContext)
   const [open, setOpen] = useState(true);
   const { t } = useTranslation();
   return (
@@ -31,27 +31,27 @@ function SideBar() {
       </button>
       {open && (
         <>
-          <Link to="/" className="explorer-file">
+          <Link to="/" className="explorer-file" onClick={() => setActiveSideBar(false)}>
             <img src={ react_icon } alt="icon" className="icon-side-bar"/>
             <p>{t('nav.home')}</p>
           </Link>
-          <Link to="/about" className="explorer-file">
+          <Link to="/about" className="explorer-file" onClick={() => setActiveSideBar(false)}>
             <img src={ html_icon } alt="icon" className="icon-side-bar"/>
             <p>{t('nav.about')}</p>
           </Link>
-          <Link to="/experience" className="explorer-file">
+          <Link to="/experience" className="explorer-file" onClick={() => setActiveSideBar(false)}>
             <img src={ markdown_icon } alt="icon" className="icon-side-bar"/>
             <p>{t('nav.experience')}</p>
           </Link>
-          <Link to="/projects" className="explorer-file">
+          <Link to="/projects" className="explorer-file" onClick={() => setActiveSideBar(false)}>
             <img src={ js_icon } alt="icon" className="icon-side-bar"/>
             <p>{t('nav.projects')}</p>
           </Link>
-          <Link to="/recommendation" className="explorer-file">
+          <Link to="/recommendation" className="explorer-file" onClick={() => setActiveSideBar(false)}>
             <img src={ json_icon } alt="icon" className="icon-side-bar"/>
             <p>{t('nav.recommendation')}</p>
           </Link>
-          <Link to="/contact" className="explorer-file">
+          <Link to="/contact" className="explorer-file" onClick={() => setActiveSideBar(false)}>
             <img src={ css_icon } alt="icon" className="icon-side-bar"/>
             <p>{t('nav.contact')}</p>
           </Link>
