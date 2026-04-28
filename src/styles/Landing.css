@@ -1,0 +1,14 @@
+/* Offset anchor scroll targets below the fixed chrome (40px TitleBar + 36px Header) */
+#home,
+#about,
+#experience,
+#projects,
+#recommendation,
+#contact {
+  scroll-margin-top: 76px;
+}
+
+/* Visual divider between stacked sections */
+.main-wrapper + .main-wrapper {
+  border-top: 1px solid var(--gray-300);
+}

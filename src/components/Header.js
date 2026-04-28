@@ -18,32 +18,32 @@ function Header() {
         <MenuBar
           icon={ react_icon }
           name={t('nav.home')}
-          path="/"
+          sectionId="home"
         />
         <MenuBar
           icon={ html_icon }
           name={t('nav.about')}
-          path="/about"
+          sectionId="about"
         />
         <MenuBar
           icon={ markdown_icon }
           name={t('nav.experience')}
-          path="/experience"
+          sectionId="experience"
         />
         <MenuBar
           icon={ js_icon }
           name={t('nav.projects')}
-          path="/projects"
+          sectionId="projects"
         />
         <MenuBar
           icon={ json_icon }
           name={t('nav.recommendation')}
-          path="/recommendation"
+          sectionId="recommendation"
         />
         <MenuBar
           icon={ css_icon }
           name={t('nav.contact')}
-          path="/contact"
+          sectionId="contact"
         />
       </nav>
     </header>

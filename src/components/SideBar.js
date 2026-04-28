@@ -8,7 +8,6 @@ import json_icon from '../images/json_icon.svg'
 import markdown_icon from '../images/markdown_icon.svg'
 import { IoIosArrowDown,IoIosArrowForward } from 'react-icons/io';
 import { FaFolder, FaFolderOpen } from 'react-icons/fa';
-import { Link } from "react-router-dom";
 import myContext from "../context/AppContext";
 import { useTranslation } from 'react-i18next';
 
@@ -31,30 +30,30 @@ function SideBar() {
       </button>
       {open && (
         <>
-          <Link to="/" className="explorer-file" onClick={() => setActiveSideBar(false)}>
+          <a href="#home" className="explorer-file" onClick={() => setActiveSideBar(false)}>
             <img src={ react_icon } alt="icon" className="icon-side-bar"/>
             <p>{t('nav.home')}</p>
-          </Link>
-          <Link to="/about" className="explorer-file" onClick={() => setActiveSideBar(false)}>
+          </a>
+          <a href="#about" className="explorer-file" onClick={() => setActiveSideBar(false)}>
             <img src={ html_icon } alt="icon" className="icon-side-bar"/>
             <p>{t('nav.about')}</p>
-          </Link>
-          <Link to="/experience" className="explorer-file" onClick={() => setActiveSideBar(false)}>
+          </a>
+          <a href="#experience" className="explorer-file" onClick={() => setActiveSideBar(false)}>
             <img src={ markdown_icon } alt="icon" className="icon-side-bar"/>
             <p>{t('nav.experience')}</p>
-          </Link>
-          <Link to="/projects" className="explorer-file" onClick={() => setActiveSideBar(false)}>
+          </a>
+          <a href="#projects" className="explorer-file" onClick={() => setActiveSideBar(false)}>
             <img src={ js_icon } alt="icon" className="icon-side-bar"/>
             <p>{t('nav.projects')}</p>
-          </Link>
-          <Link to="/recommendation" className="explorer-file" onClick={() => setActiveSideBar(false)}>
+          </a>
+          <a href="#recommendation" className="explorer-file" onClick={() => setActiveSideBar(false)}>
             <img src={ json_icon } alt="icon" className="icon-side-bar"/>
             <p>{t('nav.recommendation')}</p>
-          </Link>
-          <Link to="/contact" className="explorer-file" onClick={() => setActiveSideBar(false)}>
+          </a>
+          <a href="#contact" className="explorer-file" onClick={() => setActiveSideBar(false)}>
             <img src={ css_icon } alt="icon" className="icon-side-bar"/>
             <p>{t('nav.contact')}</p>
-          </Link>
+          </a>
         </>
       )}
     </aside>
