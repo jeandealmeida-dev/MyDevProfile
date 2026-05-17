@@ -1,0 +1,701 @@
+/* ── Section wrapper ── */
+.exp-inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ── macOS-style window chrome ── */
+.pipeline-window {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.03),
+    0 24px 64px rgba(0, 0, 0, 0.65),
+    0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+.pipeline-window-header {
+  display: flex;
+  align-items: center;
+  background: #21262d;
+  border-bottom: 1px solid #30363d;
+  padding: 0.65rem 1.25rem;
+  gap: 0.75rem;
+  user-select: none;
+}
+
+.pipeline-traffic-lights {
+  display: flex;
+  gap: 0.42rem;
+}
+
+.tl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.tl-dot--red    { background: #ff5f57; }
+.tl-dot--yellow { background: #ffbd2e; }
+.tl-dot--green  { background: #28c840; }
+
+.pipeline-window-title {
+  flex: 1;
+  text-align: center;
+  font-size: 0.75rem;
+  font-family: 'Fira Code', monospace;
+  color: var(--gray-100);
+  letter-spacing: 0.3px;
+}
+
+.pipeline-status-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.65rem;
+  font-family: 'Fira Code', monospace;
+  color: #3DDC84;
+  background: rgba(61, 220, 132, 0.1);
+  border: 1px solid rgba(61, 220, 132, 0.25);
+  padding: 0.15rem 0.55rem;
+  border-radius: 20px;
+}
+
+.pipeline-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #3DDC84;
+  animation: status-pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes status-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.35; }
+}
+
+.pipeline-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.42rem 1.25rem;
+  background: #161b22;
+  border-bottom: 1px solid #30363d;
+  font-size: 0.62rem;
+  font-family: 'Fira Code', monospace;
+  color: var(--gray-100);
+}
+
+.ptb-sep { color: #30363d; }
+.ptb-val { color: var(--blue-200); }
+
+.exp-header {
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.exp-header .section-tag    { color: var(--blue-400); }
+.exp-header .section-heading { color: #1F2428; }
+
+/* ── Parallel lane divider ── */
+.pipeline-lane-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.4rem 1.25rem;
+  background: #161b22;
+  border-top: 1px solid #30363d;
+  border-bottom: 1px solid #30363d;
+}
+
+.pipeline-lane-label {
+  font-size: 0.62rem;
+  font-family: 'Fira Code', monospace;
+  color: var(--gold);
+  letter-spacing: 0.3px;
+}
+
+
+/* ── Scroll container ── */
+.sm-scroll {
+  overflow-x: auto;
+  overflow-y: visible;
+  cursor: grab;
+  padding: 1rem 0 2rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--blue-200) rgba(255, 255, 255, 0.04);
+}
+
+.sm-scroll::-webkit-scrollbar        { height: 3px; }
+.sm-scroll::-webkit-scrollbar-track  { background: rgba(255, 255, 255, 0.04); }
+.sm-scroll::-webkit-scrollbar-thumb  { background: var(--blue-200); border-radius: 2px; }
+
+/* Parallel lane — no grab cursor, less vertical padding */
+.sm-scroll--parallel {
+  cursor: default;
+  padding: 0.5rem 0 1.25rem;
+}
+
+.sm-scroll--parallel .sm-track {
+  gap: 1.5rem;
+}
+
+/* ── Horizontal track ── */
+.sm-track {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: max-content;
+  padding: 2.5rem 3rem;
+  gap: 0;
+}
+
+/* ── Pipeline trigger node (filled circle) ── */
+.sm-initial {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.sm-initial-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--blue-200);
+  box-shadow: 0 0 0 3px rgba(144, 202, 249, 0.15);
+  flex-shrink: 0;
+}
+
+/* ── Arrow connector ── */
+.sm-arrow {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.sm-arrow-line {
+  width: 32px;
+  height: 1.5px;
+  background: rgba(144, 202, 249, 0.28);
+}
+
+.sm-arrowhead {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0 4px 7px;
+  border-color: transparent transparent transparent rgba(144, 202, 249, 0.28);
+  flex-shrink: 0;
+}
+
+/* ── Transition connector with label ── */
+.sm-transition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  flex-shrink: 0;
+}
+
+.sm-label {
+  font-size: 0.58rem;
+  color: var(--gray-100);
+  font-family: 'Fira Code', monospace;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+/* ── Entrance animation wrapper ── */
+.sm-state-wrap {
+  display: flex;
+  animation: sm-enter 0.5s ease both;
+  animation-delay: calc(var(--idx) * 0.1s);
+}
+
+@keyframes sm-enter {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Job card (GitHub Actions pipeline style) ── */
+.sm-state {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem 1.1rem;
+  width: 210px;
+  flex-shrink: 0;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-top: 3px solid rgba(144, 202, 249, 0.5);
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  text-align: left;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s;
+}
+
+.sm-state:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.55);
+  border-color: rgba(144, 202, 249, 0.45);
+  border-top-color: var(--blue-200);
+}
+
+.sm-state--current {
+  background: rgba(240, 165, 0, 0.04);
+  border-color: rgba(240, 165, 0, 0.25);
+  border-top-color: var(--gold);
+  box-shadow:
+    0 0 0 1px rgba(240, 165, 0, 0.08),
+    0 4px 20px rgba(240, 165, 0, 0.1);
+}
+
+/* Sabbatical / career break node — non-interactive, muted */
+.sm-state--sabbatical {
+  border: 1px dashed rgba(168, 178, 188, 0.28);
+  border-top: 3px dashed rgba(168, 178, 188, 0.22);
+  background: rgba(255, 255, 255, 0.015);
+  box-shadow: none;
+  opacity: 0.65;
+}
+
+.sm-state--sabbatical:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border-color: rgba(168, 178, 188, 0.45);
+  border-top-color: rgba(168, 178, 188, 0.4);
+  background: rgba(255, 255, 255, 0.03);
+  opacity: 0.85;
+}
+
+.sm-state--sabbatical .sm-name  { color: var(--gray-100); }
+.sm-state--sabbatical .sm-role  { color: var(--gray-100); opacity: 0.7; }
+.sm-state--sabbatical .sm-years { color: rgba(168, 178, 188, 0.45); }
+
+.sm-logo--sabbatical {
+  background: rgba(168, 178, 188, 0.06);
+  border-color: rgba(168, 178, 188, 0.18);
+}
+
+.sm-sabbatical-icon {
+  font-size: 1rem;
+  opacity: 0.45;
+}
+
+.sm-sabbatical-icon--lg {
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+
+/* Parallel / freelance card — gold top accent (matches Consultancy tag color) */
+.sm-state--parallel {
+  border-top-color: rgba(240, 165, 0, 0.4);
+}
+
+.sm-state--parallel:hover {
+  border-top-color: var(--gold);
+}
+
+.sm-state--current:hover {
+  border-color: rgba(240, 165, 0, 0.45);
+  border-top-color: var(--gold);
+  box-shadow:
+    0 0 0 2px rgba(240, 165, 0, 0.1),
+    0 12px 32px rgba(240, 165, 0, 0.18);
+}
+
+/* ── Card top row: logo + title + status icon ── */
+.sm-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.sm-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid rgba(144, 202, 249, 0.2);
+  flex-shrink: 0;
+}
+
+.sm-state--current .sm-logo {
+  border-color: rgba(240, 165, 0, 0.35);
+}
+
+.sm-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sm-logo-initials {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--blue-200);
+  font-family: 'Roboto', sans-serif;
+  line-height: 1;
+}
+
+.sm-logo-initials--lg {
+  font-size: 1.4rem;
+}
+
+.sm-card-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.sm-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--white-100);
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sm-state--current .sm-name { color: var(--gold); }
+
+.sm-client {
+  font-size: 0.65rem;
+  color: var(--gray-100);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* ── Status icon: ✓ check (past) / spinner (current) ── */
+.sm-status-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 0.58rem;
+  font-weight: 700;
+}
+
+.sm-status-icon--done {
+  background: rgba(61, 220, 132, 0.1);
+  color: #3DDC84;
+  border: 1.5px solid rgba(61, 220, 132, 0.35);
+}
+
+.sm-status-icon--running {
+  border: 1.5px solid rgba(240, 165, 0, 0.35);
+  background: transparent;
+  position: relative;
+}
+
+.sm-status-icon--running::after {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border: 2px solid transparent;
+  border-top-color: var(--gold);
+  border-right-color: rgba(240, 165, 0, 0.45);
+  border-radius: 50%;
+  animation: pipeline-spin 0.85s linear infinite;
+}
+
+@keyframes pipeline-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Card body: role + years ── */
+.sm-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 0.65rem;
+}
+
+.sm-role {
+  font-size: 0.7rem;
+  color: var(--blue-200);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.3;
+}
+
+.sm-years {
+  font-size: 0.62rem;
+  color: var(--gray-100);
+  font-family: 'Fira Code', monospace;
+  letter-spacing: 0.3px;
+}
+
+/* ── Tags preview ── */
+.sm-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.sm-tag {
+  font-size: 0.58rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  padding: 0.12rem 0.4rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.sm-tag--tech    { background: rgba(83, 155, 245, 0.12); color: var(--blue-200);  border: 1px solid rgba(83, 155, 245, 0.2); }
+.sm-tag--context { background: rgba(240, 165, 0, 0.1);   color: var(--gold);      border: 1px solid rgba(240, 165, 0, 0.2); }
+.sm-tag--domain  { background: rgba(61, 220, 132, 0.08); color: var(--green-100); border: 1px solid rgba(61, 220, 132, 0.15); }
+
+/* ── Pipeline end node (double circle) ── */
+.sm-final {
+  display: flex;
+  align-items: center;
+  padding-left: 4px;
+  flex-shrink: 0;
+}
+
+.sm-final-outer {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px rgba(240, 165, 0, 0.25);
+}
+
+.sm-final-inner {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+/* ── Overlay ── */
+.sm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  animation: sm-fade 0.18s ease;
+}
+
+@keyframes sm-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ── Detail card ── */
+.sm-detail {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 540px;
+  position: relative;
+  animation: sm-rise 0.22s ease;
+}
+
+@keyframes sm-rise {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+.sm-detail-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.07);
+  border: none;
+  color: var(--gray-100);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.72rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, color 0.15s;
+}
+
+.sm-detail-close:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--white-100);
+}
+
+.sm-detail-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.sm-detail-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 2px solid var(--blue-200);
+  flex-shrink: 0;
+}
+
+.sm-detail-logo img {
+  width: 68%;
+  height: 68%;
+  object-fit: contain;
+}
+
+.sm-detail-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+/* ── Shared detail content styles ── */
+.exp-company-block {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.exp-company {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--white-100);
+  font-family: 'Roboto', sans-serif;
+}
+
+.exp-client {
+  font-size: 0.9rem;
+  color: var(--gray-100);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.exp-badge {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.current-badge {
+  background-color: rgba(240, 165, 0, 0.15);
+  color: var(--gold);
+  border: 1px solid rgba(240, 165, 0, 0.3);
+}
+
+.exp-period {
+  font-size: 0.8rem;
+  color: var(--gray-100);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.exp-role {
+  font-size: 0.88rem;
+  color: var(--blue-200);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.exp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.exp-tag {
+  font-size: 0.7rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.exp-tag--tech    { background-color: rgba(83, 155, 245, 0.12); color: var(--blue-200);  border: 1px solid rgba(83, 155, 245, 0.25); }
+.exp-tag--context { background-color: rgba(240, 165, 0, 0.1);   color: var(--gold);      border: 1px solid rgba(240, 165, 0, 0.25); }
+.exp-tag--domain  { background-color: rgba(61, 220, 132, 0.08); color: var(--green-100); border: 1px solid rgba(61, 220, 132, 0.2);  }
+
+.exp-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  padding-top: 1rem;
+}
+
+.exp-highlights li {
+  font-size: 0.88rem;
+  color: var(--white-100);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.exp-highlights li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 0.72rem;
+  top: 0.22rem;
+}
+
+/* ── Card highlight (triggered from About carousel click) ── */
+@keyframes card-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(88, 166, 255, 0.5); }
+  50%  { box-shadow: 0 0 0 8px rgba(88, 166, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(88, 166, 255, 0); }
+}
+
+.exp-card--highlighted > .sm-state {
+  animation: card-pulse 0.8s ease-out 2;
+}
+
+/* ── Mobile ── */
+@media screen and (max-width: 600px) {
+  .sm-track  { padding: 1.5rem 1.5rem; }
+  .sm-state  { width: 175px; padding: 0.9rem; }
+  .sm-logo   { width: 32px; height: 32px; }
+  .sm-arrow-line { width: 18px; }
+  .sm-detail { padding: 1.5rem; }
+  .pipeline-toolbar { gap: 0.5rem; font-size: 0.58rem; }
+}

@@ -1,14 +1,37 @@
 {
   "home": {
     "greeting": "Hi 👋 I'm",
-    "downloadCv": "Download CV"
+    "iam": "I'm",
+    "downloadCv": "Download CV",
+    "intro": "I've been building Android apps since 2012 — and the craft still excites me every single day. From fintech to wellness, I bring technical depth and a genuine love for creating apps that people enjoy using.",
+    "workedAt": "Worked at"
   },
   "about": {
     "title": "Hello,",
-    "bio1": "My name is <highlight>Jean Paulo</highlight> and with more than <highlight>5 years of experience</highlight> as a mobile developer, I have deep knowledge of the Android platform and its development ecosystem.",
-    "bio2": "My technical skills are complemented by my excellent <highlight>soft skills</highlight>, which include active listening, collaboration, support for juniors, resilience and attention to detail.",
-    "bio3": "My purpose is to develop innovative, high-quality apps that meet users' needs and <highlight>positively impact the world.</highlight>",
-    "bio4": "Relevant skills include: <highlight>Android SDK, Java, Kotlin, Flutter, Dart, Python</highlight>"
+    "sectionTitle": "How I <accent>Build</accent>",
+    "bio1": "Started building for Android over 13 years ago. Since then I've shipped across <highlight>fintech, e-commerce, health and retail</highlight> — at companies like Thoughtworks, Magazine Luiza and XP — always focused on scalable apps and hard technical problems.",
+    "bio2": "Beyond coding, I like to <highlight>understand the product deeply and bring suggestions</highlight> — ownership matters to me, not just delivery. I also invest in people: mentoring, driving architecture decisions and pushing quality as a team habit.",
+    "bio3": "My toolkit centres on <highlight>Kotlin, Jetpack Compose, Flutter and KMP</highlight> — but I care more about choosing the right tool than stacking acronyms. Good engineering is mostly clear thinking, honest tradeoffs and code the next person can actually read.",
+    "bio4": "",
+    "skillListening": "Active Listening",
+    "skillListeningDesc": "I ask before I assume. Understanding context is half the solution.",
+    "skillCollaboration": "Collaboration",
+    "skillCollaborationDesc": "Code reviews, pairing, knowledge sharing — I build with the team, not beside it.",
+    "skillMentoring": "Mentoring",
+    "skillMentoringDesc": "I invest in the people around me. Their growth is part of my job.",
+    "skillDetail": "Attention to Detail",
+    "skillDetailDesc": "Craft matters at every layer, from API contract to pixel alignment.",
+    "skillResilience": "Resilience",
+    "skillResilienceDesc": "I ship under pressure and treat setbacks as feedback, not failure.",
+    "available": "Open to work",
+    "location": "São Paulo, BR",
+    "focus": "Android · Flutter · KMP",
+    "experience": "8+ years exp.",
+    "fact1Label": "years building for Android",
+    "fact2Keywords": "Fintech · E-commerce · Health · Retail",
+    "fact2Label": "industries",
+    "fact3Keywords": "Mentoring · Architecture · Quality",
+    "fact3Label": "beyond the code"
   },
   "projects": {
     "title": "My projects...",
@@ -25,6 +48,8 @@
   },
   "contact": {
     "title": "Let's talk 🤙",
+    "sectionTitle": "Let's talk",
+    "cvLabel": "Get a copy of my CV:",
     "quote": "\"The future belongs to those who believe in the beauty of their dreams.\" – Eleanor Roosevelt"
   },
   "recommendation": {
@@ -70,16 +95,46 @@
         "h1": "Developed and implemented advanced geolocation features for healthcare and education platforms.",
         "h2": "Served as a key member of a specialized support squad, addressing on-demand tickets and production-critical issues with high agility.",
         "h3": "Provided guidance to modernize legacy codebases and improve the overall stability and quality of Android applications."
+      },
+      "omnichat": {
+        "period": "2015 – 2016",
+        "h1": "Served as the sole Android developer, taking full ownership of designing and building the Android version of the company's main product.",
+        "h2": "Established the Android architecture, data persistence (SQLite) and client-server communication (REST/JSON) layer from scratch.",
+        "h3": "Gained end-to-end product responsibility — from architecture decisions to release — in a fast-paced startup environment."
+      },
+      "snowmanlabs": {
+        "period": "2015",
+        "h1": "Worked as an embedded consultant delivering mobile solutions for external clients alongside designers, architects and developers.",
+        "h2": "Developed end-to-end Android features in a collaborative, client-facing environment with high-quality delivery expectations.",
+        "h3": "Operated in a consultancy model that demanded adaptability, rapid onboarding to client contexts and clear communication."
+      },
+      "totvs": {
+        "period": "Feb 2014 – Jan 2015",
+        "h1": "Contributed to FLUIG, a productivity and collaboration platform published on the Google Play Store and used by enterprise clients across Brazil.",
+        "h2": "Worked within a structured mobile team on a large-scale ERP product, following Kanban methodology and pair programming practices.",
+        "h3": "Handled legacy bug fixes and participated in new feature delivery for one of Brazil's largest enterprise software companies."
+      },
+      "sabbatical": {
+        "h1": "Left Brazil in 2017 and spent 4 years backpacking through South America — visiting Uruguay, Argentina, Chile and the Patagonia region.",
+        "h2": "Maintained remote freelance Android development for Brazilian startups and small businesses throughout the journey.",
+        "h3": "Returned with a broader perspective on people, cultures and resilience — experiences that shaped a more empathetic and self-directed approach to work."
+      },
+      "softin": {
+        "period": "May 2012 – Jan 2014",
+        "h1": "Started professional career in web development (.NET/C#) then transitioned to Android — building the technical foundation for over a decade of mobile work.",
+        "h2": "Built and shipped Android apps in Java with SQLite and REST/JSON, including SimpsAndroid, a mobile integration system for enterprise clients.",
+        "h3": "Practiced TDD, pair programming and code review from day one, building engineering habits that carried through the entire career."
       }
     }
   },
   "nav": {
-    "home": "home.jsx",
-    "about": "about.html",
-    "projects": "projects.js",
-    "recommendation": "recommendations.json",
-    "contact": "contact.css",
-    "experience": "experience.md"
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "testimonials": "Testimonials",
+    "recommendation": "Testimonials",
+    "contact": "Contact"
   },
   "footer": {
     "findMe": "Find me at:",

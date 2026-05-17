@@ -38,7 +38,7 @@ const Componente = () => {
         id={"icon"}
         minContrastRatio={1}
         iconSize={45}
-        backgroundHexColor={"#fff"}
+        backgroundHexColor={"#24292E"}
         fallbackHexColor={"#000"}
         tags={iconTags}
         tagCanvasOptions={tagCanvasOptions}

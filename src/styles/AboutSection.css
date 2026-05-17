@@ -1,0 +1,229 @@
+/* ── Outer wrapper ── */
+.about-inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.about-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+/* section-tag and section-heading overrides for light bg */
+#about .section-tag {
+  color: var(--blue-400);
+  font-size: 0.78rem;
+  letter-spacing: 0.8px;
+}
+
+#about .section-heading {
+  font-size: 3rem;
+  color: #1F2428;
+  line-height: 1.05;
+}
+
+.heading-accent {
+  color: var(--blue-400);
+  display: inline-flex;
+  align-items: center;
+}
+
+.heading-accent::after {
+  content: '|';
+  color: var(--blue-400);
+  font-weight: 300;
+  margin-left: 4px;
+  line-height: 1;
+  animation: blink 1s step-start infinite;
+}
+
+/* ── Shared card shell — Material elevation ── */
+.bento-card {
+  background: #ffffff;
+  border: none;
+  border-radius: 16px;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.08),
+    0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+/* ── Photo + Bio combined — full width ── */
+.about-selection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 32px;
+  margin-right: 32px;
+}
+
+/* Groups dashed frame + corners + cursor so they move as one unit */
+.selection-frame-group {
+  position: absolute;
+  top:    -15px;
+  left:   -15px;
+  right:  -30px;
+  bottom: -30px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.about-selection-frame {
+  position: absolute;
+  inset: 0;
+  border: 1.5px dashed rgba(21, 101, 192, 0.5);
+  border-radius: 6px;
+}
+
+/* Figma corner handles — positioned relative to the group */
+.frame-corner {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-color: var(--blue-400);
+  border-style: solid;
+  pointer-events: none;
+}
+
+.fc-tl { top: -5px;    left: -5px;  border-width: 2px 0 0 2px; }
+.fc-tr { top: -5px;    right: -5px; border-width: 2px 2px 0 0; }
+.fc-bl { bottom: -5px; left: -5px;  border-width: 0 0 2px 2px; }
+
+/* Cursor sits over the dashed line at the bottom-right corner of the frame */
+.selection-cursor {
+  position: absolute;
+  bottom: -20px;
+  right: -14px;
+  pointer-events: none;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25));
+}
+
+.bento-photo-bio {
+  display: flex;
+  position: relative;
+  padding: 0;
+}
+
+.about-photo-wrapper {
+  width: 240px;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px 0 0 16px;
+}
+
+.about-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+.bento-bio-text {
+  padding: 1.75rem 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.about-paragraph {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.85;
+}
+
+.about-highlight {
+  color: var(--blue-400);
+  font-weight: 600;
+}
+
+/* ── Companies inside the bio card ── */
+.bio-companies {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 1.25rem 0 1.75rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+
+.bio-companies .companies-label {
+  font-size: 0.65rem;
+  color: #9ca3af;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.bio-companies .company-chip {
+  background-color: #f5f5f5;
+  border-color: transparent;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 0.35rem 0.5rem;
+}
+
+.bio-companies .company-chip:hover {
+  border-color: var(--blue-400);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.bio-companies .company-logo-badge {
+  width: 42px;
+  height: 42px;
+  border-radius: 4px;
+}
+
+/* ── Soft skills — compact chips inside bio card ── */
+.bio-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.bio-skill-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(21, 101, 192, 0.07);
+  border: 1px solid rgba(21, 101, 192, 0.15);
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #1F2428;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.bio-skill-chip:hover {
+  background: rgba(21, 101, 192, 0.12);
+  border-color: var(--blue-400);
+}
+
+.bio-skill-icon {
+  font-size: 0.82rem;
+  color: var(--blue-400);
+  flex-shrink: 0;
+}
+
+/* ── Responsive ── */
+@media screen and (max-width: 860px) {
+  .bento-photo-bio       { flex-direction: column; }
+  .about-photo-wrapper   { width: 100%; height: 220px; border-radius: 16px 16px 0 0; }
+  .about-photo           { object-position: center 30%; }
+  .selection-frame-group { top: -10px; left: -10px; right: -20px; bottom: -20px; }
+  .about-selection       { margin-bottom: 22px; margin-right: 22px; }
+}
+
+@media screen and (max-width: 560px) {
+  #about .section-heading { font-size: 2rem; }
+}

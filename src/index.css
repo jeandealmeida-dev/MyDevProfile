@@ -1,15 +1,20 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
-  --white-100: #e1e1e6;
+  --white-100: #FFFFFF;        /* pure white  — headings, names          */
   --green-100: #3DDC84;
-  --blue-400: #225aad;
-  --blue-300: #306DCA;
-  --blue-200: #539BF5;
-  --blue-100: #539cf531;
-  --gray-500: #1F2428;
-  --gray-400:#24292E;
-  --gray-300: #2D333B;
-  --gray-200: #3f4244;
-  --gray-100: #768390;
+  --gold:      #F0A500;        /* warm accent — underline, current badge */
+  --blue-400:  #1565C0;
+  --blue-300:  #2196F3;        /* Material Blue — CTA button             */
+  --blue-200:  #90CAF9;        /* Material Blue 200 — roles, links       */
+  --blue-100:  rgba(144, 202, 249, 0.12);
+  --gray-500:  #1F2428;
+  --gray-400:  #24292E;
+  --gray-300:  #2D333B;
+  --gray-200:  #3f4244;
+  --gray-100:  #A8B2BC;        /* lighter muted text — much more legible */
 }
 body {
   margin: 0;
