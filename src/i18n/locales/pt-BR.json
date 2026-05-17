@@ -34,11 +34,12 @@
     "fact3Label": "além do código"
   },
   "projects": {
-    "title": "Meus projetos...",
+    "title": "Alguns projetos pessoais",
     "filterAll": "Todos",
     "filterAndroid": "Android",
     "filterFlutter": "Flutter",
     "viewApp": "Ver no GitHub",
+    "tapHint": "toque em um ícone",
     "descriptions": {
       "1": "App Android que busca músicas, álbuns e artistas usando a API do iTunes.",
       "2": "App Android para consumir a API do FutMarket, exibindo dados do mercado do futebol.",

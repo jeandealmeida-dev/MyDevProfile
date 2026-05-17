@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { FiDownload, FiChevronDown } from 'react-icons/fi';
+import { FiDownload, FiChevronDown, FiMail } from 'react-icons/fi';
 import '../styles/ContactSection.css';
 
 function ContactSection() {
@@ -24,6 +24,13 @@ function ContactSection() {
       <div className="contact-header">
         <span className="section-tag">{'// contact'}</span>
         <h2 className="section-heading">{t('contact.sectionTitle')}</h2>
+      </div>
+
+      <div className="contact-email">
+        <a href="mailto:jeandealmeida.dev@gmail.com" className="contact-email-link">
+          <FiMail />
+          jeandealmeida.dev@gmail.com
+        </a>
       </div>
 
       <div className="contact-cv">

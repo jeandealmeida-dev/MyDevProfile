@@ -34,11 +34,12 @@
     "fact3Label": "beyond the code"
   },
   "projects": {
-    "title": "My projects...",
+    "title": "Some personal projects",
     "filterAll": "All",
     "filterAndroid": "Android",
     "filterFlutter": "Flutter",
     "viewApp": "View on GitHub",
+    "tapHint": "tap an app icon",
     "descriptions": {
       "1": "Android app that searches for music, albums and artists using the iTunes API.",
       "2": "Android app to consume the FutMarket API, displaying football market data.",

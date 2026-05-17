@@ -1,0 +1,589 @@
+/* ── Section wrapper ── */
+.proj-inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.proj-header {
+  margin-bottom: 3.5rem;
+  text-align: left;
+}
+
+/* ── Stage: shared device container ── */
+.proj-stage {
+  display: flex;
+  justify-content: center;
+}
+
+/* Phone + Play Store panel sit inside one unified device card */
+.proj-device {
+  display: flex;
+  align-items: stretch;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 44px;
+  padding: 20px;
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.08),
+    0 16px 48px rgba(0, 0, 0, 0.1);
+}
+
+/* ══════════════════════════════
+   PHONE SHELL
+══════════════════════════════ */
+.phone-shell {
+  position: relative;
+  width: 272px;
+  height: 580px;
+  flex-shrink: 0;
+  background: linear-gradient(170deg, #2c2c30 0%, #18181c 60%, #111114 100%);
+  border-radius: 36px;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.09),
+    inset 1px 0 0 rgba(255, 255, 255, 0.04),
+    inset -1px 0 0 rgba(255, 255, 255, 0.04);
+}
+
+/* Side hardware buttons */
+.phone-btn {
+  position: absolute;
+  border-radius: 2px;
+}
+
+.phone-btn--vol-up {
+  left: -3px;
+  top: 116px;
+  width: 3px;
+  height: 34px;
+  background: linear-gradient(90deg, #252525, #444);
+  border-radius: 2px 0 0 2px;
+}
+
+.phone-btn--vol-down {
+  left: -3px;
+  top: 162px;
+  width: 3px;
+  height: 34px;
+  background: linear-gradient(90deg, #252525, #444);
+  border-radius: 2px 0 0 2px;
+}
+
+.phone-btn--power {
+  right: -3px;
+  top: 136px;
+  width: 3px;
+  height: 58px;
+  background: linear-gradient(270deg, #252525, #444);
+  border-radius: 0 2px 2px 0;
+}
+
+/* ── Phone screen ── */
+.phone-screen {
+  position: absolute;
+  inset: 8px;
+  border-radius: 28px;
+  background: #000;
+  overflow: hidden;
+}
+
+/* ── Punch-hole camera ── */
+.phone-punch-hole {
+  position: absolute;
+  top: 13px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 13px;
+  height: 13px;
+  background: #000;
+  border-radius: 50%;
+  z-index: 20;
+  box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.07);
+}
+
+/* ── Status bar ── */
+.phone-status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  z-index: 15;
+  pointer-events: none;
+}
+
+.phone-time {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: 0.3px;
+}
+
+.phone-status-icons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+}
+
+/* ══════════════════════════════
+   HOME SCREEN
+══════════════════════════════ */
+.phone-home {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  z-index: 1;
+  transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity   0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.phone-home--behind {
+  transform: scale(0.9);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Wallpaper */
+.phone-wallpaper {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, #0a1628 0%, #0d1b3e 40%, #12082b 100%);
+  z-index: 0;
+}
+
+/* App icon grid */
+.app-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 62px);
+  gap: 18px 28px;
+  margin: auto;
+  padding-bottom: 54px;
+}
+
+.app-icon-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.app-icon {
+  width: 62px;
+  height: 62px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.app-icon-btn:hover  .app-icon { transform: scale(1.08); }
+.app-icon-btn:active .app-icon { transform: scale(0.94); }
+
+.app-glyph {
+  font-size: 1.75rem;
+  line-height: 1;
+  /* prevent emoji color variation on some systems */
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;
+}
+
+.app-label {
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.88);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 500;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 72px;
+  text-align: center;
+}
+
+/* Android 3-button navigation bar */
+.android-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: rgba(0, 0, 0, 0.7);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.android-nav-icon {
+  color: rgba(255, 255, 255, 0.6);
+  flex-shrink: 0;
+}
+
+.android-nav-home {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1.8px solid rgba(255, 255, 255, 0.6);
+}
+
+.android-nav-recents {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  border: 1.8px solid rgba(255, 255, 255, 0.6);
+}
+
+/* ══════════════════════════════
+   APP VIEW
+══════════════════════════════ */
+.phone-app {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  background: #111;
+  z-index: 2;
+  animation: app-enter 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes app-enter {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+
+.phone-app--exiting {
+  animation: app-exit 0.28s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes app-exit {
+  from { transform: translateY(0); }
+  to   { transform: translateY(100%); }
+}
+
+/* App topbar (back + title) */
+.phone-app-topbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 46px;
+  padding: 0 14px;
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
+}
+
+.phone-back-btn {
+  background: none;
+  border: none;
+  color: #90CAF9;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+
+.phone-back-btn:hover { background: rgba(144, 202, 249, 0.1); }
+
+.phone-app-title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* App body */
+.phone-app-body {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.phone-app-media {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+}
+
+/* Placeholder screen */
+.phone-app-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.phone-placeholder-glyph {
+  font-size: 3.5rem;
+  line-height: 1;
+  filter: drop-shadow(0 4px 16px rgba(0,0,0,0.5));
+}
+
+.phone-placeholder-label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.phone-placeholder-hint {
+  font-size: 0.65rem;
+  color: rgba(255, 255, 255, 0.45);
+  font-family: 'Fira Code', monospace;
+  letter-spacing: 0.3px;
+}
+
+
+/* ══════════════════════════════
+   INFO PANEL — Google Play Store listing
+══════════════════════════════ */
+.proj-panel {
+  width: 272px;
+  flex-shrink: 0;
+  background: #ffffff;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+/* hint state (nothing selected) */
+.proj-panel .proj-hint {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 2rem;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.proj-panel .proj-hint-arrow {
+  font-size: 1.8rem;
+  animation: hint-pulse 2s ease-in-out infinite;
+}
+
+.proj-panel .proj-hint p {
+  font-size: 0.78rem;
+  font-family: 'Fira Code', monospace;
+  letter-spacing: 0.3px;
+}
+
+/* ── Play Store listing ── */
+@keyframes play-enter {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.play-listing {
+  display: flex;
+  flex-direction: column;
+  animation: play-enter 0.25s ease;
+}
+
+.play-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  padding: 1.25rem 1.25rem 1rem;
+}
+
+.play-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.9rem;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.play-title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-top: 0.1rem;
+}
+
+.play-app-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #202124;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.play-developer {
+  font-size: 0.78rem;
+  color: #01875f;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.play-category {
+  font-size: 0.72rem;
+  color: #5f6368;
+  font-family: 'Roboto', sans-serif;
+}
+
+.play-divider {
+  height: 1px;
+  background: #f1f3f4;
+  margin: 0 1.25rem;
+}
+
+.play-install-btn {
+  display: block;
+  margin: 0.9rem 1.25rem;
+  background: #01875f;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  padding: 0.6rem 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.play-install-btn:hover { background: #017550; }
+
+.play-about {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0.9rem 1.25rem 0.75rem;
+}
+
+.play-about-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #202124;
+  font-family: 'Roboto', sans-serif;
+}
+
+.play-about-text {
+  font-size: 0.8rem;
+  color: #5f6368;
+  line-height: 1.55;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.play-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0 1.25rem 0.9rem;
+}
+
+.play-chip {
+  font-size: 0.68rem;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  padding: 0.25rem 0.65rem;
+  border-radius: 50px;
+  background: #e8f5e9;
+  color: #1b5e20;
+  border: 1px solid #c8e6c9;
+  letter-spacing: 0.2px;
+}
+
+.play-source-link {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.78rem;
+  color: #5f6368;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.play-source-link:hover { color: #202124; }
+
+.proj-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  color: rgba(255, 255, 255, 0.25);
+  text-align: center;
+}
+
+.proj-hint-arrow {
+  font-size: 1.8rem;
+  animation: hint-pulse 2s ease-in-out infinite;
+}
+
+@keyframes hint-pulse {
+  0%, 100% { opacity: 0.25; transform: translateX(0); }
+  50%       { opacity: 0.5;  transform: translateX(-6px); }
+}
+
+.proj-hint p {
+  font-size: 0.78rem;
+  font-family: 'Fira Code', monospace;
+  letter-spacing: 0.3px;
+}
+
+/* ── Mobile ── */
+@media screen and (max-width: 720px) {
+  .proj-device {
+    flex-direction: column;
+    border-radius: 28px;
+    padding: 16px;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .proj-panel {
+    width: 272px;
+    overflow-y: auto;
+    max-height: 360px;
+  }
+
+  .play-chips   { justify-content: center; }
+  .play-listing { text-align: center; }
+  .play-header  { justify-content: center; }
+}

@@ -40,6 +40,9 @@ const JobCard = ({ exp, idx, onCardClick }) => {
   if (exp.sabbatical) {
     return (
       <div className="sm-state-wrap" id={`exp-card-${exp.id}`} style={{ '--idx': idx }}>
+        {exp.period && (
+          <span className="sm-year-badge">{getYearRange(exp.period)}</span>
+        )}
         <button
           className="sm-state sm-state--sabbatical"
           onClick={() => onCardClick(exp)}
@@ -56,9 +59,6 @@ const JobCard = ({ exp, idx, onCardClick }) => {
           </div>
           <div className="sm-card-body">
             <span className="sm-role">{exp.role}</span>
-            {exp.period && (
-              <span className="sm-years">{getYearRange(exp.period)}</span>
-            )}
           </div>
         </button>
       </div>
@@ -67,6 +67,11 @@ const JobCard = ({ exp, idx, onCardClick }) => {
 
   return (
     <div className="sm-state-wrap" id={`exp-card-${exp.id}`} style={{ '--idx': idx }}>
+      {exp.period && (
+        <span className={`sm-year-badge${isCurrent ? ' sm-year-badge--current' : ''}`}>
+          {getYearRange(exp.period)}
+        </span>
+      )}
       <button
         className={`sm-state${isCurrent ? ' sm-state--current' : ''}${exp.parallel ? ' sm-state--parallel' : ''}`}
         onClick={() => onCardClick(exp)}
@@ -90,9 +95,6 @@ const JobCard = ({ exp, idx, onCardClick }) => {
 
         <div className="sm-card-body">
           <span className="sm-role">{exp.role}</span>
-          {exp.period && (
-            <span className="sm-years">{getYearRange(exp.period)}</span>
-          )}
         </div>
 
         {exp.tags && exp.tags.length > 0 && (
@@ -215,12 +217,9 @@ function ExperienceSection() {
                 <React.Fragment key={exp.id}>
                   <JobCard exp={exp} idx={index} onCardClick={handleClick} />
                   {!isLast && (
-                    <div className="sm-transition">
-                      {transitionLabel && <span className="sm-label">{transitionLabel}</span>}
-                      <div className="sm-arrow">
-                        <div className="sm-arrow-line" />
-                        <div className="sm-arrowhead" />
-                      </div>
+                    <div className="sm-arrow">
+                      <div className="sm-arrow-line" />
+                      <div className="sm-arrowhead" />
                     </div>
                   )}
                 </React.Fragment>
