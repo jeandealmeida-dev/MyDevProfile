@@ -8,6 +8,7 @@ import ProjectsSection from '../components/ProjectsSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import ContactSection from '../components/ContactSection';
 import '../styles/LandingPage.css';
+import '../styles/SectionHeading.css';
 
 const PU = process.env.PUBLIC_URL;
 

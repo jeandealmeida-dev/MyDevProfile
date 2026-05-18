@@ -59,7 +59,7 @@ function AboutSection() {
   return (
     <div className="about-inner">
 
-      <div className="about-header">
+      <div className="about-header section-header">
         <span className="section-tag">{'// about'}</span>
         <h2 className="section-heading">
           <Trans i18nKey="about.sectionTitle" components={{ accent: <span className="heading-accent" /> }} />

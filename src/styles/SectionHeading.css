@@ -1,0 +1,65 @@
+/* ─────────────────────────────────────────────
+   Section headings — single source of truth
+   Import once in LandingPage.js
+───────────────────────────────────────────── */
+
+/* ── Tag line  e.g. "// about" ── */
+.section-tag {
+  display: block;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8rem;
+  color: var(--blue-200);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+/* ── Heading ── */
+.section-heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--white-100);
+  line-height: 1.1;
+  padding-bottom: 0.75rem;
+  background-image: linear-gradient(var(--blue-200), var(--blue-200));
+  background-size: 52px 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+/* ── Light-background sections ── */
+#about .section-tag,
+#experience .section-tag,
+#projects .section-tag,
+#testimonials .section-tag {
+  color: var(--blue-400);
+}
+
+#about .section-heading,
+#experience .section-heading,
+#projects .section-heading,
+#testimonials .section-heading {
+  color: #1F2428;
+  background-image: linear-gradient(var(--blue-400), var(--blue-400));
+}
+
+
+/* ── Blinking cursor on contact ── */
+#contact .section-heading::after {
+  content: '|';
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  margin-left: 3px;
+  animation: blink-cursor 1s step-start infinite;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* ── Mobile ── */
+@media screen and (max-width: 560px) {
+  .section-heading { font-size: 1.9rem; }
+}

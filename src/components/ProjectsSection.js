@@ -122,7 +122,7 @@ function ProjectsSection() {
 
   return (
     <div className="proj-inner">
-      <div className="proj-header">
+      <div className="proj-header section-header">
         <span className="section-tag">{'// projects'}</span>
         <h2 className="section-heading">{t('projects.title')}</h2>
       </div>

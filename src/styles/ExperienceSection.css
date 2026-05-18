@@ -97,9 +97,6 @@
   text-align: left;
 }
 
-.exp-header .section-tag    { color: var(--blue-400); }
-.exp-header .section-heading { color: #1F2428; }
-
 /* ── Parallel lane divider ── */
 .pipeline-lane-header {
   display: flex;

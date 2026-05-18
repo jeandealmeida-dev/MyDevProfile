@@ -11,35 +11,11 @@
 .about-header {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
 }
 
-/* section-tag and section-heading overrides for light bg */
-#about .section-tag {
-  color: var(--blue-400);
-  font-size: 0.78rem;
-  letter-spacing: 0.8px;
-}
-
-#about .section-heading {
-  font-size: 3rem;
-  color: #1F2428;
-  line-height: 1.05;
-}
 
 .heading-accent {
-  color: var(--blue-400);
-  display: inline-flex;
-  align-items: center;
-}
-
-.heading-accent::after {
-  content: '|';
-  color: var(--blue-400);
-  font-weight: 300;
-  margin-left: 4px;
-  line-height: 1;
-  animation: blink 1s step-start infinite;
+  color: inherit;
 }
 
 /* ── Shared card shell — Material elevation ── */
@@ -224,6 +200,3 @@
   .about-selection       { margin-bottom: 22px; margin-right: 22px; }
 }
 
-@media screen and (max-width: 560px) {
-  #about .section-heading { font-size: 2rem; }
-}

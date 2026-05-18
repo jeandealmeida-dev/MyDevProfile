@@ -21,7 +21,7 @@ function ContactSection() {
   return (
     <div className="contact-inner">
 
-      <div className="contact-header">
+      <div className="contact-header section-header">
         <span className="section-tag">{'// contact'}</span>
         <h2 className="section-heading">{t('contact.sectionTitle')}</h2>
       </div>

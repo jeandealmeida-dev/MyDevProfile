@@ -160,8 +160,8 @@ function ExperienceSection() {
 
   return (
     <div className="exp-inner">
-      <div className="exp-header">
-        <span className="section-tag">{'// career.yml'}</span>
+      <div className="exp-header section-header">
+        <span className="section-tag">{'// career'}</span>
         <h2 className="section-heading">{t('experience.title')}</h2>
       </div>
 

@@ -49,12 +49,12 @@
   },
   "contact": {
     "title": "Vamos conversar 🤙",
-    "sectionTitle": "Vamos conversar",
+    "sectionTitle": "Vamos conversar?",
     "cvLabel": "Baixe uma cópia do meu CV:",
     "quote": "\"O futuro pertence àqueles que acreditam na beleza dos seus sonhos.\" – Eleanor Roosevelt"
   },
   "recommendation": {
-    "title": "O que dizem devs que colaboraram comigo",
+    "title": "O que meus colegas falam sobre mim",
     "messages": {
       "yris": "\"Uma pessoa muito centrada e crítica, e acredito que sempre muito atento aos detalhes. Nos damos muito bem no trabalho e creio que é muito fácil trabalhar com você, sem dramas e tudo direto ao ponto.\"",
       "fabio": "\"Dedicação, foco, entrega e questionamentos pertinentes. Admiro seu trabalho e espero que você continue procurando crescer.\"",
@@ -62,6 +62,14 @@
       "bruna": "\"Prático e objetivo. Se comunica bem e com clareza. Tem um perfil analítico excelente, fazendo boas análises e investigações. Documenta as coisas com qualidade. Possui muita autonomia e proatividade.\"",
       "murilo": "\"Jean é um desenvolvedor Android muito competente, com domínio técnico acima da média. Confiável, com entregas de qualidade e com pontualidade, tem uma postura tranquila que facilita o dia a dia.\"",
       "weslley": "\"Profissional, responsável, idealizador. Continue sempre aberto a coisas novas. Isso vai te levar a patamares mais altos sempre.\""
+    },
+    "highlights": {
+      "yris": ["atento aos detalhes", "sem dramas", "direto ao ponto"],
+      "fabio": ["Dedicação, foco, entrega", "questionamentos pertinentes"],
+      "jessica": ["Domina o Android", "perfil analítico", "traz soluções"],
+      "bruna": ["perfil analítico excelente", "autonomia e proatividade"],
+      "murilo": ["domínio técnico acima da média", "qualidade e com pontualidade"],
+      "weslley": ["Profissional, responsável, idealizador"]
     }
   },
   "experience": {

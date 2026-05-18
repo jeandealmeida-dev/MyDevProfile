@@ -56,18 +56,12 @@
   min-height: 0;
 }
 
-#projects .section-heading { color: #1F2428; }
-#projects .section-tag     { color: var(--blue-400); }
-
 /* ── Testimonials: marquee bleeds edge-to-edge ── */
 #testimonials {
   min-height: 0;
   padding: 4rem 0 3rem;
   overflow: hidden;
 }
-
-#testimonials .section-heading { color: #1F2428; }
-#testimonials .section-tag     { color: var(--blue-400); }
 
 /* ── Contact: inverted hero — closes the canvas ── */
 #contact {
@@ -96,20 +90,3 @@
   z-index: 1;
 }
 
-/* ── Shared section header ── */
-.section-tag {
-  display: block;
-  font-family: 'Fira Code', monospace;
-  font-size: 0.85rem;
-  color: var(--blue-200);
-  margin-bottom: 0.5rem;
-  letter-spacing: 0.5px;
-}
-
-.section-heading {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--white-100);
-  line-height: 1.1;
-}
