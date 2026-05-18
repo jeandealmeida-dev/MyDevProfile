@@ -1,61 +1,106 @@
-# My Portfolio
+# Jean de Almeida — Developer Portfolio
 
-<p align="center">
- <img width="900" src="https://github.com/thiagodanobrega/myPortfolio/blob/master/project-preview.png?raw=true" alt="exemplo imagem" >
-</p>
+Personal portfolio website for **Jean Paulo de Almeida Silva**, Senior Android Developer with 13+ years of experience. Built as a single-page React application with a terminal/developer aesthetic, bilingual support (EN/PT-BR), and a fully responsive design.
 
-## 💻 Projeto
+---
 
-Portfólio pessoal apresentando projetos e informações de contato.
+## Live Sections
 
-## 🚀 Tecnologias
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+| Section | Description |
+|---|---|
+| **Hero** | Animated typewriter cycling through job titles, polaroid-style profile photo |
+| **About** | Bio, soft skills, company logo marquee with scroll-to-experience interaction |
+| **Career History** | Horizontal pipeline with draggable cards, year badges, job detail modals, parallel contractor lane |
+| **Projects** | Android phone simulator showing Play Store-style app listings with GitHub links |
+| **Testimonials** | Two-row infinite marquee of colleague recommendations with keyword highlights and modal expansion |
+| **Let's Talk?** | Email link and CV download dropdown (EN/PT-BR PDFs) |
 
-> Front-End: React, Context API, React Router, PropTypes, CSS, HTML, JavaScript
+---
 
-## 📌 Habilidades
+## Tech Stack
 
-Nesse projeto, fui capaz de:
+**Framework & Routing**
+- React 18 + React Router v6
+- Create React App (react-scripts 5)
 
-- Trabalhar com estado e componentes
-- Implementar roteamento com React Router v6
-- Aplicar boas práticas de desenvolvimento React
-- Criar testes unitários com React Testing Library
+**Internationalization**
+- i18next + react-i18next + i18next-browser-languagedetector
+- English (en-US) and Portuguese (pt-BR) — auto-detected from browser, togglable at runtime
 
-## 📝 Ajustes e melhorias
+**Styling**
+- Plain CSS with custom properties (design tokens)
+- CSS Grid + Flexbox layouts
+- CSS animations (`@keyframes`, `backdrop-filter`, `background-gradient`)
+- Centralized section heading styles (`SectionHeading.css`)
 
-Melhorias recentes implementadas (2026-03-26):
+**Icons**
+- react-icons (Feather + Bootstrap icon sets)
 
-- [x] Realizar testes unitários
-- [x] Remover código comentado e dependências não utilizadas
-- [x] Corrigir uso de tags HTML inválidas em componentes React
-- [x] Adicionar PropTypes para validação de tipos
-- [x] Melhorar acessibilidade com textos alternativos descritivos
-- [x] Corrigir nomes de funções e exportações
-- [x] Adicionar IDs únicos para chaves em listas
-- [x] Remover props depreciados do React Router v6
-- [x] Padronizar importações com ponto e vírgula
+**Runtime**
+- Node 20.x
 
-## ⬇️ Instalando dependências
+---
 
-  ```bash
-  npm install
-  ``` 
+## Notable Implementation Details
 
-## 🚀 Executando o projeto
+- **Custom `useTypewriter` hook** — smooth typing/deleting animation without external libraries, no flicker
+- **IntersectionObserver** — navbar highlights the active section during scroll
+- **Infinite marquee** — 4-copy technique (`translateX(-25%)`) for gap-free seamless looping
+- **Testimonial highlights** — regex-based keyword bolding with per-language highlight arrays
+- **Phone simulator** — full Android mockup (status bar, punch hole, nav buttons) with glassmorphism device wrapper
+- **Scroll offset correction** — programmatic `scrollTo` subtracts fixed header height (92px) for accurate anchor navigation
+- **Samsung Browser dark mode fix** — `color-scheme: light` in both HTML meta and CSS
 
-  ```bash
-  npm start
-  ```
+---
 
-## 🧪 Executando os testes
+## Project Structure
 
-  ```bash
-  npm test
-  ```
+```
+src/
+├── components/         # UI sections (Hero, About, Experience, Projects, Testimonials, Contact…)
+├── pages/              # LandingPage (single route)
+├── styles/             # One CSS file per component + SectionHeading.css (shared)
+├── data/               # experiences.js · projects.js · recommendation.js · contacts.js
+├── i18n/
+│   └── locales/        # en-US.json · pt-BR.json
+├── context/            # Global state (sidebar/menu)
+└── index.css           # CSS variables (design tokens), global reset
+```
 
-## 📄 Licença
+---
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+## Getting Started
 
-[⬆ Voltar ao topo](#my-portfolio)<br>
+**Install dependencies**
+```bash
+npm install
+```
+
+**Run development server**
+```bash
+npm start
+```
+
+**Production build**
+```bash
+npm run build
+```
+
+**Run tests**
+```bash
+npm test
+```
+
+---
+
+## Deployment
+
+Deployed on **Vercel**. The `engines` field in `package.json` pins Node 20.x — make sure the Vercel project settings match.
+
+---
+
+## About Jean
+
+Senior Android Developer based in Joinville, SC, Brazil. 13+ years building for Android across fintech, e-commerce, health, and retail. Currently at **Thoughtworks**. Fluent in Portuguese, Spanish, and English.
+
+[linkedin.com/in/jeanalmeida](https://www.linkedin.com/in/jeanalmeida)
