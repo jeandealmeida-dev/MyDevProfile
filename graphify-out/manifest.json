@@ -1,0 +1,266 @@
+{
+  "/Users/dev/workspace/MyDevProfile/src/index.js": {
+    "mtime": 1774532666.9476602,
+    "hash": "469bae9c125a2e4e3764489f60448a4b"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/serviceWorker.js": {
+    "mtime": 1710021773.3830917,
+    "hash": "7a46f42106a4c4fd1a03c4afd48f65e9"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/setupTests.js": {
+    "mtime": 1710021773.3831437,
+    "hash": "dea886be67ea6fa5cee27dba16786b90"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/App.js": {
+    "mtime": 1777380351.7424934,
+    "hash": "f60503a214035ee270bf8bb2d630cd55"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/context/AppProvider.js": {
+    "mtime": 1710021773.3808985,
+    "hash": "3fc71355ea3854bbb13cd970aafc3511"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/context/AppContext.js": {
+    "mtime": 1710021773.380825,
+    "hash": "16ad6597ece78ea5755f91fe21470084"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/components/ExperienceSection.js": {
+    "mtime": 1777382718.455749,
+    "hash": "513feb438474ef41b44837f5462ad8e1"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/components/TitleBar.js": {
+    "mtime": 1774802239.4081445,
+    "hash": "f27f317d93fa75687f46005dfce60963"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/components/AboutSection.js": {
+    "mtime": 1778502801.2259138,
+    "hash": "f2716a3b69699ddce3071851580df864"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/components/Navbar.js": {
+    "mtime": 1777380303.2810571,
+    "hash": "f34807c5794034af22946bc95f7963d7"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/components/IconCloud.js": {
+    "mtime": 1777382987.2512567,
+    "hash": "f69e4ef4d166f3f81edd5754f1e7f8eb"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/components/MenuBar.js": {
+    "mtime": 1774803435.728908,
+    "hash": "b12dd75b855f40c14ed7a5b4cddc712c"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/components/SideBar.js": {
+    "mtime": 1774833541.6818647,
+    "hash": "edda1a26c9ebb25ba900c0ecd92bad1e"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/components/MenuMobile.js": {
+    "mtime": 1710021773.3806314,
+    "hash": "94b2abfef1481e37d4a547c086c22532"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/components/ContactSection.js": {
+    "mtime": 1777738260.3283973,
+    "hash": "374e02d5588edee9beed0a9d7e039934"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/components/Header.js": {
+    "mtime": 1774812229.5448923,
+    "hash": "d271bbdb6e53cd580acc98d976618afc"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/components/Hero.js": {
+    "mtime": 1777820296.1361988,
+    "hash": "21d56f7ca2eb50a449a706193c64a9df"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/components/Footer.js": {
+    "mtime": 1774532779.9383438,
+    "hash": "31d310de34706b5910b27e3d3756363c"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/i18n/index.js": {
+    "mtime": 1774532627.2609882,
+    "hash": "f2eec7622c8f48219c06126ed79284dc"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/data/experiences.js": {
+    "mtime": 1777382704.8445873,
+    "hash": "071b57839fc1533cae89714d482de938"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/data/contacts.js": {
+    "mtime": 1710022916.8618205,
+    "hash": "f815df3afc13d34efca9867e3dc62017"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/data/projects.js": {
+    "mtime": 1774803408.3206573,
+    "hash": "24f4ddac26be17011f1648d0e1244305"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/data/recommendation.js": {
+    "mtime": 1774802801.3775265,
+    "hash": "cac9bd14dd534871c1980a568043c507"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/pages/About.js": {
+    "mtime": 1774532702.5726223,
+    "hash": "a0fc64f81576d9fd78bfa100a3cde565"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/pages/LandingPage.js": {
+    "mtime": 1777773286.7529,
+    "hash": "738b47bb70d161b074e9759cf1cf33f9"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/pages/Experience.js": {
+    "mtime": 1774802950.937883,
+    "hash": "07ec7d5bc6d68fe576fa981291b055c1"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/pages/Home.js": {
+    "mtime": 1774814880.97343,
+    "hash": "11ac4c4555904ea576f24ed880de9beb"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/pages/Projects.js": {
+    "mtime": 1774803414.3163927,
+    "hash": "5bd9d41e0e78652c0a3d4adf66cf18e1"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/pages/Contact.js": {
+    "mtime": 1774532742.531314,
+    "hash": "f5dd93e786ff5d297af5649632e13f4a"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/pages/Recommendation.js": {
+    "mtime": 1774802806.9785602,
+    "hash": "b670ec107b1f8acfd81af7a6e6be15e7"
+  },
+  "/Users/dev/workspace/MyDevProfile/LICENSE.md": {
+    "mtime": 1710021773.3312466,
+    "hash": "ed5d300785d9812167490c8cd2b9d164"
+  },
+  "/Users/dev/workspace/MyDevProfile/HOW_TO_RUN.md": {
+    "mtime": 1774527725.4080355,
+    "hash": "4ae9be3550813ab2699ba30a64d981ed"
+  },
+  "/Users/dev/workspace/MyDevProfile/README.md": {
+    "mtime": 1774527496.6315486,
+    "hash": "7cc44538affdedc3e07541d12bfcd42c"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/index.html": {
+    "mtime": 1710021856.8985338,
+    "hash": "4aead704fcbe34d98668a22e108add0e"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/robots.txt": {
+    "mtime": 1710021773.3720849,
+    "hash": "fa1ded1ed7c11438a9b0385b1e112850"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/cv_jeandealmeida.pdf": {
+    "mtime": 1710022842.6782103,
+    "hash": "3a11c1dbce0a180671a79efbf29650d8"
+  },
+  "/Users/dev/workspace/MyDevProfile/project-preview.png": {
+    "mtime": 1710021773.3351166,
+    "hash": "16c9fa3aa0ec12dea55386ce00f00671"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/xpinc_logo.jpeg": {
+    "mtime": 1777733468.750077,
+    "hash": "eaba706aedb4029a770569fc365dfe9a"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/profile-image.png": {
+    "mtime": 1777771237.61895,
+    "hash": "55ad2cd04f00a7953fa120b67fcabe79"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/trivia.gif": {
+    "mtime": 1710021773.38,
+    "hash": "dc1777bc304a2f318433d25de1af1331"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/profile-image2.jpg": {
+    "mtime": 1778463610.0,
+    "hash": "f63809dea76c137643102ec48d8c19f7"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/store.png": {
+    "mtime": 1710021773.373397,
+    "hash": "ed3bd5cf2468a463cf6e2ea23ec7ac08"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/totvs_logo.jpeg": {
+    "mtime": 1777733501.4624617,
+    "hash": "01dc87c630a795b840ddf0f8db9b3e0e"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/recipe.gif": {
+    "mtime": 1710021773.3699956,
+    "hash": "f70105ec5a27062db697d967dfa1b249"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/background.jpg": {
+    "mtime": 1777735344.413265,
+    "hash": "c32914de5b716a989bad4cb4f5af0f46"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/profile-image2_backup3.png": {
+    "mtime": 1777943877.0,
+    "hash": "1c2a1c98f4b0a487c01260ff440bb5be"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/profile-image2_backup2.png": {
+    "mtime": 1777943562.0,
+    "hash": "38ec6f392a538a140821d57e4c12e849"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/ab_inbev_logo.jpeg": {
+    "mtime": 1777738034.699669,
+    "hash": "61d61215bb413e8ca029a5b67351692f"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/breathwrk_logo.jpeg": {
+    "mtime": 1777738543.856715,
+    "hash": "d77c72aad305f6c54085012614bf58e3"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/profile-image2_backup.png": {
+    "mtime": 1777735688.8388367,
+    "hash": "a61fea914a12a773548cb2e5262b60a4"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/afyamedicina_logo.jpeg": {
+    "mtime": 1777738054.619725,
+    "hash": "87001ab325af4acafbacbbf50cd37ebe"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/profile-image2_backup4.png": {
+    "mtime": 1777946338.9298263,
+    "hash": "05b71e85fc501b851ad56f6ba8bf49b4"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/luizalabs_logo.jpeg": {
+    "mtime": 1777733455.1233935,
+    "hash": "7b658585ee65916c566c82b3d9bf8d22"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/polaroid_frame.png": {
+    "mtime": 1777739180.9039788,
+    "hash": "ac6a9c2bc8f07a7e0d5ee46241081da9"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/background_2.jpg": {
+    "mtime": 1777735486.340296,
+    "hash": "1625f4185a1f039f4fd61fd33c7ad4b9"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/hubxp_logo.jpeg": {
+    "mtime": 1777738070.612144,
+    "hash": "04b6875ea03de9c2c0d058bd1207e0f0"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/thoughtworks_logo.jpeg": {
+    "mtime": 1777733439.4676142,
+    "hash": "141f7b004702fc81ba8f9aef41ba974b"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/back.png": {
+    "mtime": 1710021773.3354013,
+    "hash": "8318b45e5f5696c4b0d6a09bfa22ea65"
+  },
+  "/Users/dev/workspace/MyDevProfile/public/nttdata_logo.jpeg": {
+    "mtime": 1777738018.029703,
+    "hash": "1c222f029472f3293889eb9cb9d19bef"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/images/js_icon.svg": {
+    "mtime": 1710021773.3824055,
+    "hash": "85461141d9a18de27ca54361ba568141"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/images/json_icon.svg": {
+    "mtime": 1710021773.3824687,
+    "hash": "77b374083a5a03b543c92c0c506985ce"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/images/img-perfil.png": {
+    "mtime": 1710021773.3823447,
+    "hash": "ee90eacf76c8e166829faa00367253b2"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/images/markdown_icon.svg": {
+    "mtime": 1710021773.3825207,
+    "hash": "f089ea9bad1fcfb43bb767afebfc1fa9"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/images/css_icon.svg": {
+    "mtime": 1710021773.381203,
+    "hash": "515a7b409c51769a4888eb95b18b9188"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/images/html_icon.svg": {
+    "mtime": 1710021773.3812518,
+    "hash": "64db9428349a4e33d157c8142e127cc0"
+  },
+  "/Users/dev/workspace/MyDevProfile/src/images/react_icon.svg": {
+    "mtime": 1710021773.3825872,
+    "hash": "1c304dcf61d6eee5c7370c5484dd48a7"
+  }
+}

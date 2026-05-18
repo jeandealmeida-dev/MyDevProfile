@@ -92,7 +92,7 @@ function TestimonialsSection() {
       <div className="test-marquee-outer">
         <div className="test-marquee-row">
           <div className="test-marquee-track">
-            {[...row1, ...row1].map((item, i) => (
+            {[...row1, ...row1, ...row1, ...row1].map((item, i) => (
               <TestimonialCard
                 key={`r1-${i}`}
                 item={item}
@@ -106,7 +106,7 @@ function TestimonialsSection() {
 
         <div className="test-marquee-row">
           <div className="test-marquee-track test-marquee-track--reverse">
-            {[...row2, ...row2].map((item, i) => (
+            {[...row2, ...row2, ...row2, ...row2].map((item, i) => (
               <TestimonialCard
                 key={`r2-${i}`}
                 item={item}
