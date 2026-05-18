@@ -21,10 +21,6 @@ const TAG_TYPE = {
   Logistics:     'domain',
 };
 
-function getStartYear(period) {
-  if (!period) return null;
-  return period.split(' ')[1];
-}
 
 function getYearRange(period) {
   if (!period) return null;
@@ -211,8 +207,6 @@ function ExperienceSection() {
 
             {mainJobs.map((exp, index) => {
               const isLast = index === mainJobs.length - 1;
-              const nextExp = mainJobs[index + 1];
-
               return (
                 <React.Fragment key={exp.id}>
                   <JobCard exp={exp} idx={index} onCardClick={handleClick} />
