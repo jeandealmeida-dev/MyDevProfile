@@ -212,7 +212,7 @@ function ExperienceSection() {
             {mainJobs.map((exp, index) => {
               const isLast = index === mainJobs.length - 1;
               const nextExp = mainJobs[index + 1];
-              const transitionLabel = nextExp ? getStartYear(nextExp.period) : null;
+
               return (
                 <React.Fragment key={exp.id}>
                   <JobCard exp={exp} idx={index} onCardClick={handleClick} />
