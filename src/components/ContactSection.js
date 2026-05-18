@@ -46,10 +46,10 @@ function ContactSection() {
           </button>
           {dropdownOpen && (
             <div className="cv-dropdown">
-              <a href="/cv_jeandealmeida_en.pdf" download onClick={() => setDropdownOpen(false)}>
+              <a href="/cv_jeandealmeida.pdf" download onClick={() => setDropdownOpen(false)}>
                 <FiDownload /> English
               </a>
-              <a href="/cv_jeandealmeida_pt.pdf" download onClick={() => setDropdownOpen(false)}>
+              <a href="/cv_jeandealmeida.pdf" download onClick={() => setDropdownOpen(false)}>
                 <FiDownload /> Português
               </a>
             </div>
