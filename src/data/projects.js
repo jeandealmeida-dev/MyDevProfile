@@ -7,9 +7,9 @@ const projects = [
     descriptionKey: 'projects.descriptions.1',
     icon: '🎵',
     color: 'linear-gradient(145deg, #1DB954, #147a34)',
-    gifSrc: '/recipe.gif',
+    gifSrc: '/demo_buscador_itunes.gif',
     repository: 'https://github.com/jeandealmeida-dev/BuscadorItunes',
-    technologies: ['Kotlin', 'Android', 'Retrofit', 'MVVM'],
+    technologies: ['Kotlin', 'MVVM', 'Clean Architecture', 'Retrofit', 'RxAndroid', 'Room', 'Dagger', 'Modularization'],
   },
   {
     id: 2,

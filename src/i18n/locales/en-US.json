@@ -41,7 +41,7 @@
     "viewApp": "View on GitHub",
     "tapHint": "tap an app icon",
     "descriptions": {
-      "1": "Android app that searches for music, albums and artists using the iTunes API.",
+      "1": "Modularized Android app for searching and playing 30-second music previews via the iTunes API. Features MVVM + Clean Architecture, Retrofit, RxAndroid, Room for local persistence, Dagger DI, and a custom Service for audio playback. Includes favorites, custom playlists and Dark/Light theme.",
       "2": "Android app to consume the FutMarket API, displaying football market data.",
       "3": "Flutter app displaying characters and episodes from the Rick and Morty universe.",
       "4": "Android test project for Reign Softwarehouse, showcasing Clean Architecture on Android."

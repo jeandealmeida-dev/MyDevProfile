@@ -41,15 +41,17 @@ const PhoneFrame = ({ selected, exiting, onOpen, onClose }) => {
         {/* Punch-hole camera */}
         <div className="phone-punch-hole" />
 
-        {/* Status bar — always on top */}
-        <div className="phone-status">
-          <span className="phone-time">9:41</span>
-          <div className="phone-status-icons">
-            <SignalIcon />
-            <WifiIcon />
-            <BatteryIcon />
+        {/* Status bar — hidden while an app is open */}
+        {!selected && (
+          <div className="phone-status">
+            <span className="phone-time">9:41</span>
+            <div className="phone-status-icons">
+              <SignalIcon />
+              <WifiIcon />
+              <BatteryIcon />
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Home screen */}
         <div className={`phone-home${selected && !exiting ? ' phone-home--behind' : ''}`}>
@@ -76,14 +78,6 @@ const PhoneFrame = ({ selected, exiting, onOpen, onClose }) => {
         {/* App view */}
         {selected && (
           <div className={`phone-app${exiting ? ' phone-app--exiting' : ''}`}>
-            <div className="phone-app-topbar">
-              <button className="phone-back-btn" onClick={onClose}>
-                <svg width="9" height="16" viewBox="0 0 9 16" fill="none">
-                  <path d="M8 1L1 8L8 15" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </button>
-              <span className="phone-app-title">{selected.shortName}</span>
-            </div>
             <div className="phone-app-body">
               {selected.gifSrc ? (
                 <img src={selected.gifSrc} alt={selected.name} className="phone-app-media" />
@@ -94,6 +88,19 @@ const PhoneFrame = ({ selected, exiting, onOpen, onClose }) => {
                   <span className="phone-placeholder-hint">Preview coming soon</span>
                 </div>
               )}
+            </div>
+            <div className="android-nav android-nav--app">
+              <button className="android-nav-btn" onClick={onClose} aria-label="Back">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path d="M11 4L6 9L11 14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+              <button className="android-nav-btn" onClick={onClose} aria-label="Home">
+                <div className="android-nav-home" />
+              </button>
+              <button className="android-nav-btn android-nav-btn--recents" aria-label="Recents">
+                <div className="android-nav-recents" />
+              </button>
             </div>
           </div>
         )}

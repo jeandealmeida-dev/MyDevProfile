@@ -236,6 +236,33 @@
   pointer-events: none;
 }
 
+/* App-mode nav: interactive, sits at the bottom of the app view */
+.android-nav--app {
+  position: relative;
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.android-nav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: background 0.15s;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.android-nav-btn:hover  { background: rgba(255, 255, 255, 0.08); }
+.android-nav-btn:active { background: rgba(255, 255, 255, 0.15); }
+
+.android-nav-btn--recents { cursor: default; }
+.android-nav-btn--recents:hover  { background: none; }
+.android-nav-btn--recents:active { background: none; }
+
 .android-nav-icon {
   color: rgba(255, 255, 255, 0.6);
   flex-shrink: 0;
@@ -281,40 +308,6 @@
 @keyframes app-exit {
   from { transform: translateY(0); }
   to   { transform: translateY(100%); }
-}
-
-/* App topbar (back + title) */
-.phone-app-topbar {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  height: 46px;
-  padding: 0 14px;
-  background: rgba(0, 0, 0, 0.6);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  flex-shrink: 0;
-}
-
-.phone-back-btn {
-  background: none;
-  border: none;
-  color: #90CAF9;
-  cursor: pointer;
-  padding: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 6px;
-  transition: background 0.15s;
-}
-
-.phone-back-btn:hover { background: rgba(144, 202, 249, 0.1); }
-
-.phone-app-title {
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.9);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 /* App body */

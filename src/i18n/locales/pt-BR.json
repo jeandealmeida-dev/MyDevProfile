@@ -41,7 +41,7 @@
     "viewApp": "Ver no GitHub",
     "tapHint": "toque em um ícone",
     "descriptions": {
-      "1": "App Android que busca músicas, álbuns e artistas usando a API do iTunes.",
+      "1": "App Android modularizado para buscar e ouvir prévias de 30 segundos via API do iTunes. Usa MVVM + Clean Architecture, Retrofit, RxAndroid, Room para persistência local, Dagger DI e um Service customizado para reprodução de áudio. Inclui favoritos, playlists personalizadas e tema Dark/Light.",
       "2": "App Android para consumir a API do FutMarket, exibindo dados do mercado do futebol.",
       "3": "App Flutter com personagens e episódios do universo Rick and Morty.",
       "4": "Projeto Android de teste para a Reign Softwarehouse, demonstrando Clean Architecture no Android."
