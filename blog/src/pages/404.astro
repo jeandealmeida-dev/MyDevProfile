@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import { t } from '../i18n';
+const lang = 'pt';
+---
+<Base lang={lang} title="404">
+  <Hero tag="// 404" title={t(lang, '404.title')} subtitle="Page not found">
+    <p class="hero-links">
+      <a href="/pt/">← {t('pt', '404.back')}</a>
+      <a href="/en/">← {t('en', '404.back')}</a>
+    </p>
+  </Hero>
+</Base>

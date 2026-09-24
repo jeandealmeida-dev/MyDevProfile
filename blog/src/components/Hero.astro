@@ -1,0 +1,17 @@
+---
+interface Props {
+  tag: string;
+  title: string;
+  subtitle?: string;
+}
+const { tag, title, subtitle } = Astro.props;
+---
+<section class="hero-section" style="background-image: url(/background.jpg)">
+  <div class="hero-inner">
+    <span class="section-tag">{tag}</span>
+    <h1 class="hero-title">{title}</h1>
+    <div class="hero-underline"></div>
+    {subtitle && <p class="hero-subtitle">{subtitle}<span class="cursor">|</span></p>}
+    <slot />
+  </div>
+</section>

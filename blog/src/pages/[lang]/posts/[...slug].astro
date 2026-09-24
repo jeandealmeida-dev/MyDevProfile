@@ -1,0 +1,58 @@
+---
+import { render } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import { formatDate, languages, otherLang, t, type Lang } from '../../../i18n';
+import { getPosts, getTranslation, postLang, postSlug, postUrl, readingTime, tagSlug } from '../../../posts';
+
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  return posts
+    .filter((post) => languages.includes(postLang(post)))
+    .map((post) => ({ params: { lang: postLang(post), slug: postSlug(post) }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const lang = Astro.params.lang as Lang;
+const { Content } = await render(post);
+const translation = await getTranslation(post);
+const altUrl = translation ? postUrl(translation) : `/${otherLang(lang)}/`;
+---
+<Base lang={lang} title={post.data.title} description={post.data.description} altUrl={altUrl} ogType="article">
+  <section class="hero-section hero-post" style="background-image: url(/background.jpg)">
+    <div class="hero-inner post-hero-inner">
+      <a class="back-link" href={`/${lang}/`}>← {t(lang, 'post.back')}</a>
+      <div class="post-meta">
+        <time datetime={post.data.date.toISOString()}>{formatDate(lang, post.data.date)}</time>
+        <span>·</span>
+        <span>{readingTime(post)} {t(lang, 'post.readingTime')}</span>
+        {post.data.updated && (
+          <>
+            <span>·</span>
+            <span>{t(lang, 'post.updated')} {formatDate(lang, post.data.updated)}</span>
+          </>
+        )}
+      </div>
+      <h1 class="hero-title post-title">{post.data.title}</h1>
+      <div class="hero-underline"></div>
+      <p class="hero-subtitle">{post.data.description}</p>
+      {post.data.tags.length > 0 && (
+        <ul class="tag-list tag-list--dark">
+          {post.data.tags.map((tag) => (
+            <li><a class="tag-chip" href={`/${lang}/tags/${tagSlug(tag)}/`}>#{tag}</a></li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </section>
+
+  <section class="canvas-section">
+    <article class="bento-card prose">
+      {translation && (
+        <a class="translation-link" href={postUrl(translation)} hreflang={t(otherLang(lang), 'htmlLang')}>
+          🌐 {t(lang, 'post.otherLang')}
+        </a>
+      )}
+      <Content />
+    </article>
+  </section>
+</Base>
