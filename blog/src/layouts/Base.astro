@@ -1,4 +1,5 @@
 ---
+import Analytics from '@vercel/analytics/astro';
 import '../styles/global.css';
 import { t, otherLang, type Lang } from '../i18n';
 
@@ -52,6 +53,7 @@ const links = [
     <script is:inline>
       try { localStorage.setItem('blog-lang', document.documentElement.lang.startsWith('pt') ? 'pt' : 'en'); } catch (e) {}
     </script>
+    <Analytics />
   </head>
   <body>
     <div class="title-bar">
