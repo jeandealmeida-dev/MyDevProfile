@@ -1,0 +1,36 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Hero from '../../../components/Hero.astro';
+import PostCard from '../../../components/PostCard.astro';
+import { languages, otherLang, t, type Lang } from '../../../i18n';
+import { getPosts, tagSlug } from '../../../posts';
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const lang of languages) {
+    const posts = await getPosts(lang);
+    const tags = new Map<string, string>();
+    for (const post of posts) for (const tag of post.data.tags) tags.set(tagSlug(tag), tag);
+    for (const [slug, tag] of tags) {
+      paths.push({
+        params: { lang, tag: slug },
+        props: { tag, posts: posts.filter((p) => p.data.tags.some((x) => tagSlug(x) === slug)) },
+      });
+    }
+  }
+  return paths;
+}
+
+const lang = Astro.params.lang as Lang;
+const { tag, posts } = Astro.props;
+---
+<Base lang={lang} title={`#${tag}`} active="tags" altUrl={`/${otherLang(lang)}/tags/`}>
+  <Hero tag={t(lang, 'tags.tag')} title={`#${tag}`} subtitle={`${t(lang, 'tag.title')} #${tag}`} />
+  <section class="canvas-section">
+    <div class="canvas-inner">
+      <div class="post-list">
+        {posts.map((post) => <PostCard post={post} lang={lang} />)}
+      </div>
+    </div>
+  </section>
+</Base>

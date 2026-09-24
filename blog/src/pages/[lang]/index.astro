@@ -1,0 +1,32 @@
+---
+import Base from '../../layouts/Base.astro';
+import Hero from '../../components/Hero.astro';
+import PostCard from '../../components/PostCard.astro';
+import { languages, otherLang, t, type Lang } from '../../i18n';
+import { getPosts } from '../../posts';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Lang;
+const posts = await getPosts(lang);
+---
+<Base lang={lang} active="posts" altUrl={`/${otherLang(lang)}/`}>
+  <Hero tag={t(lang, 'hero.tag')} title={t(lang, 'hero.title')} subtitle={t(lang, 'hero.subtitle')} />
+  <section class="canvas-section">
+    <div class="canvas-inner">
+      <header class="canvas-header">
+        <span class="section-tag">{t(lang, 'list.tag')}</span>
+        <h2 class="section-heading">{t(lang, 'list.title')}</h2>
+      </header>
+      {posts.length === 0 ? (
+        <p class="empty">{t(lang, 'list.empty')}</p>
+      ) : (
+        <div class="post-list">
+          {posts.map((post) => <PostCard post={post} lang={lang} />)}
+        </div>
+      )}
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,32 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Hero from '../../../components/Hero.astro';
+import { languages, otherLang, t, type Lang } from '../../../i18n';
+import { getPosts, tagSlug } from '../../../posts';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Lang;
+const posts = await getPosts(lang);
+const counts = new Map<string, number>();
+for (const post of posts) for (const tag of post.data.tags) counts.set(tag, (counts.get(tag) ?? 0) + 1);
+const tags = [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+---
+<Base lang={lang} title={t(lang, 'tags.title')} active="tags" altUrl={`/${otherLang(lang)}/tags/`}>
+  <Hero tag={t(lang, 'tags.tag')} title={t(lang, 'tags.title')} />
+  <section class="canvas-section">
+    <div class="canvas-inner">
+      {tags.length === 0 ? (
+        <p class="empty">{t(lang, 'list.empty')}</p>
+      ) : (
+        <ul class="tag-list tag-list--big">
+          {tags.map(([tag, n]) => (
+            <li><a class="tag-chip" href={`/${lang}/tags/${tagSlug(tag)}/`}>#{tag} <span class="tag-count">{n}</span></a></li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,24 @@
+---
+// Root: send visitors to their language (last choice, then browser language).
+---
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#24292E" />
+    <title>Jean de Almeida — Blog</title>
+    <link rel="alternate" hreflang="pt-BR" href="/pt/" />
+    <link rel="alternate" hreflang="en-US" href="/en/" />
+    <script is:inline>
+      var lang;
+      try { lang = localStorage.getItem('blog-lang'); } catch (e) {}
+      if (lang !== 'pt' && lang !== 'en') {
+        lang = (navigator.language || 'pt').toLowerCase().startsWith('pt') ? 'pt' : 'en';
+      }
+      location.replace('/' + lang + '/');
+    </script>
+    <noscript><meta http-equiv="refresh" content="0; url=/pt/" /></noscript>
+  </head>
+  <body style="background:#24292E"></body>
+</html>

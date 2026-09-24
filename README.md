@@ -93,6 +93,12 @@ npm test
 
 ---
 
+## Blog
+
+The blog at **blog.jeandealmeida.dev** lives in [`blog/`](blog/) — an Astro static site sharing the portfolio's design tokens (`src/tokens.css`), deployed as a separate Vercel project. See [`blog/README.md`](blog/README.md).
+
+---
+
 ## Deployment
 
 Deployed on **Vercel**. The `engines` field in `package.json` pins Node 20.x — make sure the Vercel project settings match.
