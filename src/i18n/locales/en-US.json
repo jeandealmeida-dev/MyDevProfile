@@ -44,7 +44,8 @@
       "1": "Modularized Android app for searching and playing 30-second music previews via the iTunes API. Features MVVM + Clean Architecture, Retrofit, RxAndroid, Room for local persistence, Dagger DI, and a custom Service for audio playback. Includes favorites, custom playlists and Dark/Light theme.",
       "2": "Android app to consume the FutMarket API, displaying football market data.",
       "3": "Flutter app displaying characters and episodes from the Rick and Morty universe.",
-      "4": "Android test project for Reign Softwarehouse, showcasing Clean Architecture on Android."
+      "4": "Android test project for Reign Softwarehouse, showcasing Clean Architecture on Android.",
+      "5": "Mobile app for iPhone and Android that helps farmers and vets track their herd from insemination to calving, for dairy and beef cattle. Shows daily to-dos, expected calvings and each cow's history, and works offline in the field, syncing when the signal returns. Being submitted to the app stores; the landing page is live."
     }
   },
   "contact": {

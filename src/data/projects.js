@@ -47,6 +47,19 @@ const projects = [
     repository: 'https://github.com/jeandealmeida-dev/ReignAndroidTest',
     technologies: ['Kotlin', 'Android', 'Clean Architecture'],
   },
+  {
+    id: 5,
+    type: 'mobile',
+    name: 'Bovinoo',
+    shortName: 'Bovinoo',
+    descriptionKey: 'projects.descriptions.5',
+    icon: '🐄',
+    color: 'linear-gradient(145deg, #4CAF50, #1b5e20)',
+    gifSrc: '/bovinoo-home.webp',
+    website: 'https://bovinoo-landingpage.vercel.app',
+    repository: 'https://github.com/jeandealmeida-dev/bovinoo-landingpage',
+    technologies: ['iOS', 'Android', 'Offline-first', 'Sync'],
+  },
 ];
 
 export default projects;
