@@ -153,14 +153,14 @@ function ProjectsSection() {
                 <div className="play-title-block">
                   <h3 className="play-app-name">{selected.name}</h3>
                   <span className="play-developer">Jean Paulo</span>
-                  <span className="play-category">{selected.type === 'flutter' ? 'Flutter' : 'Android'}</span>
+                  <span className="play-category">{{ flutter: 'Flutter', mobile: 'iOS · Android' }[selected.type] || 'Android'}</span>
                 </div>
               </div>
 
               <div className="play-divider" />
 
               <a
-                href={selected.repository}
+                href={selected.website || selected.repository}
                 target="_blank"
                 rel="noreferrer"
                 className="play-install-btn"
