@@ -55,7 +55,7 @@ const projects = [
     descriptionKey: 'projects.descriptions.5',
     icon: '🐄',
     color: 'linear-gradient(145deg, #4CAF50, #1b5e20)',
-    gifSrc: '/bovinoo-home.webp',
+    gifSrc: '/bovinoo_demo.gif',
     website: 'https://bovinoo-landingpage.vercel.app',
     repository: 'https://github.com/jeandealmeida-dev/bovinoo-landingpage',
     technologies: ['iOS', 'Android', 'Offline-first', 'Sync'],
