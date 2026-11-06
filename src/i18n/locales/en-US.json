@@ -93,6 +93,33 @@
           "title": "Magalu Ads placement",
           "caption": "Sponsored block at the top of the Magalu search results (staging environment, test catalog)."
         }
+      },
+      "peloton": {
+        "note": "At Thoughtworks, working for Peloton, I'm on the Android re-platforming of the Breathwrk app. The recordings below come from internal development and QA builds using a test account, so you will see loading states and the bug-report button.",
+        "onboarding": {
+          "title": "Onboarding",
+          "caption": "First-run flow with a guided breathing exercise, a \"Lung Health Score\" test, picking a daily time and the notification prompt, ending on the personalised plan."
+        },
+        "home": {
+          "title": "Home by category",
+          "caption": "The All, Sleep, Calm and Energy tabs rearrange Home with suggested sections and each category's colour theme, with skeletons while content loads."
+        },
+        "program": {
+          "title": "Program detail",
+          "caption": "The \"7 Days of Breathwrk\" program: progress (2 of 8), a start-next-class button and the class list grouped by day."
+        },
+        "filters": {
+          "title": "Discover filters",
+          "caption": "Filtering by category, duration and instructor with a live result count, plus an empty state that lets you reset the filters."
+        },
+        "saved": {
+          "title": "Saved classes",
+          "caption": "Saving and unsaving classes and exercises from the detail screen and the player, with instant feedback and the Saved list kept in sync."
+        },
+        "activity": {
+          "title": "Activity",
+          "caption": "Activity screen with top streak, total breaths and minutes, and a calendar marking the days practised."
+        }
       }
     },
     "jobs": {
