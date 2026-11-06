@@ -30,6 +30,29 @@ const experiences = [
       'experience.jobs.magalu.h2',
       'experience.jobs.magalu.h3',
     ],
+    mediaNoteKey: 'experience.detail.luizalabs.note',
+    media: [
+      {
+        type: 'video',
+        src: `${PU}/media/luizalabs/netshoes-viewability-list.mp4`,
+        poster: `${PU}/media/luizalabs/netshoes-viewability-list-poster.webp`,
+        titleKey: 'experience.detail.luizalabs.list.title',
+        captionKey: 'experience.detail.luizalabs.list.caption',
+      },
+      {
+        type: 'video',
+        src: `${PU}/media/luizalabs/netshoes-viewability-carousel.mp4`,
+        poster: `${PU}/media/luizalabs/netshoes-viewability-carousel-poster.webp`,
+        titleKey: 'experience.detail.luizalabs.carousel.title',
+        captionKey: 'experience.detail.luizalabs.carousel.caption',
+      },
+      {
+        type: 'image',
+        src: `${PU}/media/luizalabs/magalu-ads.webp`,
+        titleKey: 'experience.detail.luizalabs.ads.title',
+        captionKey: 'experience.detail.luizalabs.ads.caption',
+      },
+    ],
   },
   {
     id: 3,

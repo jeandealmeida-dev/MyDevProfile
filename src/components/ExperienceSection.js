@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import experiences from '../data/experiences';
+import ExperienceMedia from './ExperienceMedia';
 import '../styles/ExperienceSection.css';
 
 const TAG_TYPE = {
@@ -235,7 +236,7 @@ function ExperienceSection() {
 
       {selected && (
         <div className="sm-overlay" onClick={() => setSelected(null)}>
-          <div className="sm-detail" onClick={(e) => e.stopPropagation()}>
+          <div className={`sm-detail${selected.media?.length ? ' sm-detail--wide' : ''}`} onClick={(e) => e.stopPropagation()}>
             <button className="sm-detail-close" onClick={() => setSelected(null)} aria-label="Close">✕</button>
 
             <div className="sm-detail-header">
@@ -280,6 +281,10 @@ function ExperienceSection() {
                   <li key={key}>{t(key)}</li>
                 ))}
               </ul>
+            )}
+
+            {selected.media?.length > 0 && (
+              <ExperienceMedia media={selected.media} noteKey={selected.mediaNoteKey} />
             )}
           </div>
         </div>

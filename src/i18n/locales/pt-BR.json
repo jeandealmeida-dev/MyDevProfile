@@ -77,6 +77,24 @@
     "title": "Histórico de Carreira",
     "present": "Presente",
     "consultancy": "Consultoria",
+    "detail": {
+      "inAction": "Em ação",
+      "luizalabs": {
+        "note": "Na Luizalabs atuei nos apps Magalu e Netshoes. As gravações abaixo são de builds de debug e homologação do SDK de anúncios que liderei, por isso aparecem dados de teste e ferramentas internas.",
+        "list": {
+          "title": "Validação de visibilidade de anúncios — lista",
+          "caption": "Build de debug do Netshoes. O overlay marca cada item de verde quando mais de 70% dele está visível na tela e de vermelho quando não está, validando a regra de visibilidade durante o scroll."
+        },
+        "carousel": {
+          "title": "Validação de visibilidade de anúncios — carrossel",
+          "caption": "Mesma regra em um carrossel horizontal de \"produtos patrocinados\": os itens ficam verdes quando mais de 70% está visível e voltam a vermelho ao sair da tela."
+        },
+        "ads": {
+          "title": "Posição de Magalu Ads",
+          "caption": "Bloco patrocinado no topo dos resultados de busca do Magalu (ambiente de homologação, catálogo de teste)."
+        }
+      }
+    },
     "jobs": {
       "thoughtworks": {
         "period": "Out 2025 – Presente",
