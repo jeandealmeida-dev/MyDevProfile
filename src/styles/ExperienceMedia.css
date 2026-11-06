@@ -24,37 +24,53 @@
   color: var(--gray-100);
 }
 
-.exp-media-row {
+.exp-carousel {
   display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  scroll-snap-type: x proximity;
-  padding-bottom: 0.5rem;
-  scrollbar-width: thin;
-  scrollbar-color: #30363d transparent;
+  align-items: center;
+  gap: 0.75rem;
 }
 
-.exp-media-row::-webkit-scrollbar { height: 6px; }
-.exp-media-row::-webkit-scrollbar-track { background: transparent; }
-.exp-media-row::-webkit-scrollbar-thumb { background: #30363d; border-radius: 3px; }
+.exp-carousel-btn {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #30363d;
+  background: #1c2128;
+  color: var(--white-100);
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+}
 
-.exp-media-figure {
+.exp-carousel-btn:hover:not(:disabled) { background: #2d333b; }
+.exp-carousel-btn:disabled { opacity: 0.3; cursor: default; }
+
+.exp-slide {
   margin: 0;
-  flex: 0 0 186px;
-  scroll-snap-align: start;
+  flex: 1;
+  min-width: 0;
   display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  animation: exp-slide-in 0.25s ease;
+}
+
+@keyframes exp-slide-in {
+  from { opacity: 0; transform: translateX(12px); }
+  to   { opacity: 1; transform: translateX(0); }
 }
 
 .exp-phone-wrap {
-  width: 186px;
-  height: 396px;
+  flex: 0 0 auto;
+  width: 204px;
+  height: 435px;
   position: relative;
 }
 
 .exp-phone {
-  transform: scale(0.683);
+  transform: scale(0.75);
   transform-origin: top left;
 }
 
@@ -66,19 +82,45 @@
   display: block;
 }
 
-.exp-media-figure figcaption {
+.exp-slide figcaption {
+  flex: 1;
+  max-width: 280px;
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.4rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-size: 0.72rem;
-  line-height: 1.5;
+  font-size: 0.82rem;
+  line-height: 1.55;
   color: var(--gray-100);
 }
 
-.exp-media-figure figcaption strong {
+.exp-slide figcaption strong {
   color: var(--white-100);
-  font-size: 0.78rem;
+  font-size: 0.9rem;
+}
+
+.exp-carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.exp-carousel-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background: #30363d;
+  cursor: pointer;
+}
+
+.exp-carousel-dot.is-active { background: var(--blue-200); }
+
+@media screen and (max-width: 560px) {
+  .exp-slide { flex-direction: column; gap: 0.9rem; }
+  .exp-slide figcaption { max-width: none; text-align: center; }
+  .exp-carousel { gap: 0.4rem; }
 }
 
 /* dialog grows and scrolls when it has media */

@@ -82,12 +82,12 @@
       "luizalabs": {
         "note": "Na Luizalabs atuei nos apps Magalu e Netshoes. As gravações abaixo são de builds de debug e homologação do SDK de anúncios que liderei, por isso aparecem dados de teste e ferramentas internas.",
         "list": {
-          "title": "Tempo de visualização de anúncios — lista",
-          "caption": "Build de debug do Netshoes. O SDK mede por quanto tempo cada anúncio fica na tela, e o overlay de debug troca a cor do componente para validar o comportamento durante o scroll."
+          "title": "Validação de visibilidade de anúncios — lista",
+          "caption": "Build de debug do Netshoes. O overlay marca cada item de verde quando mais de 70% dele está visível na tela e de vermelho quando não está, validando a regra de visibilidade durante o scroll."
         },
         "carousel": {
-          "title": "Tempo de visualização de anúncios — carrossel",
-          "caption": "Mesmo mecanismo em um carrossel horizontal de \"produtos patrocinados\": os itens mudam de cor ao entrar e sair da área visível."
+          "title": "Validação de visibilidade de anúncios — carrossel",
+          "caption": "Mesma regra em um carrossel horizontal de \"produtos patrocinados\": os itens ficam verdes quando mais de 70% está visível e voltam a vermelho ao sair da tela."
         },
         "ads": {
           "title": "Posição de Magalu Ads",
