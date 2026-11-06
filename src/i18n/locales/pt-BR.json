@@ -128,6 +128,13 @@
           "title": "Breath Machine",
           "caption": "Tela de início dos exercícios de respiração (Calm e Iceman), com descrição, paginação, botão Start, duração e atalhos de vibração e ajustes."
         }
+      },
+      "afya": {
+        "note": "Na HubXP atuei nos apps Android da Afya. A gravação abaixo é de uma build de QA com conta de teste, por isso aparecem dados de teste e rótulos de build.",
+        "medcel": {
+          "title": "Medcel",
+          "caption": "Build de QA: abertura pela tela inicial, splash, central do aluno, menu de perfil e a página na Play Store."
+        }
       }
     },
     "jobs": {
