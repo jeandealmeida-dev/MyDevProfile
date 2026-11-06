@@ -284,7 +284,7 @@ function ExperienceSection() {
             )}
 
             {selected.media?.length > 0 && (
-              <ExperienceMedia media={selected.media} noteKey={selected.mediaNoteKey} />
+              <ExperienceMedia key={selected.id} media={selected.media} noteKey={selected.mediaNoteKey} />
             )}
           </div>
         </div>
