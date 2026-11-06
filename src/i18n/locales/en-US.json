@@ -116,9 +116,29 @@
           "title": "Saved classes",
           "caption": "Saving and unsaving classes and exercises from the detail screen and the player, with instant feedback and the Saved list kept in sync."
         },
-        "activity": {
-          "title": "Activity",
-          "caption": "Activity screen with top streak, total breaths and minutes, and a calendar marking the days practised."
+        "themeSleep": {
+          "title": "Sleep theme",
+          "caption": "Filtering by Sleep gives Home a purple gradient and the sections switch to sleep content."
+        },
+        "themeCalm": {
+          "title": "Calm theme",
+          "caption": "The Calm filter turns the gradient teal, with relaxation suggestions and exercises."
+        },
+        "themeEnergy": {
+          "title": "Energy theme",
+          "caption": "The Energy filter switches to an amber background, highlighting morning classes and energising exercises."
+        },
+        "carousels": {
+          "title": "Home carousels",
+          "caption": "Home cards in horizontal carousels: Dailies, breathing exercises and programs, with the next card peeking from the edge to hint at the scroll."
+        },
+        "player": {
+          "title": "Video player",
+          "caption": "A program class opened from Home: the video loading and the player controls (play/pause, skip back and forward 10s, elapsed time and current class)."
+        },
+        "breathMachine": {
+          "title": "Breath Machine",
+          "caption": "Start screen for breathing exercises (Calm and Iceman), with description, paging, Start button, duration and vibration and settings shortcuts."
         }
       }
     },

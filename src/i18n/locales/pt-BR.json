@@ -116,9 +116,29 @@
           "title": "Aulas salvas",
           "caption": "Salvar e remover aulas e exercícios a partir do detalhe e do player, com feedback imediato e a lista de \"Saved\" sendo atualizada."
         },
-        "activity": {
-          "title": "Atividade",
-          "caption": "Tela de atividade com maior sequência, total de respirações e minutos, e calendário marcando os dias praticados."
+        "themeSleep": {
+          "title": "Tema Sleep",
+          "caption": "Ao filtrar por Sleep, o fundo da Home ganha um gradiente roxo e as seções passam a sugerir conteúdo para dormir."
+        },
+        "themeCalm": {
+          "title": "Tema Calm",
+          "caption": "No filtro Calm o gradiente muda para verde-azulado, com sugestões e exercícios de relaxamento."
+        },
+        "themeEnergy": {
+          "title": "Tema Energy",
+          "caption": "No filtro Energy o fundo fica âmbar, destacando aulas matinais e exercícios para energizar."
+        },
+        "carousels": {
+          "title": "Carrosséis da Home",
+          "caption": "Cards da Home em carrosséis horizontais: Dailies, exercícios de respiração e programas, com o card seguinte aparecendo na borda para indicar o scroll."
+        },
+        "player": {
+          "title": "Player de vídeo",
+          "caption": "Aula de programa aberta pela Home: carregamento do vídeo e controles do player (play/pause, voltar e avançar 10s, tempo decorrido e aula atual)."
+        },
+        "breathMachine": {
+          "title": "Breath Machine",
+          "caption": "Tela de início dos exercícios de respiração (Calm e Iceman), com descrição, paginação, botão Start, duração e atalhos de vibração e ajustes."
         }
       }
     },
