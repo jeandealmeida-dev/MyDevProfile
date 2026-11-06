@@ -182,17 +182,10 @@ const experiences = [
     media: [
       {
         type: 'video',
-        src: `${PU}/media/afya/afya-internato.mp4`,
-        poster: `${PU}/media/afya/afya-internato-poster.webp`,
-        titleKey: 'experience.detail.afya.internato.title',
-        captionKey: 'experience.detail.afya.internato.caption',
-      },
-      {
-        type: 'video',
-        src: `${PU}/media/afya/afya-papers.mp4`,
-        poster: `${PU}/media/afya/afya-papers-poster.webp`,
-        titleKey: 'experience.detail.afya.papers.title',
-        captionKey: 'experience.detail.afya.papers.caption',
+        src: `${PU}/media/afya/medcel.mp4`,
+        poster: `${PU}/media/afya/medcel-poster.webp`,
+        titleKey: 'experience.detail.afya.medcel.title',
+        captionKey: 'experience.detail.afya.medcel.caption',
       },
     ],
   },

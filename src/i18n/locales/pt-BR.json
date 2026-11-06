@@ -130,14 +130,10 @@
         }
       },
       "afya": {
-        "note": "Na HubXP atuei nos apps Android da Afya. As gravações abaixo são de builds de QA com conta de teste, por isso aparecem dados de teste e rótulos de build.",
-        "internato": {
-          "title": "Internato Afya+",
-          "caption": "Build de QA: abertura pela tela inicial, splash, seleção de curso, menu de perfil e a página na Play Store."
-        },
-        "papers": {
-          "title": "Afya Papers",
-          "caption": "Mesmo fluxo no app Papers: as telas e os menus são os mesmos, com outra marca, splash e identidade."
+        "note": "Na HubXP atuei nos apps Android da Afya. A gravação abaixo é de uma build de QA com conta de teste, por isso aparecem dados de teste e rótulos de build.",
+        "medcel": {
+          "title": "Medcel",
+          "caption": "Build de QA: abertura pela tela inicial, splash, central do aluno, menu de perfil e a página na Play Store."
         }
       }
     },
