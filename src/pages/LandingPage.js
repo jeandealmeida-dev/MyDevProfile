@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import React from 'react';
 import TitleBar from '../components/TitleBar';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
@@ -14,13 +13,6 @@ import '../styles/SectionHeading.css';
 const PU = process.env.PUBLIC_URL;
 
 function LandingPage() {
-  const { hash } = useLocation();
-
-  useEffect(() => {
-    if (!hash) return;
-    document.getElementById(hash.slice(1))?.scrollIntoView();
-  }, [hash]);
-
   return (
     <>
       <TitleBar />

@@ -34,21 +34,21 @@ const experiences = [
     media: [
       {
         type: 'video',
-        src: `${PU}/experience/luizalabs/netshoes-viewability-list.mp4`,
-        poster: `${PU}/experience/luizalabs/netshoes-viewability-list-poster.webp`,
+        src: `${PU}/media/luizalabs/netshoes-viewability-list.mp4`,
+        poster: `${PU}/media/luizalabs/netshoes-viewability-list-poster.webp`,
         titleKey: 'experience.detail.luizalabs.list.title',
         captionKey: 'experience.detail.luizalabs.list.caption',
       },
       {
         type: 'video',
-        src: `${PU}/experience/luizalabs/netshoes-viewability-carousel.mp4`,
-        poster: `${PU}/experience/luizalabs/netshoes-viewability-carousel-poster.webp`,
+        src: `${PU}/media/luizalabs/netshoes-viewability-carousel.mp4`,
+        poster: `${PU}/media/luizalabs/netshoes-viewability-carousel-poster.webp`,
         titleKey: 'experience.detail.luizalabs.carousel.title',
         captionKey: 'experience.detail.luizalabs.carousel.caption',
       },
       {
         type: 'image',
-        src: `${PU}/experience/luizalabs/magalu-ads.webp`,
+        src: `${PU}/media/luizalabs/magalu-ads.webp`,
         titleKey: 'experience.detail.luizalabs.ads.title',
         captionKey: 'experience.detail.luizalabs.ads.caption',
       },

@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
 import experiences from '../data/experiences';
+import ExperienceDetail from './ExperienceDetail';
 import '../styles/ExperienceSection.css';
 
 const TAG_TYPE = {
@@ -111,10 +111,13 @@ const JobCard = ({ exp, idx, onCardClick }) => {
 function ExperienceSection() {
   const { t } = useTranslation();
   const [selected, setSelected] = useState(null);
+  const [detail, setDetail] = useState(null);
   const scrollRef = useRef(null);
   const isDragging = useRef(false);
   const startX = useRef(0);
   const scrollLeft = useRef(0);
+
+  const closeDetail = useCallback(() => setDetail(null), []);
 
   const allDisplayed = [...experiences].reverse();
   const mainJobs     = allDisplayed.filter(e => !e.parallel);
@@ -284,13 +287,19 @@ function ExperienceSection() {
             )}
 
             {selected.slug && (
-              <Link to={`/experience/${selected.slug}`} className="exp-detail-link">
+              <button
+                type="button"
+                className="exp-detail-link"
+                onClick={() => { setDetail(selected); setSelected(null); }}
+              >
                 {t('experience.detail.viewDetails')} →
-              </Link>
+              </button>
             )}
           </div>
         </div>
       )}
+
+      {detail && <ExperienceDetail exp={detail} onClose={closeDetail} />}
     </div>
   );
 }
