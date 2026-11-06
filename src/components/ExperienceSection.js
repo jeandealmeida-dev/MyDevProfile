@@ -117,7 +117,6 @@ function ExperienceSection() {
 
   const allDisplayed = [...experiences].reverse();
   const mainJobs     = allDisplayed.filter(e => !e.parallel);
-  const parallelJobs = allDisplayed.filter(e => e.parallel);
 
   useEffect(() => {
     const onKey = (e) => { if (e.key === 'Escape') setSelected(null); };
@@ -229,19 +228,6 @@ function ExperienceSection() {
                 <div className="sm-final-inner" />
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Parallel jobs lane */}
-        <div className="pipeline-lane-header">
-          <span className="pipeline-lane-label">contractors:</span>
-        </div>
-
-        <div className="sm-scroll sm-scroll--parallel">
-          <div className="sm-track">
-            {parallelJobs.map((exp, index) => (
-              <JobCard key={exp.id} exp={exp} idx={mainJobs.length + index} onCardClick={handleClick} />
-            ))}
           </div>
         </div>
 
