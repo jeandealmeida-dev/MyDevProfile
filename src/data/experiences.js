@@ -176,6 +176,25 @@ const experiences = [
       'experience.jobs.hubxp.h2',
       'experience.jobs.hubxp.h3',
     ],
+    // Hidden for now: `parallel` jobs are not rendered in the pipeline (see ExperienceSection).
+    // The media below is ready and will show in the dialog as soon as this card is displayed.
+    mediaNoteKey: 'experience.detail.afya.note',
+    media: [
+      {
+        type: 'video',
+        src: `${PU}/media/afya/afya-internato.mp4`,
+        poster: `${PU}/media/afya/afya-internato-poster.webp`,
+        titleKey: 'experience.detail.afya.internato.title',
+        captionKey: 'experience.detail.afya.internato.caption',
+      },
+      {
+        type: 'video',
+        src: `${PU}/media/afya/afya-papers.mp4`,
+        poster: `${PU}/media/afya/afya-papers-poster.webp`,
+        titleKey: 'experience.detail.afya.papers.title',
+        captionKey: 'experience.detail.afya.papers.caption',
+      },
+    ],
   },
   {
     id: 6,

@@ -128,6 +128,17 @@
           "title": "Breath Machine",
           "caption": "Start screen for breathing exercises (Calm and Iceman), with description, paging, Start button, duration and vibration and settings shortcuts."
         }
+      },
+      "afya": {
+        "note": "At HubXP I worked on Afya's Android apps. The recordings below are from QA builds with a test account, so you will see test data and build labels.",
+        "internato": {
+          "title": "Internato Afya+",
+          "caption": "QA build: launch from the home screen, splash, course selection, the profile menu, and the Play Store listing."
+        },
+        "papers": {
+          "title": "Afya Papers",
+          "caption": "Same flow on the Papers app: the screens and menus are the same ones, with a different brand, splash and identity."
+        }
       }
     },
     "jobs": {
