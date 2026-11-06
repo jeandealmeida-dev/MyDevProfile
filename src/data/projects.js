@@ -54,6 +54,7 @@ const projects = [
     shortName: 'Bovinoo',
     descriptionKey: 'projects.descriptions.5',
     icon: '🐄',
+    iconSrc: '/bovinoo-icon.png',
     color: 'linear-gradient(145deg, #4CAF50, #1b5e20)',
     gifSrc: '/bovinoo_demo.gif',
     website: 'https://bovinoo-landingpage.vercel.app',

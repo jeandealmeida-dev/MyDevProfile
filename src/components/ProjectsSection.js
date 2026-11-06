@@ -60,7 +60,9 @@ const PhoneFrame = ({ selected, exiting, onOpen, onClose }) => {
             {projects.map(p => (
               <button key={p.id} className="app-icon-btn" onClick={() => onOpen(p)}>
                 <div className="app-icon" style={{ background: p.color }}>
-                  <span className="app-glyph">{p.icon}</span>
+                  {p.iconSrc
+                    ? <img src={p.iconSrc} alt="" className="app-icon-img" />
+                    : <span className="app-glyph">{p.icon}</span>}
                 </div>
                 <span className="app-label">{p.shortName}</span>
               </button>
@@ -148,7 +150,9 @@ function ProjectsSection() {
             <div className="play-listing" key={selected.id}>
               <div className="play-header">
                 <div className="play-icon" style={{ background: selected.color }}>
-                  <span>{selected.icon}</span>
+                  {selected.iconSrc
+                    ? <img src={selected.iconSrc} alt="" className="app-icon-img" />
+                    : <span>{selected.icon}</span>}
                 </div>
                 <div className="play-title-block">
                   <h3 className="play-app-name">{selected.name}</h3>

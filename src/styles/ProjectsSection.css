@@ -197,6 +197,18 @@
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
+.app-icon,
+.play-icon {
+  overflow: hidden;
+}
+
+.app-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .app-icon-btn:hover  .app-icon { transform: scale(1.08); }
 .app-icon-btn:active .app-icon { transform: scale(0.94); }
 
