@@ -78,12 +78,9 @@
     "present": "Presente",
     "consultancy": "Consultoria",
     "detail": {
-      "back": "Voltar para experiência",
       "inAction": "Em ação",
-      "viewDetails": "Ver detalhes",
       "luizalabs": {
-        "heading": "SDK de anúncios & qualidade dos apps",
-        "intro": "Na Luizalabs atuei nos apps Magalu e Netshoes. As gravações abaixo são de builds de debug e homologação do SDK de anúncios que liderei, por isso aparecem dados de teste e ferramentas internas.",
+        "note": "Na Luizalabs atuei nos apps Magalu e Netshoes. As gravações abaixo são de builds de debug e homologação do SDK de anúncios que liderei, por isso aparecem dados de teste e ferramentas internas.",
         "list": {
           "title": "Tempo de visualização de anúncios — lista",
           "caption": "Build de debug do Netshoes. O SDK mede por quanto tempo cada anúncio fica na tela, e o overlay de debug troca a cor do componente para validar o comportamento durante o scroll."

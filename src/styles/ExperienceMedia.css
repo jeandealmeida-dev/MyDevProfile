@@ -1,0 +1,89 @@
+/* Phone recordings inside the experience dialog (dark card). Phones are the
+   272x580 Projects mock-up scaled down so three fit side by side. */
+.exp-media {
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.exp-media-title {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--blue-200);
+}
+
+.exp-media-title::before { content: '// '; }
+
+.exp-media-note {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--gray-100);
+}
+
+.exp-media-row {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  padding-bottom: 0.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: #30363d transparent;
+}
+
+.exp-media-row::-webkit-scrollbar { height: 6px; }
+.exp-media-row::-webkit-scrollbar-track { background: transparent; }
+.exp-media-row::-webkit-scrollbar-thumb { background: #30363d; border-radius: 3px; }
+
+.exp-media-figure {
+  margin: 0;
+  flex: 0 0 186px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.exp-phone-wrap {
+  width: 186px;
+  height: 396px;
+  position: relative;
+}
+
+.exp-phone {
+  transform: scale(0.683);
+  transform-origin: top left;
+}
+
+.exp-phone-media {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+  display: block;
+}
+
+.exp-media-figure figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: var(--gray-100);
+}
+
+.exp-media-figure figcaption strong {
+  color: var(--white-100);
+  font-size: 0.78rem;
+}
+
+/* dialog grows and scrolls when it has media */
+.sm-detail--wide {
+  max-width: 740px;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+}

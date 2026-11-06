@@ -78,12 +78,9 @@
     "present": "Present",
     "consultancy": "Consultancy",
     "detail": {
-      "back": "Back to experience",
       "inAction": "In action",
-      "viewDetails": "View details",
       "luizalabs": {
-        "heading": "Ad SDK & app quality",
-        "intro": "At Luizalabs I worked across the Magalu and Netshoes apps. The recordings below are from debug and staging builds of the advertising SDK I led, so you will see test data and internal tooling.",
+        "note": "At Luizalabs I worked across the Magalu and Netshoes apps. The recordings below are from debug and staging builds of the advertising SDK I led, so you will see test data and internal tooling.",
         "list": {
           "title": "Ad view tracking — product list",
           "caption": "Netshoes debug build. The SDK tracks how long each ad stays on screen, and the debug overlay switches the component color so the behavior can be validated while scrolling."

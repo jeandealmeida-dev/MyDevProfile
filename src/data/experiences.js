@@ -22,7 +22,6 @@ const experiences = [
     logoSrc: `${PU}/luizalabs_logo.jpeg`,
     client: null,
     role: 'Senior Mobile Developer - Android',
-    slug: 'luizalabs',
     period: 'Sep 2024 – Oct 2025',
     periodKey: 'experience.jobs.magalu.period',
     tags: ['Android', 'Kotlin', 'Senior', 'SDK', 'E-commerce'],
@@ -31,6 +30,7 @@ const experiences = [
       'experience.jobs.magalu.h2',
       'experience.jobs.magalu.h3',
     ],
+    mediaNoteKey: 'experience.detail.luizalabs.note',
     media: [
       {
         type: 'video',

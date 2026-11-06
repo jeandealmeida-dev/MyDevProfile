@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect, useCallback } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import experiences from '../data/experiences';
-import ExperienceDetail from './ExperienceDetail';
+import ExperienceMedia from './ExperienceMedia';
 import '../styles/ExperienceSection.css';
 
 const TAG_TYPE = {
@@ -111,13 +111,10 @@ const JobCard = ({ exp, idx, onCardClick }) => {
 function ExperienceSection() {
   const { t } = useTranslation();
   const [selected, setSelected] = useState(null);
-  const [detail, setDetail] = useState(null);
   const scrollRef = useRef(null);
   const isDragging = useRef(false);
   const startX = useRef(0);
   const scrollLeft = useRef(0);
-
-  const closeDetail = useCallback(() => setDetail(null), []);
 
   const allDisplayed = [...experiences].reverse();
   const mainJobs     = allDisplayed.filter(e => !e.parallel);
@@ -239,7 +236,7 @@ function ExperienceSection() {
 
       {selected && (
         <div className="sm-overlay" onClick={() => setSelected(null)}>
-          <div className="sm-detail" onClick={(e) => e.stopPropagation()}>
+          <div className={`sm-detail${selected.media?.length ? ' sm-detail--wide' : ''}`} onClick={(e) => e.stopPropagation()}>
             <button className="sm-detail-close" onClick={() => setSelected(null)} aria-label="Close">✕</button>
 
             <div className="sm-detail-header">
@@ -286,20 +283,12 @@ function ExperienceSection() {
               </ul>
             )}
 
-            {selected.slug && (
-              <button
-                type="button"
-                className="exp-detail-link"
-                onClick={() => { setDetail(selected); setSelected(null); }}
-              >
-                {t('experience.detail.viewDetails')} →
-              </button>
+            {selected.media?.length > 0 && (
+              <ExperienceMedia media={selected.media} noteKey={selected.mediaNoteKey} />
             )}
           </div>
         </div>
       )}
-
-      {detail && <ExperienceDetail exp={detail} onClose={closeDetail} />}
     </div>
   );
 }
