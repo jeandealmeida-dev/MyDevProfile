@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import experiences from '../data/experiences';
 import '../styles/ExperienceSection.css';
 
@@ -280,6 +281,12 @@ function ExperienceSection() {
                   <li key={key}>{t(key)}</li>
                 ))}
               </ul>
+            )}
+
+            {selected.slug && (
+              <Link to={`/experience/${selected.slug}`} className="exp-detail-link">
+                {t('experience.detail.viewDetails')} →
+              </Link>
             )}
           </div>
         </div>

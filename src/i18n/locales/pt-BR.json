@@ -77,6 +77,27 @@
     "title": "Histórico de Carreira",
     "present": "Presente",
     "consultancy": "Consultoria",
+    "detail": {
+      "back": "Voltar para experiência",
+      "inAction": "Em ação",
+      "viewDetails": "Ver detalhes",
+      "luizalabs": {
+        "heading": "SDK de anúncios & qualidade dos apps",
+        "intro": "Na Luizalabs atuei nos apps Magalu e Netshoes. As gravações abaixo são de builds de debug e homologação do SDK de anúncios que liderei, por isso aparecem dados de teste e ferramentas internas.",
+        "list": {
+          "title": "Tempo de visualização de anúncios — lista",
+          "caption": "Build de debug do Netshoes. O SDK mede por quanto tempo cada anúncio fica na tela, e o overlay de debug troca a cor do componente para validar o comportamento durante o scroll."
+        },
+        "carousel": {
+          "title": "Tempo de visualização de anúncios — carrossel",
+          "caption": "Mesmo mecanismo em um carrossel horizontal de \"produtos patrocinados\": os itens mudam de cor ao entrar e sair da área visível."
+        },
+        "ads": {
+          "title": "Posição de Magalu Ads",
+          "caption": "Bloco patrocinado no topo dos resultados de busca do Magalu (ambiente de homologação, catálogo de teste)."
+        }
+      }
+    },
     "jobs": {
       "thoughtworks": {
         "period": "Out 2025 – Presente",

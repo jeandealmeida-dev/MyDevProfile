@@ -22,6 +22,7 @@ const experiences = [
     logoSrc: `${PU}/luizalabs_logo.jpeg`,
     client: null,
     role: 'Senior Mobile Developer - Android',
+    slug: 'luizalabs',
     period: 'Sep 2024 – Oct 2025',
     periodKey: 'experience.jobs.magalu.period',
     tags: ['Android', 'Kotlin', 'Senior', 'SDK', 'E-commerce'],
@@ -29,6 +30,28 @@ const experiences = [
       'experience.jobs.magalu.h1',
       'experience.jobs.magalu.h2',
       'experience.jobs.magalu.h3',
+    ],
+    media: [
+      {
+        type: 'video',
+        src: `${PU}/experience/luizalabs/netshoes-viewability-list.mp4`,
+        poster: `${PU}/experience/luizalabs/netshoes-viewability-list-poster.webp`,
+        titleKey: 'experience.detail.luizalabs.list.title',
+        captionKey: 'experience.detail.luizalabs.list.caption',
+      },
+      {
+        type: 'video',
+        src: `${PU}/experience/luizalabs/netshoes-viewability-carousel.mp4`,
+        poster: `${PU}/experience/luizalabs/netshoes-viewability-carousel-poster.webp`,
+        titleKey: 'experience.detail.luizalabs.carousel.title',
+        captionKey: 'experience.detail.luizalabs.carousel.caption',
+      },
+      {
+        type: 'image',
+        src: `${PU}/experience/luizalabs/magalu-ads.webp`,
+        titleKey: 'experience.detail.luizalabs.ads.title',
+        captionKey: 'experience.detail.luizalabs.ads.caption',
+      },
     ],
   },
   {
