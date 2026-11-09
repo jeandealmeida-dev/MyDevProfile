@@ -65,8 +65,8 @@ const cv = {
         {
           id: 'tw-release',
           text: {
-            en: 'Published the new version on Jun 30, 2026 and rolled it out to 100% of users on Jul 16.',
-            pt: 'Publiquei a nova versão em 30 de junho de 2026 e liberei para 100% dos usuários em 16 de julho.',
+            en: 'The new version shipped on Jun 30, 2026 and reached 100% of users on Jul 16.',
+            pt: 'A nova versão foi lançada em 30 de junho de 2026 e chegou a 100% dos usuários em 16 de julho.',
           },
         },
         {
