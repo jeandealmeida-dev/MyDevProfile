@@ -25,12 +25,12 @@ const cv = {
   summary: {
     en: [
       'Android engineer with almost 10 years in mobile. I do my best work on code that other teams and apps depend on, like SDKs and platform pieces.',
-      'At XP I led the move of the real-time market data SDK shared by three apps from WebSockets to Server-Sent Events. At Luizalabs I was the Android technical lead for the Ads SDKs behind the Magalu and Netshoes apps. At Thoughtworks I led the Android rebuild of Peloton’s Breathwrk app in Jetpack Compose.',
+      'At XP I led the redesign of the real-time market data SDK shared by three apps. At Luizalabs I was the Android technical lead for the Ads SDKs behind the Magalu and Netshoes apps. At Thoughtworks I led the Android rebuild of Peloton’s Breathwrk app in Jetpack Compose, working with AI coding agents.',
       'I mentor junior developers and I stay calm when production breaks.',
     ],
     pt: [
       'Engenheiro Android com quase 10 anos em mobile. Meu melhor trabalho está no código de que outros times e apps dependem, como SDKs e peças de plataforma.',
-      'Na XP, liderei a migração de WebSockets para Server-Sent Events do SDK de dados de mercado em tempo real compartilhado por três apps. Na Luizalabs, fui o líder técnico Android dos SDKs de Ads que atendem os apps Magalu e Netshoes. Na Thoughtworks, liderei a reconstrução Android do app Breathwrk, da Peloton, em Jetpack Compose.',
+      'Na XP, liderei a reformulação do SDK de dados de mercado em tempo real compartilhado por três apps. Na Luizalabs, fui o líder técnico Android dos SDKs de Ads que atendem os apps Magalu e Netshoes. Na Thoughtworks, liderei a reconstrução Android do app Breathwrk, da Peloton, em Jetpack Compose, trabalhando com agentes de IA de código.',
       'Mentoro devs júniores e mantenho a calma quando a produção quebra.',
     ],
   },
@@ -51,29 +51,29 @@ const cv = {
         {
           id: 'tw-rewrite',
           text: {
-            en: 'What started as a rebrand became a full rewrite. I led it as a single-Activity app on Jetpack Compose Navigation.',
-            pt: 'O que começou como rebrand virou reescrita completa. Liderei como um app single-Activity com Jetpack Compose Navigation.',
+            en: 'What started as a rebrand became a full rewrite of the Android app in Jetpack Compose, which I led.',
+            pt: 'O que começou como rebrand virou a reescrita completa do app Android em Jetpack Compose, que liderei.',
           },
         },
         {
-          id: 'tw-state',
+          id: 'tw-ai',
           text: {
-            en: 'Shared state lives in ViewModels scoped to the NavHost, deep links are centralized, and no Intent or Bundle passing between screens. Most of the hard work was resetting state correctly on the Compose backstack.',
-            pt: 'O estado compartilhado fica em ViewModels escopados ao NavHost, os deep links são centralizados e não há troca de Intent ou Bundle entre telas. O trabalho mais difícil foi resetar o estado direito no backstack do Compose.',
+            en: 'AI-assisted development: I directed AI coding agents through the rewrite and reviewed what they produced.',
+            pt: 'Desenvolvimento assistido por IA: dirigi agentes de IA de código durante a reescrita e revisei o que eles produziram.',
           },
         },
         {
           id: 'tw-release',
           text: {
-            en: 'First commit on Feb 2, 2026. New version published Jun 30 and rolled out to 100% of users on Jul 16.',
-            pt: 'Primeiro commit em 2 de fevereiro de 2026. Nova versão publicada em 30 de junho e liberada para 100% dos usuários em 16 de julho.',
+            en: 'The rewrite went from first commit to release in about 5 months and reached 100% of users in July.',
+            pt: 'A reescrita foi do primeiro commit ao lançamento em cerca de 5 meses e chegou a 100% dos usuários em julho.',
           },
         },
         {
           id: 'tw-metrics',
           text: {
-            en: '4.6 stars on Google Play (about 2,700 ratings) and 91% crash-free users on Firebase.',
-            pt: '4,6 estrelas na Google Play (cerca de 2.700 avaliações) e 91% de usuários sem crash no Firebase.',
+            en: '91% crash-free users on Firebase.',
+            pt: '91% de usuários sem crash no Firebase.',
           },
         },
       ],
@@ -85,22 +85,22 @@ const cv = {
       start: '2024-09',
       end: '2026-01',
       intro: {
-        en: 'Ads SDKs for the Magalu and Netshoes apps. Team of 2 Android, 2 iOS and 2 web developers, plus a PM.',
-        pt: 'SDKs de Ads dos apps Magalu e Netshoes. Time com 2 devs Android, 2 iOS e 2 web, mais um PM.',
+        en: 'Team of 2 Android, 2 iOS and 2 web developers, plus a PM.',
+        pt: 'Time com 2 devs Android, 2 iOS e 2 web, mais um PM.',
       },
       bullets: [
         {
           id: 'lz-lead',
           text: {
-            en: 'Android technical lead for two SDKs, one per app, with the same approach and separate code. They track ad impressions, views and interactions.',
-            pt: 'Líder técnico Android de dois SDKs, um por app, com a mesma abordagem e códigos separados. Eles rastreiam impressões, visualizações e interações dos anúncios.',
+            en: 'Android technical lead for the Ads SDKs used by the Magalu and Netshoes apps.',
+            pt: 'Líder técnico Android dos SDKs de Ads usados pelos apps Magalu e Netshoes.',
           },
         },
         {
           id: 'lz-queue',
           text: {
-            en: 'Refactored event delivery. WorkManager sends batches of 10 events kept in a Room queue, and an event is removed only after the server confirms it. Nothing is lost when the app is offline or gets killed.',
-            pt: 'Refatorei o envio de eventos. O WorkManager manda lotes de 10 eventos guardados numa fila Room, e o evento só sai da fila depois da confirmação do servidor. Nada se perde com o app offline ou encerrado.',
+            en: 'Led the refactor of the SDK’s event delivery to make it resilient: events are sent in batches and none is lost when the app is offline or closed.',
+            pt: 'Liderei a refatoração do envio de eventos do SDK para torná-lo resiliente: os eventos saem em lotes e nenhum se perde com o app offline ou fechado.',
           },
         },
         {
@@ -133,8 +133,8 @@ const cv = {
         {
           id: 'xp-sse',
           text: {
-            en: 'Led the migration of the white-label real-time market data SDK, shared by the three apps, from WebSockets to Server-Sent Events. I built the PoC, then the SDK, and mapped edge cases like auto-reconnect and packet loss. Infrastructure cost dropped 50%.',
-            pt: 'Liderei a migração do SDK white-label de dados de mercado em tempo real, compartilhado pelos três apps, de WebSockets para Server-Sent Events. Fiz a PoC, depois o SDK, e mapeei casos de borda como reconexão automática e perda de pacotes. O custo de infraestrutura caiu 50%.',
+            en: 'Led the redesign of the real-time market data SDK shared by the XP, Rico and Clear apps, from the proof of concept to production.',
+            pt: 'Liderei a reformulação do SDK de dados de mercado em tempo real compartilhado pelos apps XP, Rico e Clear, da prova de conceito à produção.',
           },
         },
         {
@@ -178,8 +178,8 @@ const cv = {
         {
           id: 'break-1',
           text: {
-            en: 'Four years living across South America. Worked as a tour guide and ran a hostel in Caldera, Chile.',
-            pt: 'Quatro anos morando na América do Sul. Trabalhei como guia turístico e administrei um hostel em Caldera, no Chile.',
+            en: 'Four years living across South America.',
+            pt: 'Quatro anos morando na América do Sul.',
           },
         },
       ],
@@ -265,8 +265,8 @@ const cv = {
         {
           id: 'tv-legacy',
           text: {
-            en: 'Fixed legacy code and shipped features with Kanban and pair programming.',
-            pt: 'Corrigi código legado e entreguei funcionalidades com Kanban e pair programming.',
+            en: 'Fixed legacy code and shipped new features.',
+            pt: 'Corrigi código legado e entreguei novas funcionalidades.',
           },
         },
       ],
@@ -316,7 +316,7 @@ const cv = {
     {
       id: 'tools',
       label: { en: 'Tools', pt: 'Ferramentas' },
-      items: ['Firebase', 'Datadog', 'Git', 'Gradle (Kotlin DSL)', 'Scrum and Kanban', 'Claude Code', 'Cursor'],
+      items: ['Firebase', 'Datadog', 'Git', 'Gradle (Kotlin DSL)', 'Scrum and Kanban', 'AI-assisted development (Claude Code, Cursor)'],
     },
   ],
 
@@ -327,16 +327,6 @@ const cv = {
       degree: { en: 'B.S. in Computer Science', pt: 'Bacharelado em Ciência da Computação' },
       start: '2010',
       end: '2013',
-    },
-    {
-      id: 'senac',
-      school: 'Senac Santa Catarina',
-      degree: {
-        en: 'Technician in Computer Assembly and Maintenance',
-        pt: 'Técnico em Montagem e Manutenção de Microcomputadores',
-      },
-      start: '2005',
-      end: '2005',
     },
   ],
 
