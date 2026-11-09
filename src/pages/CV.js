@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import cv from '../data/cv';
+import { resolveCv } from '../data/cvResolve';
+import variants from '../data/cvVariants';
 import '../styles/CV.css';
 
 const LANGS = ['en', 'pt'];
@@ -55,31 +57,32 @@ function Section({ title, children }) {
   );
 }
 
-function CV() {
-  const { lang } = useParams();
-  const valid = LANGS.includes(lang);
-
+function CVSheet({ data, lang, title, noindex, langSwitch }) {
   useEffect(() => {
-    if (!valid) return undefined;
     const previous = document.title;
-    document.title = cv.ui.docTitle[lang]; // Chrome uses this as the PDF file name
+    document.title = title; // Chrome uses this as the PDF file name
     document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+    let meta;
+    if (noindex) {
+      meta = document.createElement('meta');
+      meta.name = 'robots';
+      meta.content = 'noindex, nofollow';
+      document.head.appendChild(meta);
+    }
     return () => {
       document.title = previous;
+      if (meta) meta.remove();
     };
-  }, [lang, valid]);
+  }, [lang, title, noindex]);
 
-  if (!valid) return <Navigate to="/cv/en" replace />;
-
-  const other = lang === 'en' ? 'pt' : 'en';
-  const { person } = cv;
+  const { person } = data;
 
   return (
     <div className="cv-page">
       <nav className="cv-toolbar" aria-label="CV">
         <Link to="/" className="cv-tool-link">← {cv.ui.back[lang]}</Link>
         <div className="cv-tool-actions">
-          <Link to={`/cv/${other}`} className="cv-tool-link">{other.toUpperCase()}</Link>
+          {langSwitch}
           <button type="button" className="cv-tool-btn" onClick={() => window.print()}>
             {cv.ui.savePdf[lang]}
           </button>
@@ -99,20 +102,20 @@ function CV() {
         </header>
 
         <Section title={cv.ui.summary[lang]}>
-          {cv.summary[lang].map((p) => (
+          {data.summary[lang].map((p) => (
             <p key={p} className="cv-summary">{p}</p>
           ))}
         </Section>
 
         <Section title={cv.ui.experience[lang]}>
-          {cv.experience.map((item) => (
+          {data.experience.map((item) => (
             <Entry key={item.id} item={item} lang={lang} />
           ))}
         </Section>
 
         <Section title={cv.ui.skills[lang]}>
           <dl className="cv-skills">
-            {cv.skills.map((group) => (
+            {data.skills.map((group) => (
               <div key={group.id} className="cv-skill-row">
                 <dt>{tr(group.label, lang)}</dt>
                 <dd>{group.items.join(', ')}</dd>
@@ -123,7 +126,7 @@ function CV() {
 
         <div className="cv-columns">
           <Section title={cv.ui.education[lang]}>
-            {cv.education.map((e) => (
+            {data.education.map((e) => (
               <div key={e.id} className="cv-edu">
                 <p className="cv-edu-degree">{tr(e.degree, lang)}</p>
                 <p className="cv-edu-school">
@@ -134,12 +137,43 @@ function CV() {
           </Section>
           <Section title={cv.ui.languages[lang]}>
             <p className="cv-langs">
-              {cv.languages.map((l) => `${tr(l.name, lang)} (${tr(l.level, lang)})`).join(' · ')}
+              {data.languages.map((l) => `${tr(l.name, lang)} (${tr(l.level, lang)})`).join(' · ')}
             </p>
           </Section>
         </div>
       </main>
     </div>
+  );
+}
+
+// /cv/:lang: the generic CV.
+function CV() {
+  const { lang } = useParams();
+  if (!LANGS.includes(lang)) return <Navigate to="/cv/en" replace />;
+  const other = lang === 'en' ? 'pt' : 'en';
+  return (
+    <CVSheet
+      data={cv}
+      lang={lang}
+      title={cv.ui.docTitle[lang]}
+      langSwitch={<Link to={`/cv/${other}`} className="cv-tool-link">{other.toUpperCase()}</Link>}
+    />
+  );
+}
+
+// /cv/for/:slug: a CV tailored to one job. Unlisted: noindex, not linked from the site.
+export function CVVariant() {
+  const { slug } = useParams();
+  const variant = variants.find((v) => v.slug === slug);
+  if (!variant) return <Navigate to="/cv/en" replace />;
+  const company = variant.target && variant.target.company;
+  return (
+    <CVSheet
+      data={resolveCv(cv, variant)}
+      lang={variant.lang}
+      title={`Jean Paulo de Almeida - CV${company ? ` - ${company}` : ''}`}
+      noindex
+    />
   );
 }
 
