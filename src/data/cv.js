@@ -265,8 +265,8 @@ const cv = {
         {
           id: 'tv-legacy',
           text: {
-            en: 'Fixed legacy code and shipped features with Kanban and pair programming.',
-            pt: 'Corrigi código legado e entreguei funcionalidades com Kanban e pair programming.',
+            en: 'Fixed legacy code and shipped new features.',
+            pt: 'Corrigi código legado e entreguei novas funcionalidades.',
           },
         },
       ],
@@ -289,8 +289,8 @@ const cv = {
         {
           id: 'sf-practices',
           text: {
-            en: 'Practiced TDD, pair programming and code review from day one.',
-            pt: 'Pratiquei TDD, pair programming e code review desde o primeiro dia.',
+            en: 'Practiced TDD and code review from day one.',
+            pt: 'Pratiquei TDD e code review desde o primeiro dia.',
           },
         },
       ],
