@@ -289,8 +289,8 @@ const cv = {
         {
           id: 'sf-practices',
           text: {
-            en: 'Practiced TDD and code review from day one.',
-            pt: 'Pratiquei TDD e code review desde o primeiro dia.',
+            en: 'Practiced TDD, pair programming and code review from day one.',
+            pt: 'Pratiquei TDD, pair programming e code review desde o primeiro dia.',
           },
         },
       ],
@@ -327,16 +327,6 @@ const cv = {
       degree: { en: 'B.S. in Computer Science', pt: 'Bacharelado em Ciência da Computação' },
       start: '2010',
       end: '2013',
-    },
-    {
-      id: 'senac',
-      school: 'Senac Santa Catarina',
-      degree: {
-        en: 'Technician in Computer Assembly and Maintenance',
-        pt: 'Técnico em Montagem e Manutenção de Microcomputadores',
-      },
-      start: '2005',
-      end: '2005',
     },
   ],
 
