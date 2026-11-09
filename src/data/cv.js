@@ -25,12 +25,12 @@ const cv = {
   summary: {
     en: [
       'Android engineer with almost 10 years in mobile. I do my best work on code that other teams and apps depend on, like SDKs and platform pieces.',
-      'At XP I led the redesign of the real-time market data SDK shared by three apps, cutting infrastructure cost by 50%. At Luizalabs I was the Android technical lead for the Ads SDKs behind the Magalu and Netshoes apps. At Thoughtworks I led the Android rebuild of Peloton’s Breathwrk app in Jetpack Compose.',
+      'At XP I led the redesign of the real-time market data SDK shared by three apps, cutting infrastructure cost by 50%. At Luizalabs I was the Android technical lead for the Ads SDKs behind the Magalu and Netshoes apps. At Thoughtworks I led the Android rebuild of Peloton’s Breathwrk app in Jetpack Compose, working with AI coding agents.',
       'I mentor junior developers and I stay calm when production breaks.',
     ],
     pt: [
       'Engenheiro Android com quase 10 anos em mobile. Meu melhor trabalho está no código de que outros times e apps dependem, como SDKs e peças de plataforma.',
-      'Na XP, liderei a reformulação do SDK de dados de mercado em tempo real compartilhado por três apps, reduzindo o custo de infraestrutura em 50%. Na Luizalabs, fui o líder técnico Android dos SDKs de Ads que atendem os apps Magalu e Netshoes. Na Thoughtworks, liderei a reconstrução Android do app Breathwrk, da Peloton, em Jetpack Compose.',
+      'Na XP, liderei a reformulação do SDK de dados de mercado em tempo real compartilhado por três apps, reduzindo o custo de infraestrutura em 50%. Na Luizalabs, fui o líder técnico Android dos SDKs de Ads que atendem os apps Magalu e Netshoes. Na Thoughtworks, liderei a reconstrução Android do app Breathwrk, da Peloton, em Jetpack Compose, trabalhando com agentes de IA de código.',
       'Mentoro devs júniores e mantenho a calma quando a produção quebra.',
     ],
   },
@@ -53,6 +53,13 @@ const cv = {
           text: {
             en: 'What started as a rebrand became a full rewrite of the Android app in Jetpack Compose, which I led.',
             pt: 'O que começou como rebrand virou a reescrita completa do app Android em Jetpack Compose, que liderei.',
+          },
+        },
+        {
+          id: 'tw-ai',
+          text: {
+            en: 'AI-assisted development: I directed AI coding agents through the rewrite and reviewed what they produced.',
+            pt: 'Desenvolvimento assistido por IA: dirigi agentes de IA de código durante a reescrita e revisei o que eles produziram.',
           },
         },
         {
@@ -309,7 +316,7 @@ const cv = {
     {
       id: 'tools',
       label: { en: 'Tools', pt: 'Ferramentas' },
-      items: ['Firebase', 'Datadog', 'Git', 'Gradle (Kotlin DSL)', 'Scrum and Kanban', 'Claude Code', 'Cursor'],
+      items: ['Firebase', 'Datadog', 'Git', 'Gradle (Kotlin DSL)', 'Scrum and Kanban', 'AI-assisted development (Claude Code, Cursor)'],
     },
   ],
 
