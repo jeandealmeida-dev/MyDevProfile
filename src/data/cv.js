@@ -178,8 +178,8 @@ const cv = {
         {
           id: 'break-1',
           text: {
-            en: 'Four years living across South America. Worked as a tour guide and ran a hostel in Caldera, Chile.',
-            pt: 'Quatro anos morando na América do Sul. Trabalhei como guia turístico e administrei um hostel em Caldera, no Chile.',
+            en: 'Four years living across South America.',
+            pt: 'Quatro anos morando na América do Sul.',
           },
         },
       ],
