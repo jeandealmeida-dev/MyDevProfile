@@ -25,12 +25,12 @@ const cv = {
   summary: {
     en: [
       'Android engineer with almost 10 years in mobile. I do my best work on code that other teams and apps depend on, like SDKs and platform pieces.',
-      'At XP I led the redesign of the real-time market data SDK shared by three apps, cutting infrastructure cost by 50%. At Luizalabs I was the Android technical lead for the Ads SDKs behind the Magalu and Netshoes apps. At Thoughtworks I led the Android rebuild of Peloton’s Breathwrk app in Jetpack Compose, working with AI coding agents.',
+      'At XP I led the redesign of the real-time market data SDK shared by three apps. At Luizalabs I was the Android technical lead for the Ads SDKs behind the Magalu and Netshoes apps. At Thoughtworks I led the Android rebuild of Peloton’s Breathwrk app in Jetpack Compose, working with AI coding agents.',
       'I mentor junior developers and I stay calm when production breaks.',
     ],
     pt: [
       'Engenheiro Android com quase 10 anos em mobile. Meu melhor trabalho está no código de que outros times e apps dependem, como SDKs e peças de plataforma.',
-      'Na XP, liderei a reformulação do SDK de dados de mercado em tempo real compartilhado por três apps, reduzindo o custo de infraestrutura em 50%. Na Luizalabs, fui o líder técnico Android dos SDKs de Ads que atendem os apps Magalu e Netshoes. Na Thoughtworks, liderei a reconstrução Android do app Breathwrk, da Peloton, em Jetpack Compose, trabalhando com agentes de IA de código.',
+      'Na XP, liderei a reformulação do SDK de dados de mercado em tempo real compartilhado por três apps. Na Luizalabs, fui o líder técnico Android dos SDKs de Ads que atendem os apps Magalu e Netshoes. Na Thoughtworks, liderei a reconstrução Android do app Breathwrk, da Peloton, em Jetpack Compose, trabalhando com agentes de IA de código.',
       'Mentoro devs júniores e mantenho a calma quando a produção quebra.',
     ],
   },
@@ -133,8 +133,8 @@ const cv = {
         {
           id: 'xp-sse',
           text: {
-            en: 'Led the redesign of the real-time market data SDK shared by the XP, Rico and Clear apps, from the proof of concept to production. Infrastructure cost dropped 50%.',
-            pt: 'Liderei a reformulação do SDK de dados de mercado em tempo real compartilhado pelos apps XP, Rico e Clear, da prova de conceito à produção. O custo de infraestrutura caiu 50%.',
+            en: 'Led the redesign of the real-time market data SDK shared by the XP, Rico and Clear apps, from the proof of concept to production.',
+            pt: 'Liderei a reformulação do SDK de dados de mercado em tempo real compartilhado pelos apps XP, Rico e Clear, da prova de conceito à produção.',
           },
         },
         {
