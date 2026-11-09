@@ -65,8 +65,8 @@ const cv = {
         {
           id: 'tw-release',
           text: {
-            en: 'The new version shipped on Jun 30, 2026 and reached 100% of users on Jul 16.',
-            pt: 'A nova versão foi lançada em 30 de junho de 2026 e chegou a 100% dos usuários em 16 de julho.',
+            en: 'The rewrite went from first commit to release in about 5 months and reached 100% of users in July.',
+            pt: 'A reescrita foi do primeiro commit ao lançamento em cerca de 5 meses e chegou a 100% dos usuários em julho.',
           },
         },
         {
