@@ -99,8 +99,8 @@ const cv = {
         {
           id: 'lz-queue',
           text: {
-            en: 'Led the refactor of how ad events are delivered, so no event is lost when the app is offline or closed.',
-            pt: 'Liderei a refatoração do envio dos eventos de anúncio, para que nenhum evento se perca com o app offline ou fechado.',
+            en: 'Led the refactor of the SDK’s event delivery to make it resilient: events are sent in batches and none is lost when the app is offline or closed.',
+            pt: 'Liderei a refatoração do envio de eventos do SDK para torná-lo resiliente: os eventos saem em lotes e nenhum se perde com o app offline ou fechado.',
           },
         },
         {
