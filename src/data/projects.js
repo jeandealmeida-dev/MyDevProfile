@@ -49,7 +49,7 @@ const projects = [
   },
   {
     id: 5,
-    type: 'mobile',
+    type: 'flutter',
     name: 'Bovinoo',
     shortName: 'Bovinoo',
     descriptionKey: 'projects.descriptions.5',
@@ -59,7 +59,7 @@ const projects = [
     gifSrc: '/bovinoo_demo.gif',
     website: 'https://bovinoo-landingpage.vercel.app',
     repository: 'https://github.com/jeandealmeida-dev/bovinoo-landingpage',
-    technologies: ['iOS', 'Android', 'Offline-first', 'Sync'],
+    technologies: ['Flutter', 'Dart', 'iOS', 'Android', 'Offline-first'],
   },
 ];
 
