@@ -57,8 +57,8 @@ const projects = [
     iconSrc: '/bovinoo-icon.png',
     color: 'linear-gradient(145deg, #4CAF50, #1b5e20)',
     gifSrc: '/bovinoo_demo.gif',
-    website: 'https://bovinoo-landingpage.vercel.app',
-    repository: 'https://github.com/jeandealmeida-dev/bovinoo-landingpage',
+    website: 'https://bovinoo.app',
+    repository: null, // source is private
     technologies: ['Flutter', 'Dart', 'iOS', 'Android', 'Offline-first'],
   },
 ];
