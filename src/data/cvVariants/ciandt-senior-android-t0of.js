@@ -16,12 +16,12 @@ const variant = {
     en: [
       'Android engineer with almost 10 years in mobile, working in Kotlin and, lately, Jetpack Compose.',
       'At Thoughtworks I led the Android rebuild of Peloton’s Breathwrk app in Compose, working with AI coding agents. At Luizalabs I was the Android technical lead for the Ads SDKs behind the Magalu and Netshoes apps, and at XP I led the redesign of a real-time market data SDK shared by three apps.',
-      'I mentor junior developers and I stay calm when production breaks.',
+      'I review code every day, mentor junior developers and stay calm when production breaks.',
     ],
     pt: [
       'Engenheiro Android com quase 10 anos em mobile, trabalhando em Kotlin e, mais recentemente, Jetpack Compose.',
       'Na Thoughtworks, liderei a reconstrução Android do app Breathwrk, da Peloton, em Compose, trabalhando com agentes de IA de código. Na Luizalabs, fui o líder técnico Android dos SDKs de Ads dos apps Magalu e Netshoes, e na XP liderei a reformulação de um SDK de dados de mercado em tempo real compartilhado por três apps.',
-      'Mentoro devs júniores e mantenho a calma quando a produção quebra.',
+      'Faço code review todos os dias, mentoro devs júniores e mantenho a calma quando a produção quebra.',
     ],
   },
 
@@ -33,9 +33,9 @@ const variant = {
   },
 
   skills: [
-    { id: 'android', items: ['Kotlin', 'Jetpack Compose', 'Coroutines and Flow', 'Room', 'Hilt', 'Koin', 'Retrofit', 'WorkManager', 'Java', 'RxJava'] },
-    { id: 'arch', items: ['Clean Architecture', 'MVVM', 'SOLID', 'TDD', 'Unit testing'] },
-    { id: 'tools', items: ['Firebase', 'Datadog', 'Git', 'Gradle (Kotlin DSL)', 'AI-assisted development (Claude Code, Cursor)', 'Scrum and Kanban'] },
+    { id: 'android', items: ['Kotlin', 'Jetpack Compose', 'Coroutines and Flow', 'Room', 'Hilt', 'Dagger', 'Koin', 'Retrofit', 'WorkManager', 'Java', 'RxJava'] },
+    { id: 'arch', items: ['Clean Architecture', 'MVVM', 'Code review', 'TDD', 'Unit testing', 'SOLID'] },
+    { id: 'tools', items: ['Firebase', 'Feature flags (Remote Config)', 'CI/CD (Azure DevOps, GitHub Actions)', 'Datadog', 'Git', 'Gradle (Kotlin DSL)', 'AI-assisted development (Claude Code, Cursor)', 'Scrum and Kanban'] },
   ],
 };
 

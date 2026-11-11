@@ -44,8 +44,8 @@ const cv = {
       start: '2026-01',
       end: null,
       intro: {
-        en: 'Peloton acquired Breathwrk, a guided-breathing wellness app. I joined to lead the Android rebrand.',
-        pt: 'A Peloton comprou o Breathwrk, app de respiração guiada. Entrei para liderar o rebrand do app Android.',
+        en: 'Peloton acquired Breathwrk, a guided-breathing wellness app. I joined to lead the Android rebrand, working in English with a distributed team.',
+        pt: 'A Peloton comprou o Breathwrk, app de respiração guiada. Entrei para liderar o rebrand do app Android, trabalhando em inglês com um time distribuído.',
       },
       bullets: [
         {
@@ -301,7 +301,7 @@ const cv = {
     {
       id: 'android',
       label: { en: 'Android', pt: 'Android' },
-      items: ['Kotlin', 'Java', 'Jetpack Compose', 'Coroutines and Flow', 'Room', 'WorkManager', 'Retrofit', 'Hilt', 'Koin', 'RxJava'],
+      items: ['Kotlin', 'Java', 'Jetpack Compose', 'Coroutines and Flow', 'Room', 'WorkManager', 'Retrofit', 'Hilt', 'Dagger', 'Koin', 'RxJava'],
     },
     {
       id: 'cross',
@@ -311,12 +311,12 @@ const cv = {
     {
       id: 'arch',
       label: { en: 'Architecture and quality', pt: 'Arquitetura e qualidade' },
-      items: ['Clean Architecture', 'MVVM', 'SOLID', 'TDD', 'Unit testing', 'SDK design'],
+      items: ['Clean Architecture', 'MVVM', 'SOLID', 'TDD', 'Unit testing', 'Code review', 'SDK design'],
     },
     {
       id: 'tools',
       label: { en: 'Tools', pt: 'Ferramentas' },
-      items: ['Firebase', 'Datadog', 'Git', 'Gradle (Kotlin DSL)', 'Scrum and Kanban', 'AI-assisted development (Claude Code, Cursor)'],
+      items: ['Firebase', 'Feature flags (Remote Config)', 'CI/CD (Azure DevOps, GitHub Actions)', 'Datadog', 'Git', 'Gradle (Kotlin DSL)', 'Scrum and Kanban', 'AI-assisted development (Claude Code, Cursor)'],
     },
   ],
 
