@@ -88,6 +88,7 @@
 .cv-entry-dates { flex: none; font-size: 13px; color: var(--cv-muted); white-space: nowrap; }
 .cv-entry-meta { margin: 0; font-size: 13px; color: var(--cv-muted); }
 .cv-entry-intro { margin: 4px 0 0; color: var(--cv-muted); font-size: 13px; }
+.cv-project-text { margin: 4px 0 0; }
 .cv-bullets { margin: 6px 0 0; padding-left: 18px; }
 .cv-bullets li { margin-bottom: 3px; }
 

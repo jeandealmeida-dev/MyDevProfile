@@ -44,8 +44,8 @@ const cv = {
       start: '2026-01',
       end: null,
       intro: {
-        en: 'Peloton acquired Breathwrk, a guided-breathing wellness app. I joined to lead the Android rebrand.',
-        pt: 'A Peloton comprou o Breathwrk, app de respiração guiada. Entrei para liderar o rebrand do app Android.',
+        en: 'Peloton acquired Breathwrk, a guided-breathing wellness app. I joined to lead the Android rebrand, working in English with a distributed team.',
+        pt: 'A Peloton comprou o Breathwrk, app de respiração guiada. Entrei para liderar o rebrand do app Android, trabalhando em inglês com um time distribuído.',
       },
       bullets: [
         {
@@ -297,11 +297,24 @@ const cv = {
     },
   ],
 
+  projects: [
+    {
+      id: 'playbook',
+      name: 'Engineering Playbook',
+      kind: { en: 'Claude Code plugin', pt: 'Plugin do Claude Code' },
+      year: '2026',
+      text: {
+        en: 'Practices and a Claude Code plugin for building apps with a team of AI agents: roles (product manager, designer, developers, PR gatekeeper) with their own tools and limits, a board that moves work between them, and quality gates before anything reaches review. I used it to build a Flutter app solo, where 93% of commits were co-authored by agents.',
+        pt: 'Práticas e um plugin do Claude Code para construir apps com um time de agentes de IA: papéis (product manager, designer, developers e guardião de PR) com ferramentas e limites próprios, um board que move o trabalho entre eles e portões de qualidade antes de qualquer revisão. Usei para construir um app Flutter sozinho, em que 93% dos commits foram co-autorados por agentes.',
+      },
+    },
+  ],
+
   skills: [
     {
       id: 'android',
       label: { en: 'Android', pt: 'Android' },
-      items: ['Kotlin', 'Java', 'Jetpack Compose', 'Coroutines and Flow', 'Room', 'WorkManager', 'Retrofit', 'Hilt', 'Koin', 'RxJava'],
+      items: ['Kotlin', 'Java', 'Jetpack Compose', 'Coroutines and Flow', 'Room', 'WorkManager', 'Retrofit', 'Hilt', 'Dagger', 'Koin', 'RxJava'],
     },
     {
       id: 'cross',
@@ -311,12 +324,12 @@ const cv = {
     {
       id: 'arch',
       label: { en: 'Architecture and quality', pt: 'Arquitetura e qualidade' },
-      items: ['Clean Architecture', 'MVVM', 'SOLID', 'TDD', 'Unit testing', 'SDK design'],
+      items: ['Clean Architecture', 'MVVM', 'SOLID', 'TDD', 'Unit testing', 'Code review', 'SDK design'],
     },
     {
       id: 'tools',
       label: { en: 'Tools', pt: 'Ferramentas' },
-      items: ['Firebase', 'Datadog', 'Git', 'Gradle (Kotlin DSL)', 'Scrum and Kanban', 'AI-assisted development (Claude Code, Cursor)'],
+      items: ['Firebase', 'Feature flags (Remote Config)', 'CI/CD (Azure DevOps, GitHub Actions)', 'Datadog', 'Git', 'Gradle (Kotlin DSL)', 'Scrum and Kanban', 'AI-assisted development (Claude Code, Cursor)'],
     },
   ],
 
@@ -340,6 +353,7 @@ const cv = {
   ui: {
     summary: { en: 'Summary', pt: 'Resumo' },
     experience: { en: 'Experience', pt: 'Experiência' },
+    projects: { en: 'Projects', pt: 'Projetos' },
     skills: { en: 'Skills', pt: 'Habilidades' },
     education: { en: 'Education', pt: 'Formação' },
     languages: { en: 'Languages', pt: 'Idiomas' },
