@@ -72,8 +72,8 @@ const cv = {
         {
           id: 'tw-metrics',
           text: {
-            en: '91% crash-free users on Firebase.',
-            pt: '91% de usuários sem crash no Firebase.',
+            en: 'Crash-free users went from 91% at release to 100% in about 2 weeks, after fixing the main crashes.',
+            pt: 'O índice de usuários sem crash foi de 91% no lançamento para 100% em cerca de 2 semanas, depois de corrigir os principais crashes.',
           },
         },
       ],
