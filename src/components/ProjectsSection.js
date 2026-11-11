@@ -183,17 +183,21 @@ function ProjectsSection() {
                 ))}
               </div>
 
-              <div className="play-divider" />
+              {selected.repository && (
+                <>
+                  <div className="play-divider" />
 
-              <a
-                href={selected.repository}
-                target="_blank"
-                rel="noreferrer"
-                className="play-source-link"
-              >
-                <FiGithub size={13} />
-                <span>{t('projects.viewApp')}</span>
-              </a>
+                  <a
+                    href={selected.repository}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="play-source-link"
+                  >
+                    <FiGithub size={13} />
+                    <span>{t('projects.viewApp')}</span>
+                  </a>
+                </>
+              )}
             </div>
           ) : (
             <div className="proj-hint">
