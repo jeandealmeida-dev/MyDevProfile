@@ -20,12 +20,12 @@ const variant = {
     en: [
       'Android engineer with almost 10 years in mobile, working in Kotlin and Jetpack Compose.',
       'At Thoughtworks I led the Android rebuild of Peloton’s Breathwrk app in Compose, directing AI coding agents through the rewrite and reviewing what they produced, in English with a distributed team.',
-      'I like owning a product end to end. At OmniChat I was the only Android developer and defined the architecture from scratch.',
+      'I like owning a product end to end: sole Android developer at OmniChat, and solo owner of a Flutter app built with a team of AI agents.',
     ],
     pt: [
       'Engenheiro Android com quase 10 anos em mobile, trabalhando em Kotlin e Jetpack Compose.',
       'Na Thoughtworks, liderei a reconstrução Android do app Breathwrk, da Peloton, em Compose, dirigindo agentes de IA de código na reescrita e revisando o que eles produziram, em inglês e com um time distribuído.',
-      'Gosto de cuidar de um produto de ponta a ponta. Na OmniChat fui o único dev Android e defini a arquitetura do zero.',
+      'Gosto de cuidar de um produto de ponta a ponta: único dev Android na OmniChat e dono sozinho de um app Flutter construído com um time de agentes de IA.',
     ],
   },
 

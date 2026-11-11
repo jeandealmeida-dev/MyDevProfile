@@ -48,6 +48,21 @@ function Entry({ item, lang }) {
   );
 }
 
+function Project({ item, lang }) {
+  return (
+    <article className="cv-entry">
+      <header className="cv-entry-head">
+        <h3 className="cv-entry-title">
+          {item.name}
+          <span className="cv-entry-role">{tr(item.kind, lang)}</span>
+        </h3>
+        <span className="cv-entry-dates">{item.year}</span>
+      </header>
+      <p className="cv-project-text">{tr(item.text, lang)}</p>
+    </article>
+  );
+}
+
 function Section({ title, children }) {
   return (
     <section className="cv-section">
@@ -112,6 +127,14 @@ function CVSheet({ data, lang, title, noindex, langSwitch }) {
             <Entry key={item.id} item={item} lang={lang} />
           ))}
         </Section>
+
+        {data.projects && data.projects.length > 0 && (
+          <Section title={cv.ui.projects[lang]}>
+            {data.projects.map((item) => (
+              <Project key={item.id} item={item} lang={lang} />
+            ))}
+          </Section>
+        )}
 
         <Section title={cv.ui.skills[lang]}>
           <dl className="cv-skills">

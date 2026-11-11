@@ -17,6 +17,7 @@
 //     xp: { bullets: ['xp-tests'], intro: false },  // keep these bullets, in this order
 //   },
 //   rewrite: { 'tw-ai': { en, pt } }, // reword an existing bullet
+//   projects: ['playbook'],           // which projects to show, in order; [] hides the section
 //   skills: [{ id: 'android', items: ['Kotlin', 'Jetpack Compose'] }], // groups/items to show, in order
 // }
 
@@ -30,6 +31,7 @@ export function resolveCv(base, variant) {
   const experienceById = new Map(base.experience.map((e) => [e.id, e]));
   const bulletIds = new Set(base.experience.flatMap((e) => e.bullets.map((b) => b.id)));
   const skillById = new Map(base.skills.map((g) => [g.id, g]));
+  const projectById = new Map((base.projects || []).map((pr) => [pr.id, pr]));
 
   const overrides = variant.experience || {};
   Object.keys(overrides).forEach((id) => {
@@ -56,6 +58,13 @@ export function resolveCv(base, variant) {
       return { ...e, bullets, intro: o && o.intro === false ? undefined : e.intro };
     });
 
+  const projects = variant.projects
+    ? variant.projects.map((id) => {
+        if (!projectById.has(id)) fail(`unknown project "${id}" in ${variant.slug}`);
+        return projectById.get(id);
+      })
+    : base.projects;
+
   const skills = variant.skills
     ? variant.skills.map((s) => {
         const group = skillById.get(s.id);
@@ -73,6 +82,7 @@ export function resolveCv(base, variant) {
     person: variant.headline ? { ...base.person, headline: variant.headline } : base.person,
     summary: variant.summary || base.summary,
     experience,
+    projects,
     skills,
   };
 }

@@ -14,6 +14,7 @@ const sample = {
     xp: { bullets: ['xp-tests', 'xp-sse'], intro: false },
   },
   rewrite: { 'tw-ai': { en: 'Reworded.', pt: 'Reescrito.' } },
+  projects: ['playbook'],
   skills: [{ id: 'android', items: ['Kotlin', 'Jetpack Compose'] }, { id: 'cross' }],
 };
 
@@ -31,6 +32,8 @@ describe('resolveCv', () => {
     const tw = out.experience.find((e) => e.id === 'thoughtworks');
     expect(tw.bullets.find((b) => b.id === 'tw-ai').text.en).toBe('Reworded.');
     expect(out.summary.en).toEqual(['Custom summary.']);
+    expect(out.projects.map((p) => p.id)).toEqual(['playbook']);
+    expect(resolveCv(cv, { slug: 'x', projects: [] }).projects).toEqual([]);
     expect(out.skills.map((g) => g.id)).toEqual(['android', 'cross']);
     expect(out.skills[0].items).toEqual(['Kotlin', 'Jetpack Compose']);
   });
@@ -39,6 +42,7 @@ describe('resolveCv', () => {
     expect(() => resolveCv(cv, { slug: 'x', experience: { nope: false } })).toThrow(/unknown experience/);
     expect(() => resolveCv(cv, { slug: 'x', experience: { xp: { bullets: ['tw-ai'] } } })).toThrow(/not in experience/);
     expect(() => resolveCv(cv, { slug: 'x', rewrite: { nope: { en: '', pt: '' } } })).toThrow(/unknown bullet/);
+    expect(() => resolveCv(cv, { slug: 'x', projects: ['nope'] })).toThrow(/unknown project/);
     expect(() => resolveCv(cv, { slug: 'x', skills: [{ id: 'android', items: ['COBOL'] }] })).toThrow(/is not in group/);
   });
 });

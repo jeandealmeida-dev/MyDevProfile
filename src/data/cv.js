@@ -297,6 +297,19 @@ const cv = {
     },
   ],
 
+  projects: [
+    {
+      id: 'playbook',
+      name: 'Engineering Playbook',
+      kind: { en: 'Claude Code plugin', pt: 'Plugin do Claude Code' },
+      year: '2026',
+      text: {
+        en: 'Practices and a Claude Code plugin for building apps with a team of AI agents: roles (product manager, designer, developers, PR gatekeeper) with their own tools and limits, a board that moves work between them, and quality gates before anything reaches review. I used it to build a Flutter app solo, where 93% of commits were co-authored by agents.',
+        pt: 'Práticas e um plugin do Claude Code para construir apps com um time de agentes de IA: papéis (product manager, designer, developers e guardião de PR) com ferramentas e limites próprios, um board que move o trabalho entre eles e portões de qualidade antes de qualquer revisão. Usei para construir um app Flutter sozinho, em que 93% dos commits foram co-autorados por agentes.',
+      },
+    },
+  ],
+
   skills: [
     {
       id: 'android',
@@ -340,6 +353,7 @@ const cv = {
   ui: {
     summary: { en: 'Summary', pt: 'Resumo' },
     experience: { en: 'Experience', pt: 'Experiência' },
+    projects: { en: 'Projects', pt: 'Projetos' },
     skills: { en: 'Skills', pt: 'Habilidades' },
     education: { en: 'Education', pt: 'Formação' },
     languages: { en: 'Languages', pt: 'Idiomas' },
