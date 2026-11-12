@@ -20,6 +20,7 @@ const projects = [
     icon: '⚽',
     color: 'linear-gradient(145deg, #2196F3, #0d47a1)',
     gifSrc: null,
+    hidden: true, // no demo GIF yet; remove this line once one exists
     repository: 'https://github.com/jeandealmeida-dev/futmarket-app',
     technologies: ['Kotlin', 'Android', 'REST API'],
   },
@@ -44,6 +45,7 @@ const projects = [
     icon: '🏛️',
     color: 'linear-gradient(145deg, #7C4DFF, #4527a0)',
     gifSrc: null,
+    hidden: true, // no demo GIF yet; remove this line once one exists
     repository: 'https://github.com/jeandealmeida-dev/ReignAndroidTest',
     technologies: ['Kotlin', 'Android', 'Clean Architecture'],
   },
