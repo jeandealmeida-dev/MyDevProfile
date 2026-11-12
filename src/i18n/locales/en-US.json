@@ -79,6 +79,25 @@
     "consultancy": "Consultancy",
     "detail": {
       "inAction": "In action",
+      "afya": {
+        "note": "At HubXP I worked on the Afya apps (Medcel, Internato Afya+, Afya Papers). The recordings below are from QA builds, so you will see test data. Names are blurred.",
+        "checkin": {
+          "title": "Attendance check-in",
+          "caption": "Feature I built: students confirm attendance at a class, or report why they could not check in. Check-in works on site or offline, by reading a QR code from the preceptor's app."
+        },
+        "updates": {
+          "title": "Study updates by week",
+          "caption": "Feature I built: lessons and activities grouped by month and week, with loading and empty states."
+        },
+        "player": {
+          "title": "Course videos",
+          "caption": "Core of the app: course topics, lesson player with Videos, Quiz and More tabs, and the report-an-error option."
+        },
+        "simulado": {
+          "title": "Exam simulations",
+          "caption": "Core of the app: list of simulations, question screen and the question map with right and wrong answers."
+        }
+      },
       "luizalabs": {
         "note": "At Luizalabs I worked across the Magalu and Netshoes apps. The recordings below are from debug and staging builds of the advertising SDK I led, so you will see test data and internal tooling.",
         "list": {

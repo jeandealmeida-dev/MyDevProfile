@@ -176,6 +176,39 @@ const experiences = [
       'experience.jobs.hubxp.h2',
       'experience.jobs.hubxp.h3',
     ],
+    mediaNoteKey: 'experience.detail.afya.note',
+    // The folder public/media/afya also keeps every other cut (01-27) and the
+    // three app recordings, unused for now. Names in cut 09 are blurred.
+    media: [
+      {
+        type: 'video',
+        src: `${PU}/media/afya/02-checkin-presenca.mp4`,
+        poster: `${PU}/media/afya/02-checkin-presenca-poster.webp`,
+        titleKey: 'experience.detail.afya.checkin.title',
+        captionKey: 'experience.detail.afya.checkin.caption',
+      },
+      {
+        type: 'video',
+        src: `${PU}/media/afya/09-atualizacoes-por-semana.mp4`,
+        poster: `${PU}/media/afya/09-atualizacoes-por-semana-poster.webp`,
+        titleKey: 'experience.detail.afya.updates.title',
+        captionKey: 'experience.detail.afya.updates.caption',
+      },
+      {
+        type: 'video',
+        src: `${PU}/media/afya/05-player-video-uniceplac.mp4`,
+        poster: `${PU}/media/afya/05-player-video-uniceplac-poster.webp`,
+        titleKey: 'experience.detail.afya.player.title',
+        captionKey: 'experience.detail.afya.player.caption',
+      },
+      {
+        type: 'video',
+        src: `${PU}/media/afya/22-simulados-mapa-de-questoes.mp4`,
+        poster: `${PU}/media/afya/22-simulados-mapa-de-questoes-poster.webp`,
+        titleKey: 'experience.detail.afya.simulado.title',
+        captionKey: 'experience.detail.afya.simulado.caption',
+      },
+    ],
   },
   {
     id: 6,
