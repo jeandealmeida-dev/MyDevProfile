@@ -9,7 +9,7 @@
   "about": {
     "title": "Olá,",
     "sectionTitle": "Como eu <accent>construo</accent>",
-    "bio1": "Comecei a desenvolver pra Android em 2012. Desde então trabalhei em <highlight>fintechs, e-commerce, saúde e varejo</highlight> — em empresas como Thoughtworks, Magazine Luiza e XP — sempre focado em apps escaláveis e problemas técnicos complexos.",
+    "bio1": "Quase 10 anos desenvolvendo pra Android. Desde 2012 trabalhei em <highlight>fintechs, e-commerce, saúde e varejo</highlight> — em empresas como Thoughtworks, Magazine Luiza e XP — sempre focado em apps escaláveis e problemas técnicos complexos.",
     "bio2": "Além de codar, gosto de <highlight>entender o produto de verdade e trazer sugestões</highlight> — me importo com ownership, não só com entrega. Também invisto em gente: mentoria, decisões de arquitetura e qualidade como hábito de time.",
     "bio3": "Meu toolkit é centrado em <highlight>Kotlin, Jetpack Compose, Flutter e KMP</highlight> — mas me importo mais em escolher a ferramenta certa do que em empilhar siglas. Boa engenharia é, na maior parte, pensar com clareza, fazer trocas honestas e escrever código que a próxima pessoa consiga ler.",
     "bio4": "",
@@ -24,7 +24,7 @@
     "skillResilience": "Resiliência",
     "skillResilienceDesc": "Entrego sob pressão e trato obstáculos como feedback, não como falha.",
     "available": "Aberto a oportunidades",
-    "location": "São Paulo, BR",
+    "location": "Joinville, SC, BR",
     "focus": "Android · Flutter · KMP",
     "experience": "8+ anos de exp.",
     "fact1Label": "anos construindo pra Android",
@@ -151,13 +151,13 @@
     },
     "jobs": {
       "thoughtworks": {
-        "period": "Out 2025 – Presente",
-        "h1": "Liderando o re-platforming do app Breathwrk para Android do zero, definindo a arquitetura e o stack de tecnologia moderno.",
-        "h2": "Estabelecendo padrões de engenharia e boas práticas para o time de desenvolvimento, garantindo uma base de código escalável e manutenível.",
-        "h3": "Aplicando profundo conhecimento do ecossistema Android para entregar uma aplicação de bem-estar de alta performance."
+        "period": "Jan 2026 – Presente",
+        "h1": "Liderou a reescrita do app Android do Breathwrk (Peloton) do zero em Jetpack Compose, definindo a arquitetura e a navegação single-Activity.",
+        "h2": "Dirigiu agentes de IA de código na reescrita e revisou o que eles produziram, trabalhando em inglês com um time distribuído.",
+        "h3": "Cerca de 5 meses do primeiro commit ao lançamento; o índice de usuários sem crash foi de 91% no lançamento para 100% em cerca de 2 semanas."
       },
       "magalu": {
-        "period": "Set 2024 – Out 2025",
+        "period": "Set 2024 – Jan 2026",
         "h1": "Liderou a refatoração e o desenvolvimento de um novo SDK de anúncios, permitindo gerenciamento escalável de anúncios para casos de uso internos e externos.",
         "h2": "Contribuiu com melhorias significativas de performance e correção de bugs em todo o ecossistema, incluindo os apps Netshoes e Magalu.",
         "h3": "Monitorou ativamente a performance do app e a estabilidade dos releases usando Firebase e Datadog, garantindo alta qualidade para apps como Netshoes e Magalu."
@@ -179,26 +179,26 @@
         "h3": "Orientou a modernização de bases de código legadas e melhorou a estabilidade e qualidade geral das aplicações Android."
       },
       "omnichat": {
-        "period": "2015 – 2016",
+        "period": "Dez 2015 – Nov 2016",
         "h1": "Atuou como único desenvolvedor Android, assumindo total ownership do design e construção da versão Android do produto principal da empresa.",
         "h2": "Estabeleceu a arquitetura Android, estratégia de persistência (SQLite) e camada de comunicação cliente-servidor (REST/JSON) do zero.",
         "h3": "Acumulou experiência de responsabilidade total pelo produto — de decisões de arquitetura ao release — em um ambiente de startup dinâmico."
       },
       "snowmanlabs": {
-        "period": "2015",
+        "period": "Jun – Nov 2015",
         "h1": "Atuou como consultor embed entregando soluções mobile para clientes externos junto a designers, arquitetos e desenvolvedores.",
         "h2": "Desenvolveu funcionalidades Android de ponta a ponta em ambiente colaborativo e orientado ao cliente, com altas expectativas de qualidade.",
         "h3": "Operou em modelo de consultoria que exigiu adaptabilidade, onboarding rápido a contextos de clientes e comunicação clara."
       },
       "totvs": {
-        "period": "Fev 2014 – Jan 2015",
+        "period": "Fev 2014 – Mai 2015",
         "h1": "Contribuiu para o FLUIG, plataforma de produtividade e colaboração publicada na Google Play Store e utilizada por clientes enterprise em todo o Brasil.",
         "h2": "Atuou em equipe mobile estruturada num produto ERP de grande escala, seguindo metodologia Kanban e práticas de pair programming.",
         "h3": "Corrigiu bugs em código legado e participou da entrega de novas funcionalidades em uma das maiores empresas de software enterprise do Brasil."
       },
       "sabbatical": {
         "h1": "Saiu do Brasil em 2017 e passou 4 anos viajando pela América do Sul — visitando Uruguai, Argentina, Chile e a região da Patagônia.",
-        "h2": "Manteve atuação como desenvolvedor Android freelance para startups e pequenas empresas brasileiras de forma remota durante a jornada.",
+        "h2": "Trabalhou como guia turístico em Caldera, no Chile, e administrou um hostel na temporada de verão, cuidando de hóspedes e equipe.",
         "h3": "Voltou com uma perspectiva mais ampla sobre pessoas, culturas e resiliência — experiências que moldaram uma forma de trabalhar mais empática e autônoma."
       },
       "softin": {

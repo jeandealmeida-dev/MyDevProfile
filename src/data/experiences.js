@@ -7,7 +7,7 @@ const experiences = [
     logoSrc: `${PU}/thoughtworks_logo.jpeg`,
     client: 'Peloton',
     role: 'Senior Mobile Developer - Android',
-    period: 'Oct 2025 – Present',
+    period: 'Jan 2026 – Present',
     periodKey: 'experience.jobs.thoughtworks.period',
     tags: ['Android', 'Kotlin', 'Senior', 'Consultancy', 'International', 'Leadership'],
     highlights: [
@@ -81,7 +81,7 @@ const experiences = [
     logoSrc: `${PU}/luizalabs_logo.jpeg`,
     client: null,
     role: 'Senior Mobile Developer - Android',
-    period: 'Sep 2024 – Oct 2025',
+    period: 'Sep 2024 – Jan 2026',
     periodKey: 'experience.jobs.magalu.period',
     tags: ['Android', 'Kotlin', 'Senior', 'SDK', 'E-commerce'],
     highlights: [
@@ -216,7 +216,7 @@ const experiences = [
     logoSrc: `${PU}/omnichat_logo.jpeg`,
     client: null,
     role: 'Mid-Level Android Developer',
-    period: 'Jan 2015 – Dec 2016',
+    period: 'Dec 2015 – Nov 2016',
     periodKey: 'experience.jobs.omnichat.period',
     tags: ['Android'],
     highlights: [
@@ -231,7 +231,7 @@ const experiences = [
     logoSrc: `${PU}/snowman_labs_logo.jpeg`,
     client: null,
     role: 'Mid-Level Android Developer',
-    period: 'Jan 2015 – Dec 2015',
+    period: 'Jun 2015 – Nov 2015',
     periodKey: 'experience.jobs.snowmanlabs.period',
     tags: ['Android', 'Consultancy'],
     highlights: [
@@ -246,7 +246,7 @@ const experiences = [
     logoSrc: `${PU}/totvs_logo.jpeg`,
     client: null,
     role: 'Mobile Systems Analyst',
-    period: 'Feb 2014 – Jan 2015',
+    period: 'Feb 2014 – May 2015',
     periodKey: 'experience.jobs.totvs.period',
     tags: ['Android'],
     highlights: [
