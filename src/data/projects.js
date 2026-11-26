@@ -20,6 +20,7 @@ const projects = [
     icon: '⚽',
     color: 'linear-gradient(145deg, #2196F3, #0d47a1)',
     gifSrc: null,
+    hidden: true, // no demo GIF yet; remove this line once one exists
     repository: 'https://github.com/jeandealmeida-dev/futmarket-app',
     technologies: ['Kotlin', 'Android', 'REST API'],
   },
@@ -44,12 +45,13 @@ const projects = [
     icon: '🏛️',
     color: 'linear-gradient(145deg, #7C4DFF, #4527a0)',
     gifSrc: null,
+    hidden: true, // no demo GIF yet; remove this line once one exists
     repository: 'https://github.com/jeandealmeida-dev/ReignAndroidTest',
     technologies: ['Kotlin', 'Android', 'Clean Architecture'],
   },
   {
     id: 5,
-    type: 'mobile',
+    type: 'flutter',
     name: 'Bovinoo',
     shortName: 'Bovinoo',
     descriptionKey: 'projects.descriptions.5',
@@ -57,9 +59,9 @@ const projects = [
     iconSrc: '/bovinoo-icon.png',
     color: 'linear-gradient(145deg, #4CAF50, #1b5e20)',
     gifSrc: '/bovinoo_demo.gif',
-    website: 'https://bovinoo-landingpage.vercel.app',
-    repository: 'https://github.com/jeandealmeida-dev/bovinoo-landingpage',
-    technologies: ['iOS', 'Android', 'Offline-first', 'Sync'],
+    website: 'https://bovinoo.app',
+    repository: null, // source is private
+    technologies: ['Flutter', 'Dart', 'iOS', 'Android', 'Offline-first'],
   },
 ];
 

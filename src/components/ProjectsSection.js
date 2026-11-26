@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FiGithub } from 'react-icons/fi';
-import projects from '../data/projects';
+import allProjects from '../data/projects';
 import '../styles/ProjectsSection.css';
+
+const projects = allProjects.filter((p) => !p.hidden);
 
 const SignalIcon = () => (
   <svg width="17" height="12" viewBox="0 0 17 12" fill="currentColor">
@@ -183,17 +185,21 @@ function ProjectsSection() {
                 ))}
               </div>
 
-              <div className="play-divider" />
+              {selected.repository && (
+                <>
+                  <div className="play-divider" />
 
-              <a
-                href={selected.repository}
-                target="_blank"
-                rel="noreferrer"
-                className="play-source-link"
-              >
-                <FiGithub size={13} />
-                <span>{t('projects.viewApp')}</span>
-              </a>
+                  <a
+                    href={selected.repository}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="play-source-link"
+                  >
+                    <FiGithub size={13} />
+                    <span>{t('projects.viewApp')}</span>
+                  </a>
+                </>
+              )}
             </div>
           ) : (
             <div className="proj-hint">

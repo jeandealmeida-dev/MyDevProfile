@@ -1,6 +1,6 @@
 # Jean de Almeida — Developer Portfolio
 
-Personal portfolio website for **Jean Paulo de Almeida Silva**, Senior Android Developer with 13+ years of experience. Built as a single-page React application with a terminal/developer aesthetic, bilingual support (EN/PT-BR), and a fully responsive design.
+Personal portfolio website for **Jean Paulo de Almeida Silva**, Senior Android Developer with almost 10 years of experience. Built as a single-page React application with a terminal/developer aesthetic, bilingual support (EN/PT-BR), and a fully responsive design.
 
 ---
 
@@ -107,6 +107,6 @@ Deployed on **Vercel**. The `engines` field in `package.json` pins Node 20.x —
 
 ## About Jean
 
-Senior Android Developer based in Joinville, SC, Brazil. 13+ years building for Android across fintech, e-commerce, health, and retail. Currently at **Thoughtworks**. Fluent in Portuguese, Spanish, and English.
+Senior Android Developer based in Joinville, SC, Brazil. Almost 10 years building for Android across fintech, e-commerce, health, and retail. Currently at **Thoughtworks**. Fluent in Portuguese, Spanish, and English.
 
 [linkedin.com/in/jeanalmeida](https://www.linkedin.com/in/jeanalmeida)
